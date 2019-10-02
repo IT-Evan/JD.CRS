@@ -5662,3 +5662,765 @@ INFO  2019-10-02 17:35:57,684 [46   ] ore.Mvc.Internal.ControllerActionInvoker -
 INFO  2019-10-02 17:35:57,693 [46   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.4339ms 500 
 DEBUG 2019-10-02 17:35:57,718 [46   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: GMk5ISqhuOrgqY7VkvVmqg
 INFO  2019-10-02 17:35:57,725 [46   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6695.0481ms 101 
+DEBUG 2019-10-02 17:39:05,011 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-02 17:39:05,205 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-10-02 17:39:05,235 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.CRS.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,238 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.CRS.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,238 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.CRS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,239 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.CRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,239 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,239 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,239 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.EntityFrameworkCore.CRSEntityFrameworkModule, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,241 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,241 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,241 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,241 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,241 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:05,245 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-10-02 17:39:05,590 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:39:05,590 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:39:05,590 [1    ] o.Configuration.LanguageManagementConfig - Converted CRS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:39:05,590 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:39:06,271 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: JD.CRS.EntityFrameworkCore.CRSDbContext, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:39:08,211 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-02 17:39:08,673 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-02 17:39:08,807 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-02 17:39:08,866 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRS
+DEBUG 2019-10-02 17:39:08,943 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-02 17:39:09,318 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-02 17:39:09,932 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-10-02 17:39:10,001 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-10-02 17:39:10,001 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-10-02 17:39:10,012 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.CreateUserDto
+DEBUG 2019-10-02 17:39:10,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.UserDto
+DEBUG 2019-10-02 17:39:10,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-02 17:39:10,014 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-02 17:39:10,014 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Roles.Dto.PermissionDto
+DEBUG 2019-10-02 17:39:10,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-02 17:39:10,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-02 17:39:10,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CourseDto
+DEBUG 2019-10-02 17:39:10,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CreateUpdateCourseDto
+DEBUG 2019-10-02 17:39:10,016 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-10-02 17:39:10,016 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-10-02 17:39:19,481 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-10-02 17:39:19,482 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-02 17:39:19,668 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.2003ms 200 
+INFO  2019-10-02 17:39:28,507 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:39:28,571 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:39:28,679 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:39:28,692 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.4039ms.
+INFO  2019-10-02 17:39:29,222 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:39:33,311 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:39:33,795 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:39:36,365 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:39:37,944 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 8734.2331ms.
+INFO  2019-10-02 17:39:37,985 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 9447.6408ms
+INFO  2019-10-02 17:39:38,024 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18533.4878ms 200 text/html; charset=utf-8
+INFO  2019-10-02 17:39:38,560 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637056347499420521  
+INFO  2019-10-02 17:39:38,561 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637056347499420521  
+INFO  2019-10-02 17:39:38,599 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-02 17:39:38,608 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-02 17:39:39,251 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-02 17:39:39,252 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-10-02 17:39:39,917 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:39:39,941 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 629.4528ms.
+INFO  2019-10-02 17:39:40,117 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-02 17:39:40,161 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 857.3226ms.
+INFO  2019-10-02 17:39:40,182 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1511.1123ms
+INFO  2019-10-02 17:39:40,185 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:39:40,201 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1628.7828ms 200 application/x-javascript
+INFO  2019-10-02 17:39:40,231 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 1586.7273ms
+INFO  2019-10-02 17:39:40,242 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1684.8081ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:39:40,336 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:39:40,434 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 57.4669ms 200 application/json
+INFO  2019-10-02 17:39:41,184 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=4tNkkxtCMtM1L60DEVNj6w  
+INFO  2019-10-02 17:39:42,085 [9    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:39:42,116 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"4tNkkxtCMtM1L60DEVNj6w","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:39:42.108498+08:00","Properties":{}}
+DEBUG 2019-10-02 17:39:42,192 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 4tNkkxtCMtM1L60DEVNj6w
+INFO  2019-10-02 17:40:08,862 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-02 17:40:08,873 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+ERROR 2019-10-02 17:40:09,072 [5    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 43
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 129
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 195
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 47
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 43
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 129
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 195
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 47
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-10-02 17:40:09,076 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-10-02 17:40:09,096 [5    ] icrosoft.AspNetCore.Mvc.StatusCodeResult - Executing HttpStatusCodeResult, setting HTTP status code 500
+INFO  2019-10-02 17:40:09,098 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 223.1415ms
+INFO  2019-10-02 17:40:09,110 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 242.3025ms 500 
+DEBUG 2019-10-02 17:40:09,212 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 4tNkkxtCMtM1L60DEVNj6w
+INFO  2019-10-02 17:40:09,312 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28125.8828ms 101 
+DEBUG 2019-10-02 17:43:22,049 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-02 17:43:22,413 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-10-02 17:43:22,432 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.CRS.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,435 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.CRS.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.CRS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.CRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,437 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,437 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,437 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,438 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.EntityFrameworkCore.CRSEntityFrameworkModule, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,438 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,438 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,439 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:22,454 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-10-02 17:43:22,575 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:43:22,575 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:43:22,575 [1    ] o.Configuration.LanguageManagementConfig - Converted CRS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:43:22,575 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:43:23,012 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: JD.CRS.EntityFrameworkCore.CRSDbContext, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:43:24,169 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-02 17:43:24,545 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-02 17:43:24,616 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-02 17:43:24,636 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRS
+DEBUG 2019-10-02 17:43:24,693 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-02 17:43:25,144 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-02 17:43:25,301 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-10-02 17:43:25,350 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-10-02 17:43:25,350 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-10-02 17:43:25,359 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.CreateUserDto
+DEBUG 2019-10-02 17:43:25,360 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.UserDto
+DEBUG 2019-10-02 17:43:25,360 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-02 17:43:25,361 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-02 17:43:25,361 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Roles.Dto.PermissionDto
+DEBUG 2019-10-02 17:43:25,361 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-02 17:43:25,361 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-02 17:43:25,361 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CourseDto
+DEBUG 2019-10-02 17:43:25,361 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CreateUpdateCourseDto
+DEBUG 2019-10-02 17:43:25,361 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-10-02 17:43:25,361 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-10-02 17:43:34,630 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-10-02 17:43:34,689 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-02 17:43:34,873 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 283.6966ms 200 
+INFO  2019-10-02 17:43:43,193 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:43:43,250 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:43:43,351 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:43:43,358 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.5781ms.
+INFO  2019-10-02 17:43:43,753 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:43:44,466 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:43:44,622 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:43:45,571 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:43:46,442 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2768.682ms.
+INFO  2019-10-02 17:43:46,459 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 3258.8295ms
+INFO  2019-10-02 17:43:46,490 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12011.571ms 200 text/html; charset=utf-8
+INFO  2019-10-02 17:43:46,992 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637056350053027402  
+INFO  2019-10-02 17:43:47,001 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637056350053027402  
+INFO  2019-10-02 17:43:47,048 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-02 17:43:47,055 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-02 17:43:47,120 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-02 17:43:47,302 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-02 17:43:47,885 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 441.8243ms.
+INFO  2019-10-02 17:43:47,927 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-02 17:43:47,984 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 874.3362ms
+INFO  2019-10-02 17:43:47,991 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1029.5133ms 200 application/x-javascript
+WARN  2019-10-02 17:43:48,059 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:43:48,094 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 970.4723ms.
+INFO  2019-10-02 17:43:48,261 [9    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:43:48,307 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 1211.5338ms
+INFO  2019-10-02 17:43:48,343 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1357.3827ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:43:48,504 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:43:48,568 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 133.9276ms 200 application/json
+INFO  2019-10-02 17:43:49,378 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=3fyPcDmvSFq-QfSS7u91aA  
+INFO  2019-10-02 17:43:50,504 [11   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:43:50,535 [11   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"3fyPcDmvSFq-QfSS7u91aA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:43:50.5280752+08:00","Properties":{}}
+DEBUG 2019-10-02 17:43:50,605 [11   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 3fyPcDmvSFq-QfSS7u91aA
+INFO  2019-10-02 17:44:03,067 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-02 17:44:03,078 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+ERROR 2019-10-02 17:44:03,159 [7    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 43
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 129
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 195
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 47
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 43
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 129
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 195
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 47
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-10-02 17:44:03,162 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-10-02 17:44:03,168 [7    ] icrosoft.AspNetCore.Mvc.StatusCodeResult - Executing HttpStatusCodeResult, setting HTTP status code 500
+INFO  2019-10-02 17:44:03,170 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 90.8262ms
+INFO  2019-10-02 17:44:03,173 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 109.1685ms 500 
+DEBUG 2019-10-02 17:44:03,313 [11   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 3fyPcDmvSFq-QfSS7u91aA
+INFO  2019-10-02 17:44:03,334 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14161.5703ms 101 
+INFO  2019-10-02 17:44:06,173 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-02 17:44:06,179 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+ERROR 2019-10-02 17:44:06,181 [7    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 43
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 129
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 195
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 47
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 43
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 129
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 195
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 47
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-10-02 17:44:06,183 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-10-02 17:44:06,185 [7    ] icrosoft.AspNetCore.Mvc.StatusCodeResult - Executing HttpStatusCodeResult, setting HTTP status code 500
+INFO  2019-10-02 17:44:06,187 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 6.4253ms
+INFO  2019-10-02 17:44:06,189 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.2263ms 500 
+INFO  2019-10-02 17:44:08,445 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-02 17:44:08,451 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:44:08,454 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:44:08,487 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:44:08,489 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.035ms.
+INFO  2019-10-02 17:44:08,525 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:44:08,527 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:44:08,530 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:44:08,590 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:44:08,615 [11   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 80.6917ms.
+INFO  2019-10-02 17:44:08,622 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 164.134ms
+INFO  2019-10-02 17:44:08,625 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 179.1428ms 200 text/html; charset=utf-8
+INFO  2019-10-02 17:44:09,021 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:44:09,070 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 100.1669ms 200 application/json
+INFO  2019-10-02 17:44:09,074 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=LfY01ro6fdjelmYXk7J7GA  
+INFO  2019-10-02 17:44:09,110 [9    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:44:09,110 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"LfY01ro6fdjelmYXk7J7GA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:44:09.1106766+08:00","Properties":{}}
+DEBUG 2019-10-02 17:44:09,111 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: LfY01ro6fdjelmYXk7J7GA
+INFO  2019-10-02 17:44:12,631 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-02 17:44:12,642 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+ERROR 2019-10-02 17:44:12,644 [6    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 43
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 129
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 195
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 47
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 43
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 129
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 195
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 47
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-10-02 17:44:12,646 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-10-02 17:44:12,647 [6    ] icrosoft.AspNetCore.Mvc.StatusCodeResult - Executing HttpStatusCodeResult, setting HTTP status code 500
+INFO  2019-10-02 17:44:12,649 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 4.9298ms
+INFO  2019-10-02 17:44:12,656 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.0142ms 500 
+INFO  2019-10-02 17:44:17,226 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tenants  
+INFO  2019-10-02 17:44:17,279 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Tenants", area = ""}. Executing action JD.CRS.Web.Controllers.TenantsController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:44:17,295 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:44:17,616 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.TenantsController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:44:18,254 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.TenantsController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 630.8644ms.
+INFO  2019-10-02 17:44:18,313 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:44:18,372 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:44:18,374 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:44:18,478 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:44:18,684 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 252.9636ms.
+INFO  2019-10-02 17:44:18,690 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.TenantsController.Index (JD.CRS.Web.Mvc) in 1405.7926ms
+INFO  2019-10-02 17:44:18,699 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1599.9461ms 200 text/html; charset=utf-8
+INFO  2019-10-02 17:44:18,988 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637056350053027402  
+INFO  2019-10-02 17:44:19,009 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Tenants/Index.js?v=4XT_M_gjM2eUDnGqNBzmnlBxdPsXYDwPPOov7WVjvsw  
+INFO  2019-10-02 17:44:19,012 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637056350053027402  
+INFO  2019-10-02 17:44:19,037 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-02 17:44:19,065 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-02 17:44:19,066 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-10-02 17:44:19,096 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:44:19,111 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Tenants/Index.js'. Physical path: 'D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\wwwroot\view-resources\Views\Tenants\Index.js'
+INFO  2019-10-02 17:44:19,119 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-02 17:44:19,122 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 126.0369ms 200 application/javascript
+INFO  2019-10-02 17:44:19,127 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1603ms.
+INFO  2019-10-02 17:44:19,133 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 39.8416ms.
+INFO  2019-10-02 17:44:19,136 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-02 17:44:19,147 [16   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:44:19,170 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 71.3766ms
+INFO  2019-10-02 17:44:19,173 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 111.7795ms
+INFO  2019-10-02 17:44:19,177 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 184.1306ms 200 application/x-javascript
+INFO  2019-10-02 17:44:19,260 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 190.4083ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:44:19,266 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:44:19,284 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.6448ms 200 application/json
+INFO  2019-10-02 17:44:19,284 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=a8CIQglGZl4jOvTp3i8OPA  
+INFO  2019-10-02 17:44:19,302 [15   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:44:19,302 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"a8CIQglGZl4jOvTp3i8OPA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:44:19.302865+08:00","Properties":{}}
+DEBUG 2019-10-02 17:44:19,307 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: a8CIQglGZl4jOvTp3i8OPA
+DEBUG 2019-10-02 17:44:21,341 [16   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: a8CIQglGZl4jOvTp3i8OPA
+INFO  2019-10-02 17:44:21,354 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2058.5338ms 101 
+DEBUG 2019-10-02 17:47:38,761 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-02 17:47:39,254 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-10-02 17:47:39,278 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.CRS.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.CRS.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.CRS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.CRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,282 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,282 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.EntityFrameworkCore.CRSEntityFrameworkModule, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,282 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,283 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,283 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,283 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,283 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,283 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:39,286 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-10-02 17:47:39,412 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:47:39,412 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:47:39,412 [1    ] o.Configuration.LanguageManagementConfig - Converted CRS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:47:39,412 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:47:40,820 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: JD.CRS.EntityFrameworkCore.CRSDbContext, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:47:42,930 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-02 17:47:43,297 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-02 17:47:43,357 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-02 17:47:43,378 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRS
+DEBUG 2019-10-02 17:47:43,414 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-02 17:47:43,681 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-02 17:47:43,976 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-10-02 17:47:44,038 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-10-02 17:47:44,038 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-10-02 17:47:44,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.CreateUserDto
+DEBUG 2019-10-02 17:47:44,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.UserDto
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Roles.Dto.PermissionDto
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CourseDto
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CreateUpdateCourseDto
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-10-02 17:47:44,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-10-02 17:47:51,762 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-10-02 17:47:51,762 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-02 17:47:51,930 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 204.9613ms 200 
+INFO  2019-10-02 17:47:57,808 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:47:57,882 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:47:58,029 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:47:58,056 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.8795ms.
+INFO  2019-10-02 17:47:58,411 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:47:59,205 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:47:59,414 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+INFO  2019-10-02 17:48:02,472 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 4637.5459ms
+ERROR 2019-10-02 17:48:02,723 [6    ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Abp.AbpException: There is no permission with name: Pages.Course
+   at Abp.Authorization.PermissionManager.GetPermission(String name) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:line 54
+   at Abp.Authorization.Users.AbpUserManager`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\Users\AbpUserManager.cs:line 140
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(Int64 userId, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 48
+   at Abp.Authorization.PermissionChecker`2.IsGrantedAsync(UserIdentifier user, String permissionName) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore\Authorization\PermissionChecker.cs:line 61
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction) in D:\Github\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:line 113
+   at Abp.Authorization.PermissionCheckerExtensions.IsGrantedAsync(IPermissionChecker permissionChecker, UserIdentifier user, Boolean requiresAll, String[] permissionNames) in D:\Github\aspnetboilerplate\src\Abp\Authorization\PermissionCheckerExtensions.cs:line 79
+   at Abp.Application.Navigation.UserNavigationManager.FillUserMenuItems(UserIdentifier user, IList`1 menuItemDefinitions, IList`1 userMenuItems) in D:\Github\aspnetboilerplate\src\Abp\Application\Navigation\UserNavigationManager.cs:line 81
+   at Abp.Application.Navigation.UserNavigationManager.GetMenuAsync(String menuName, UserIdentifier user) in D:\Github\aspnetboilerplate\src\Abp\Application\Navigation\UserNavigationManager.cs:line 41
+   at JD.CRS.Web.Views.Shared.Components.SideBarNav.SideBarNavViewComponent.InvokeAsync(String activeMenu) in D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\Views\Shared\Components\SideBarNav\SideBarNavViewComponent.cs:line 23
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsyncCore(ObjectMethodExecutor executor, ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+   at AspNetCore.Views_Shared__Layout.<ExecuteAsync>b__64_1() in D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\Views\Shared\_Layout.cshtml:line 127
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Shared__Layout.ExecuteAsync() in D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\Views\Shared\_Layout.cshtml:line 66
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at JD.CRS.Authentication.JwtBearer.JwtTokenMiddleware.<>c__DisplayClass0_0.<<UseJwtTokenMiddleware>b__0>d.MoveNext() in D:\Git\JD.CRS\src\JD.CRS.Web.Core\Authentication\JwtBearer\JwtTokenMiddleware.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  2019-10-02 17:48:02,973 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11260.6256ms 500 text/html; charset=utf-8
+DEBUG 2019-10-02 17:54:08,366 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-02 17:54:08,688 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-10-02 17:54:08,709 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.CRS.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.CRS.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.CRS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.CRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,716 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.EntityFrameworkCore.CRSEntityFrameworkModule, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,716 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,716 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:08,721 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-10-02 17:54:08,814 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:54:08,814 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:54:08,814 [1    ] o.Configuration.LanguageManagementConfig - Converted CRS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:54:08,814 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-02 17:54:09,328 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: JD.CRS.EntityFrameworkCore.CRSDbContext, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-02 17:54:12,173 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-02 17:54:12,557 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-02 17:54:12,619 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-02 17:54:12,663 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRS
+DEBUG 2019-10-02 17:54:12,700 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-02 17:54:13,118 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-02 17:54:13,291 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-10-02 17:54:13,336 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-10-02 17:54:13,336 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-10-02 17:54:13,343 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.CreateUserDto
+DEBUG 2019-10-02 17:54:13,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.UserDto
+DEBUG 2019-10-02 17:54:13,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-02 17:54:13,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-02 17:54:13,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Roles.Dto.PermissionDto
+DEBUG 2019-10-02 17:54:13,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-02 17:54:13,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-02 17:54:13,345 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CourseDto
+DEBUG 2019-10-02 17:54:13,346 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CreateUpdateCourseDto
+DEBUG 2019-10-02 17:54:13,346 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-10-02 17:54:13,346 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-10-02 17:54:23,249 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-10-02 17:54:23,249 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-02 17:54:23,337 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 95.7251ms 200 
+INFO  2019-10-02 17:54:32,157 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:54:32,215 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:54:32,339 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:54:32,348 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.1963ms.
+INFO  2019-10-02 17:54:33,146 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:54:33,919 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:54:34,040 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:54:35,295 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:54:36,413 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 3675.6479ms.
+INFO  2019-10-02 17:54:36,520 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 4265.4428ms
+INFO  2019-10-02 17:54:36,547 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13311.5688ms 200 text/html; charset=utf-8
+INFO  2019-10-02 17:54:36,919 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637056356532924182  
+INFO  2019-10-02 17:54:36,963 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637056356532924182  
+INFO  2019-10-02 17:54:36,980 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-02 17:54:36,980 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-02 17:54:37,104 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-02 17:54:37,156 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-02 17:54:37,637 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 411.1989ms.
+INFO  2019-10-02 17:54:37,685 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-02 17:54:37,841 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 708.7034ms
+INFO  2019-10-02 17:54:37,887 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 924.1286ms 200 application/x-javascript
+WARN  2019-10-02 17:54:37,899 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:54:38,058 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 883.1491ms.
+INFO  2019-10-02 17:54:38,069 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:54:38,081 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 1088.5477ms
+INFO  2019-10-02 17:54:38,121 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1120.1632ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:54:38,136 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:54:38,395 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 166.7822ms 200 application/json
+INFO  2019-10-02 17:54:38,558 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=QoOLqxOJLUG9Tp6GJ6gnWA  
+INFO  2019-10-02 17:54:39,092 [9    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:54:39,122 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"QoOLqxOJLUG9Tp6GJ6gnWA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:54:39.1135283+08:00","Properties":{}}
+DEBUG 2019-10-02 17:54:39,178 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: QoOLqxOJLUG9Tp6GJ6gnWA
+INFO  2019-10-02 17:54:42,044 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-02 17:54:42,053 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:54:42,056 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:54:42,724 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:54:43,097 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 370.2684ms.
+INFO  2019-10-02 17:54:43,156 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:54:43,167 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,168 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,168 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,169 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,170 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,170 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,171 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateCourse' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,184 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,184 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,185 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,185 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,186 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,189 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,191 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:54:43,259 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:54:43,298 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 147.0212ms.
+INFO  2019-10-02 17:54:43,302 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 1244.644ms
+INFO  2019-10-02 17:54:43,459 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1259.7429ms 200 text/html; charset=utf-8
+DEBUG 2019-10-02 17:54:43,543 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: QoOLqxOJLUG9Tp6GJ6gnWA
+INFO  2019-10-02 17:54:43,897 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5112.4734ms 101 
+INFO  2019-10-02 17:54:44,082 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637056356532924182  
+INFO  2019-10-02 17:54:44,091 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637056356532924182  
+INFO  2019-10-02 17:54:44,092 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-02 17:54:44,123 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Course/Index.js?v=8AV3e2UlDCzbtWA_sUevk_Ih4XAy4DHiJiLUu8Ymf90  
+INFO  2019-10-02 17:54:44,129 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-02 17:54:44,133 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-10-02 17:54:44,172 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:54:44,195 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-02 17:54:44,199 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 55.8345ms.
+INFO  2019-10-02 17:54:44,204 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1402ms.
+INFO  2019-10-02 17:54:44,207 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:54:44,214 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-02 17:54:44,226 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 116.6825ms
+INFO  2019-10-02 17:54:44,238 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 86.0993ms
+INFO  2019-10-02 17:54:44,260 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 155.6092ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:54:44,293 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 153.9519ms 200 application/x-javascript
+INFO  2019-10-02 17:54:44,303 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Course/Index.js'. Physical path: 'D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\wwwroot\view-resources\Views\Course\Index.js'
+INFO  2019-10-02 17:54:44,314 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 209.1646ms 200 application/javascript
+INFO  2019-10-02 17:54:44,324 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:54:44,343 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.6209ms 200 application/json
+INFO  2019-10-02 17:54:44,409 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=wt_lyPyh_8oQZ3QevdXtKA  
+INFO  2019-10-02 17:54:44,430 [9    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:54:44,430 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"wt_lyPyh_8oQZ3QevdXtKA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:54:44.4306441+08:00","Properties":{}}
+DEBUG 2019-10-02 17:54:44,432 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: wt_lyPyh_8oQZ3QevdXtKA
+INFO  2019-10-02 17:55:18,715 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/api/services/app/Course/Create application/json 85
+INFO  2019-10-02 17:55:18,731 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "Course"}. Executing action JD.CRS.Course.CourseAppService.Create (JD.CRS.Application)
+INFO  2019-10-02 17:55:18,870 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Course.CourseAppService.Create (JD.CRS.Application) with arguments (JD.CRS.Course.Dto.CreateUpdateCourseDto) - Validation state: Valid
+INFO  2019-10-02 17:55:19,100 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Course.CourseAppService.Create (JD.CRS.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 228.0964ms.
+INFO  2019-10-02 17:55:19,198 [7    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-10-02 17:55:19,229 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Course.CourseAppService.Create (JD.CRS.Application) in 486.3448ms
+INFO  2019-10-02 17:55:19,240 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 518.1733ms 200 application/json; charset=utf-8
+INFO  2019-10-02 17:55:19,282 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-02 17:55:19,289 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:55:19,291 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:55:19,313 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:55:19,438 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 123.947ms.
+INFO  2019-10-02 17:55:19,496 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:55:19,497 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,498 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,498 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,499 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,499 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,499 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,536 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateCourse' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,537 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,538 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,538 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,539 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,539 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,540 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,543 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:55:19,600 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:55:19,620 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 132.3187ms.
+DEBUG 2019-10-02 17:55:19,642 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: wt_lyPyh_8oQZ3QevdXtKA
+INFO  2019-10-02 17:55:19,647 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 330.946ms
+INFO  2019-10-02 17:55:19,658 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 367.5659ms 200 text/html; charset=utf-8
+INFO  2019-10-02 17:55:19,709 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35251.6462ms 101 
+INFO  2019-10-02 17:55:19,824 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637056356532924182  
+INFO  2019-10-02 17:55:19,833 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637056356532924182  
+INFO  2019-10-02 17:55:19,836 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-02 17:55:19,863 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-02 17:55:19,864 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-02 17:55:19,867 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.048ms.
+INFO  2019-10-02 17:55:19,872 [9    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-02 17:55:19,893 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 52.7156ms
+INFO  2019-10-02 17:55:19,897 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-02 17:55:19,902 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 183.6453ms 200 application/x-javascript
+WARN  2019-10-02 17:55:19,906 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:55:19,917 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 18.9212ms.
+INFO  2019-10-02 17:55:19,922 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:55:19,943 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 55.7761ms
+INFO  2019-10-02 17:55:20,116 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 129.2661ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:55:20,133 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:55:20,141 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.7374ms 200 application/json
+INFO  2019-10-02 17:55:20,149 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=xRQyUZPnoNZgfKsvSwsikg  
+INFO  2019-10-02 17:55:20,159 [9    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:55:20,159 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"xRQyUZPnoNZgfKsvSwsikg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:55:20.1598003+08:00","Properties":{}}
+DEBUG 2019-10-02 17:55:20,159 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: xRQyUZPnoNZgfKsvSwsikg
+INFO  2019-10-02 17:55:21,782 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/Course/EditCourseModal?courseId=1 application/html 0
+INFO  2019-10-02 17:55:21,793 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "EditCourseModal", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.EditCourseModal (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:55:21,795 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:55:21,819 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.CourseController.EditCourseModal (JD.CRS.Web.Mvc) with arguments (0) - Validation state: Valid
+ERROR 2019-10-02 17:55:22,584 [7    ] Mvc.ExceptionHandling.AbpExceptionFilter - There is no such an entity. Entity type: JD.CRS.Entitys.Course, id: 0
+Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: JD.CRS.Entitys.Course, id: 0
+   at Abp.Domain.Repositories.AbpRepositoryBase`2.GetAsync(TPrimaryKey id) in D:\Github\aspnetboilerplate\src\Abp\Domain\Repositories\AbpRepositoryBase.cs:line 86
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Application.Services.AsyncCrudAppService`8.Get(TGetInput input)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithFinallyAndGetResult[T](Task`1 actualReturnValue, Action`2 finalAction)
+   at JD.CRS.Web.Controllers.CourseController.EditCourseModal(Int32 customerId) in D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\Controllers\CourseController.cs:line 40
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-10-02 17:55:22,591 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.EditCourseModal (JD.CRS.Web.Mvc) in 795.3988ms
+ERROR 2019-10-02 17:55:22,811 [7    ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: JD.CRS.Entitys.Course, id: 0
+   at Abp.Domain.Repositories.AbpRepositoryBase`2.GetAsync(TPrimaryKey id) in D:\Github\aspnetboilerplate\src\Abp\Domain\Repositories\AbpRepositoryBase.cs:line 86
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Application.Services.AsyncCrudAppService`8.Get(TGetInput input)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult[T](Task`1 actualReturnValue, Func`1 postAction, Action`1 finalAction)
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithFinallyAndGetResult[T](Task`1 actualReturnValue, Action`2 finalAction)
+   at JD.CRS.Web.Controllers.CourseController.EditCourseModal(Int32 customerId) in D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\Controllers\CourseController.cs:line 40
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at JD.CRS.Authentication.JwtBearer.JwtTokenMiddleware.<>c__DisplayClass0_0.<<UseJwtTokenMiddleware>b__0>d.MoveNext() in D:\Git\JD.CRS\src\JD.CRS.Web.Core\Authentication\JwtBearer\JwtTokenMiddleware.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  2019-10-02 17:55:23,014 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1185.9281ms 500 text/html; charset=utf-8
+INFO  2019-10-02 17:55:36,706 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-02 17:55:36,714 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:55:36,720 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:55:36,742 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:55:36,832 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 88.4104ms.
+INFO  2019-10-02 17:55:36,877 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:55:36,878 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,879 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,879 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,880 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,880 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,881 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,884 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateCourse' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,885 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,885 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,886 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,886 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,887 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,888 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,890 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:55:36,968 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:55:36,983 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 104.2985ms.
+DEBUG 2019-10-02 17:55:36,997 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: xRQyUZPnoNZgfKsvSwsikg
+INFO  2019-10-02 17:55:36,998 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 269.1469ms
+INFO  2019-10-02 17:55:37,009 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16850.0231ms 101 
+INFO  2019-10-02 17:55:37,044 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 359.0453ms 200 text/html; charset=utf-8
+INFO  2019-10-02 17:55:37,150 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637056356532924182  
+INFO  2019-10-02 17:55:37,161 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637056356532924182  
+INFO  2019-10-02 17:55:37,167 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-02 17:55:37,176 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-02 17:55:37,217 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-10-02 17:55:37,227 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:55:37,230 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-02 17:55:37,233 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.063ms.
+INFO  2019-10-02 17:55:37,256 [9    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-02 17:55:37,280 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 80.1288ms
+INFO  2019-10-02 17:55:37,284 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 133.7589ms 200 application/x-javascript
+INFO  2019-10-02 17:55:37,290 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 71.3266ms.
+INFO  2019-10-02 17:55:37,291 [15   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:55:37,302 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 123.7353ms
+INFO  2019-10-02 17:55:37,330 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 156.2832ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:55:37,335 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:55:37,344 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.8775ms 200 application/json
+INFO  2019-10-02 17:55:37,350 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=HOxHK8VUsnFBqviDsKKaug  
+INFO  2019-10-02 17:55:37,360 [15   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:55:37,361 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"HOxHK8VUsnFBqviDsKKaug","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:55:37.3612991+08:00","Properties":{}}
+DEBUG 2019-10-02 17:55:37,361 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: HOxHK8VUsnFBqviDsKKaug
+INFO  2019-10-02 17:55:45,234 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DELETE http://localhost:62114/api/services/app/Course/Delete?id=1 application/json 
+INFO  2019-10-02 17:55:45,243 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "Delete", controller = "Course"}. Executing action JD.CRS.Course.CourseAppService.Delete (JD.CRS.Application)
+INFO  2019-10-02 17:55:45,273 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Course.CourseAppService.Delete (JD.CRS.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Int32]) - Validation state: Valid
+INFO  2019-10-02 17:55:45,474 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Course.CourseAppService.Delete (JD.CRS.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 142.7919ms.
+INFO  2019-10-02 17:55:46,131 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-10-02 17:55:46,161 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Course.CourseAppService.Delete (JD.CRS.Application) in 887.6779ms
+INFO  2019-10-02 17:55:46,178 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 928.8569ms 200 application/json; charset=utf-8
+INFO  2019-10-02 17:55:46,216 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-02 17:55:46,228 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-02 17:55:46,230 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-02 17:55:46,253 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-02 17:55:46,401 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 146.196ms.
+INFO  2019-10-02 17:55:46,448 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-02 17:55:46,449 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,450 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,451 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,452 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,452 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,452 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,453 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateCourse' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,454 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,454 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,455 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,455 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,456 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,457 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,459 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-02 17:55:46,528 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+DEBUG 2019-10-02 17:55:46,672 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: HOxHK8VUsnFBqviDsKKaug
+INFO  2019-10-02 17:55:46,725 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 93.5057ms.
+INFO  2019-10-02 17:55:46,779 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9323.6204ms 101 
+INFO  2019-10-02 17:55:46,792 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 537.2052ms
+INFO  2019-10-02 17:55:46,807 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 591.6963ms 200 text/html; charset=utf-8
+INFO  2019-10-02 17:55:46,810 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637056356532924182  
+INFO  2019-10-02 17:55:46,817 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637056356532924182  
+INFO  2019-10-02 17:55:46,819 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-02 17:55:46,847 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-02 17:55:46,873 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-02 17:55:46,877 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-02 17:55:46,878 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 1.7259ms.
+INFO  2019-10-02 17:55:46,881 [15   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+WARN  2019-10-02 17:55:46,888 [17   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+INFO  2019-10-02 17:55:46,891 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 62.4854ms
+INFO  2019-10-02 17:55:46,914 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 96.4704ms 200 application/x-javascript
+INFO  2019-10-02 17:55:46,915 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 23.3605ms.
+INFO  2019-10-02 17:55:46,917 [17   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:55:46,951 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 67.8231ms
+INFO  2019-10-02 17:55:46,960 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 153.855ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-02 17:55:46,961 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-02 17:55:46,980 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.8218ms 200 application/json
+INFO  2019-10-02 17:55:46,982 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=Jv1HhJMjgNzVnot8PP1lbA  
+INFO  2019-10-02 17:55:46,999 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-02 17:55:46,999 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"Jv1HhJMjgNzVnot8PP1lbA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-02T17:55:46.9997815+08:00","Properties":{}}
+DEBUG 2019-10-02 17:55:47,000 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: Jv1HhJMjgNzVnot8PP1lbA

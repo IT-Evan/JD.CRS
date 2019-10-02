@@ -22,6 +22,14 @@ namespace JD.CRS.Web.Startup
                     )
                 ).AddItem(
                     new MenuItemDefinition(
+                        PageNames.Course,
+                        L("Course"),
+                        url: "Course",
+                        icon: "home",
+                        requiredPermissionName: PermissionNames.Pages_Course
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
                         PageNames.Tenants,
                         L("Tenants"),
                         url: "Tenants",
