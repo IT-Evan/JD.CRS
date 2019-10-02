@@ -148,5 +148,17 @@
     "inputFiles": [
       "wwwroot/view-resources/Views/Shared/Components/TenantChange/Default.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Views/Course/_EditCourseModal.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Views/Course/_EditCourseModal.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Views/Course/Index.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Views/Course/Index.js"
+    ]
   }
 ]

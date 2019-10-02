@@ -4,6 +4,7 @@
     Layout = null;
 }
 @Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditCourse")))
+
 <div class="modal-body">
     <form name="CourseEditForm" role="form" novalidate class="form-validation">
         <input type="hidden" name="Id" value="@Model.Course.Id" />
