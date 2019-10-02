@@ -10,58 +10,33 @@ namespace JD.CRS.Course.Dto
     [AutoMapTo(typeof(Entitys.Course))]
     public class CreateUpdateCourseDto : EntityDto<int>
     {
-
         /// <summary>
-        /// 客商编号
+        /// 课程编号
         /// </summary>
         [StringLength(50)]
         public string Code { get; set; }
         /// <summary>
-        /// 客商名称
+        /// 院系编号
+        /// </summary>
+        [StringLength(50)]
+        public string DepartmentCode { get; set; }
+        /// <summary>
+        /// 课程名称
         /// </summary>
         [StringLength(150)]
         public string Name { get; set; }
         /// <summary>
-        /// 拼音码
+        /// 课程积分
         /// </summary>
-        [StringLength(150)]
-        public string PinyinCode { get; set; }
-        /// <summary>
-        /// 地址
-        /// </summary>
-        [StringLength(200)]
-        public string Address { get; set; }
-        /// <summary>
-        /// 联系人
-        /// </summary>
-        [StringLength(50)]
-        public string Contact { get; set; }
-        /// <summary>
-        /// 联系电话
-        /// </summary>
-        [StringLength(50)]
-        public string Phone { get; set; }
-        /// <summary>
-        /// 微信
-        /// </summary>
-        [StringLength(50)]
-        public string Wechat { get; set; }
-        /// <summary>
-        /// 所属区域
-        /// </summary>
-        [StringLength(50)]
-        public string Area { get; set; }
-        /// <summary>
-        /// 客商类别
-        /// </summary>
-        public int? CustomerType { get; set; }
+        [Range(0, 5)]
+        public int Credits { get; set; }
         /// <summary>
         /// 备注
         /// </summary>
         [StringLength(200)]
         public string Remarks { get; set; }
         /// <summary>
-        /// 状态
+        /// 状态: 0 正常, 1 废弃
         /// </summary>
         public int? Status { get; set; }
         /// <summary>
@@ -82,6 +57,7 @@ namespace JD.CRS.Course.Dto
         /// </summary>
         [StringLength(50)]
         public string UpdateName { get; set; }
+
         public DateTime CreationTime { get; set; }
     }
 }
