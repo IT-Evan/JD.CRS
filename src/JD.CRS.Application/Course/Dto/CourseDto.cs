@@ -1,10 +1,7 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using JD.CRS.Entitys;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace JD.CRS.Course.Dto
 {

@@ -3,10 +3,8 @@ using Abp.AspNetCore.Mvc.Authorization;
 using JD.CRS.Authorization;
 using JD.CRS.Controllers;
 using JD.CRS.Course;
-using JD.CRS.Course.Dto;
 using JD.CRS.Web.Models.Course;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace JD.CRS.Web.Controllers
@@ -25,10 +23,8 @@ namespace JD.CRS.Web.Controllers
         {
             var courses = (await _courseAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             // Paging not implemented yet
-            //CourseDto cuModule = courses.FirstOrDefault();
             var model = new CourseListViewModel
             {
-                //Course = cuModule,
                 Courses = courses
             };
             return View(model);
@@ -37,7 +33,6 @@ namespace JD.CRS.Web.Controllers
         public async Task<ActionResult> EditCourseModal(int courseId)
         {
             var course = await _courseAppService.Get(new EntityDto<int>(courseId));
-            //CreateUpdateCourseDto cuCourse = AutoMapper.Mapper.Map<CreateUpdateCourseDto>(course);
             var model = new EditCourseModalViewModel
             {
                 Course = course

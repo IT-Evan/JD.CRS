@@ -3,7 +3,6 @@ using Abp.AutoMapper;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-
 namespace JD.CRS.Course.Dto
 {
 
