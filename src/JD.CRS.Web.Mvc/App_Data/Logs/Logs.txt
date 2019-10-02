@@ -855,10 +855,10 @@ DEBUG 2019-09-26 20:36:20,004 [67   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub -
 INFO  2019-09-26 20:36:20,024 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2536746.4133ms 101 
 DEBUG 2019-09-26 20:46:35,156 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
 DEBUG 2019-09-26 20:46:35,384 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
-DEBUG 2019-09-26 20:46:35,401 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.Invoicing.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-09-26 20:46:35,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.Invoicing.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-09-26 20:46:35,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.Invoicing.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-DEBUG 2019-09-26 20:46:35,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.Invoicing.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-26 20:46:35,401 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.CRS.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-26 20:46:35,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.CRS.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-26 20:46:35,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.CRS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-26 20:46:35,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.CRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 DEBUG 2019-09-26 20:46:35,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
 DEBUG 2019-09-26 20:46:35,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
 DEBUG 2019-09-26 20:46:35,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
