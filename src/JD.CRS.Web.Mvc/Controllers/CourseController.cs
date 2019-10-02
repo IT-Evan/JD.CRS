@@ -14,34 +14,33 @@ namespace JD.CRS.Web.Controllers
     [AbpMvcAuthorize(PermissionNames.Pages_Course)]
     public class CourseController : CRSControllerBase
     {
-        private readonly ICourseAppService _customerAppService;
+        private readonly ICourseAppService _courseAppService;
         const int MaxNum = 10;
-        public CourseController(ICourseAppService customerAppService)
+        public CourseController(ICourseAppService courseAppService)
         {
-            _customerAppService = customerAppService;
-
+            _courseAppService = courseAppService;
         }
         // GET: /<controller>/
         public async Task<ActionResult> Index()
         {
-            var customers = (await _customerAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+            var courses = (await _courseAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
             // Paging not implemented yet
-            //CourseDto cuModule = customers.FirstOrDefault();
+            //CourseDto cuModule = courses.FirstOrDefault();
             var model = new CourseListViewModel
             {
                 //Course = cuModule,
-                Courses = customers
+                Courses = courses
             };
             return View(model);
         }
 
-        public async Task<ActionResult> EditCourseModal(int customerId)
+        public async Task<ActionResult> EditCourseModal(int courseId)
         {
-            var customer = await _customerAppService.Get(new EntityDto<int>(customerId));
-            //CreateUpdateCourseDto cuCourse = AutoMapper.Mapper.Map<CreateUpdateCourseDto>(customer);
+            var course = await _courseAppService.Get(new EntityDto<int>(courseId));
+            //CreateUpdateCourseDto cuCourse = AutoMapper.Mapper.Map<CreateUpdateCourseDto>(course);
             var model = new EditCourseModalViewModel
             {
-                Course = customer
+                Course = course
             };
             return View("_EditCourseModal", model);
         }
