@@ -1,8 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="zh-Hans">
   <texts>
+    <text name="AppName" >排班系统</text>
+    <text name="CRS" value="排班系统" />
+    <text name="StartTyping">开始输入</text>
+    <text name="Version">版本</text>
+    <text name="CopyRight" >© 2019 排班系统</text>
     <text name="HomePage" value="主页" />
-    <text name="About" value="关于我们" />
+    <text name="Data">基础数据</text>
+    <text name="Service">综合服务</text>
+    <text name="Report">管理报表</text>
+    <text name="Setting">系统设置</text>
+    <text name="Office">办公室信息</text>
+    <text name="Department">院系</text>
+    <text name="Course">课程</text>
+    <text name="Instructor">教职员</text>
+    <text name="Student">学生</text>
+    <text name="OfficeInstructor">教职员办公室分配</text>
+    <text name="DepartmentInstructor">院系主任设置</text>
+    <text name="DepartmentCourse">院系课程设置</text>
+    <text name="InstructorCourse">教职员课程分配</text>
+    <text name="StudentCourse">学生选课</text>
+    <text name="OfficeReport">办公室报表</text>
+    <text name="DepartmentReport">院系报表</text>
+    <text name="CourseReport">课程报表</text>
+    <text name="InstructorReport">教职员报表</text>
+    <text name="StudentReport">学生报表</text>
+    <text name="About" value="关于" />
+    <text name="Skins">皮肤</text>
+    <text name="Settings">设置</text>
     <text name="WelcomeMessage" value="欢迎使用 CRS!" />
     <text name="FormIsNotValidMessage" value="部分输入信息不符合要求，请检查并改正.." />
     <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
@@ -21,10 +47,8 @@
     <text name="LeaveEmptyToSwitchToHost" value="留空以切换到Host"/>
     <text name="LogIn" value="登录" />
     <text name="LoginFailed" value="登录失败!" />
-    <text name="AppName" >CRS</text>
     <text name="UserNamePlaceholder" >请输入账户</text>
     <text name="PasswordPlaceholder" >请输入密码</text>
-    <text name="CopyRight" >© 2018 CRS</text>
     <text name="LoginPrompt" >正在登陆，请稍候！</text>
     <text name="UserProfile" >用户资料</text>
     <text name="Users" >用户</text>

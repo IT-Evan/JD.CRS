@@ -65,8 +65,8 @@ namespace JD.CRS.Web.Startup
                 )
                 .AddItem( //一级菜单 - 综合服务
                     new MenuItemDefinition(
-                        "Operation",
-                        L("Operation"),
+                        "Service",
+                        L("Service"),
                         icon: "business"
                     ).AddItem( //二级菜单 - 教职员办公室设置
                         new MenuItemDefinition(

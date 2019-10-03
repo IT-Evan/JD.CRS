@@ -1,8 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="en">
   <texts>
+    <text name="AppName" >CRS</text>
+    <text name="CRS" value="CRS" />
+    <text name="StartTyping">Start Typing</text>
+    <text name="Version">Version</text>
+    <text name="CopyRight" >© 2019 CRS</text>
     <text name="HomePage" value="Home page" />
+    <text name="Data">Data</text>
+    <text name="Service">Service</text>
+    <text name="Report">Report</text>
+    <text name="Setting">Setting</text>
+    <text name="Office">Office</text>
+    <text name="Department">Department</text>
+    <text name="Course">Course</text>
+    <text name="Instructor">Instructor</text>
+    <text name="Student">Student</text>
+    <text name="OfficeInstructor">Office-Allocation</text>
+    <text name="DepartmentInstructor">Department-Instructor</text>
+    <text name="DepartmentCourse">Department-Course</text>
+    <text name="InstructorCourse">Instructor-Course</text>
+    <text name="StudentCourse">Student-Course</text>
+    <text name="OfficeReport">Office Report</text>
+    <text name="DepartmentReport">Department Report</text>
+    <text name="CourseReport">Course Report</text>
+    <text name="InstructorReport">Instructor Report</text>
+    <text name="StudentReport">Student Report</text>
     <text name="About" value="About" />
+    <text name="Skins">Skins</text>
+    <text name="Settings">Settings</text>
     <text name="WelcomeMessage" value="Welcome to CRS!" />
     <text name="FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />
     <text name="TenantNameCanNotBeEmpty" value="Tenant name can not be empty" />
@@ -87,13 +113,9 @@
     <text name="UserDetails">User details</text>
     <text name="UserRoles">User roles</text>
     <text name="ConfirmPassword">Confirm password</text>
-    <text name="Version">Version</text>
     <text name="On">On</text>
     <text name="Off">Off</text>
     <text name="AreYouSureWantToDelete">Are you sure want to delete {0}?</text>
-    <text name="StartTyping">Start Typing</text>
-    <text name="Skins">Skins</text>
-    <text name="Settings">Settings</text>
     <text name="Filter">Filter</text>
   </texts>
 </localizationDictionary>
