@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Course
 {
-
     public class CourseAppService : AsyncCrudAppService<Entitys.Course, CourseDto, int, PagedResultRequestDto,
                              CreateUpdateCourseDto, CreateUpdateCourseDto>, ICourseAppService
 
     {
-
         public CourseAppService(IRepository<Entitys.Course, int> repository)
             : base(repository)
         {
