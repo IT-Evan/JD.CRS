@@ -8213,3 +8213,734 @@ INFO  2019-10-03 01:10:16,913 [34   ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2019-10-03 01:10:16,927 [35   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
 DEBUG 2019-10-03 01:10:16,927 [35   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"EtEawRmFUPtpBwssEN3crg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-03T01:10:16.9276381+08:00","Properties":{}}
 DEBUG 2019-10-03 01:10:16,927 [35   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: EtEawRmFUPtpBwssEN3crg
+DEBUG 2019-10-03 12:13:26,956 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-03 12:13:27,153 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-10-03 12:13:27,170 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.CRS.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.CRS.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.CRS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.CRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,174 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,174 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,174 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.EntityFrameworkCore.CRSEntityFrameworkModule, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:27,179 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-10-03 12:13:27,313 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-03 12:13:27,313 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-03 12:13:27,313 [1    ] o.Configuration.LanguageManagementConfig - Converted CRS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-03 12:13:27,313 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-03 12:13:27,849 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: JD.CRS.EntityFrameworkCore.CRSDbContext, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-03 12:13:29,123 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-03 12:13:29,754 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-03 12:13:29,824 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-03 12:13:29,858 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRS
+DEBUG 2019-10-03 12:13:29,890 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-03 12:13:30,093 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-03 12:13:30,224 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-10-03 12:13:30,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-10-03 12:13:30,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-10-03 12:13:30,274 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.CreateUserDto
+DEBUG 2019-10-03 12:13:30,275 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.UserDto
+DEBUG 2019-10-03 12:13:30,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-03 12:13:30,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-03 12:13:30,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Roles.Dto.PermissionDto
+DEBUG 2019-10-03 12:13:30,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-03 12:13:30,276 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-03 12:13:30,277 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CourseDto
+DEBUG 2019-10-03 12:13:30,277 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CreateUpdateCourseDto
+DEBUG 2019-10-03 12:13:30,277 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-10-03 12:13:30,277 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-10-03 12:13:37,077 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-10-03 12:13:37,077 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-03 12:13:37,201 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 135.2358ms 200 
+INFO  2019-10-03 12:13:41,194 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+WARN  2019-10-03 12:13:41,862 [7    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-10-03 12:13:41,866 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-10-03 12:13:41,877 [7    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-10-03 12:13:41,899 [7    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-10-03 12:13:41,903 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 704.4153ms
+INFO  2019-10-03 12:13:41,958 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4893.8722ms 302 
+INFO  2019-10-03 12:13:41,976 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-10-03 12:13:42,016 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action JD.CRS.Web.Controllers.AccountController.Login (JD.CRS.Web.Mvc)
+INFO  2019-10-03 12:13:45,131 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.AccountController.Login (JD.CRS.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-10-03 12:13:45,142 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.AccountController.Login (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.6312ms.
+INFO  2019-10-03 12:13:45,378 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+WARN  2019-10-03 12:13:45,850 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+INFO  2019-10-03 12:13:46,539 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 1237.8008ms.
+INFO  2019-10-03 12:13:46,553 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.AccountController.Login (JD.CRS.Web.Mvc) in 4528.6499ms
+INFO  2019-10-03 12:13:46,580 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4597.2298ms 200 text/html; charset=utf-8
+INFO  2019-10-03 12:13:46,690 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=opI27tVP8lfzTdiKv9Wi8UuRkNhIAvZwMVLWtOpRHKk  
+INFO  2019-10-03 12:13:46,691 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=kKePN_CyxTiMEgsSDu_7z21ru07YOZtR-0UV0JOkt5o  
+INFO  2019-10-03 12:13:46,693 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=53F8z0aw8DRnG9ou9x1tuKMPbNjRZWM-VBHl3B0s9-o  
+INFO  2019-10-03 12:13:46,696 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=YIHlqxkiJtENTMuzIHC9EfZaB5RniGr7kF7juUQJUuc  
+INFO  2019-10-03 12:13:46,697 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=JVJiF3s2_kk99xQHfYhfxo_-Dd52ZIruDMOILwPkqv0  
+INFO  2019-10-03 12:13:46,761 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+INFO  2019-10-03 12:13:46,763 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/famfamfam-flags/dist/sprite/famfamfam-flags.css was not modified
+INFO  2019-10-03 12:13:46,765 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/roboto.css was not modified
+INFO  2019-10-03 12:13:46,768 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/toastr/toastr.css was not modified
+INFO  2019-10-03 12:13:46,770 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/font-awesome/css/font-awesome.css was not modified
+INFO  2019-10-03 12:13:46,775 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 95.4054ms 304 text/css
+INFO  2019-10-03 12:13:46,788 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 78.9663ms 304 text/css
+INFO  2019-10-03 12:13:46,789 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 82.3246ms 304 text/css
+INFO  2019-10-03 12:13:46,810 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 95.4206ms 304 text/css
+INFO  2019-10-03 12:13:46,815 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=nd3hxjNg6DhkuFIz5IbxLK8Xw2ac0blsDQpF4pkJxUc  
+INFO  2019-10-03 12:13:46,818 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 80.4396ms 304 text/css
+INFO  2019-10-03 12:13:46,820 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=ey-J3xahkqficOYUHVX3jexmzvRFrge9bmux4CQr1DQ  
+INFO  2019-10-03 12:13:46,822 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=D6S4845clN-CCG9Rk-QbM203bladP-zOew5mzz_lu0o  
+INFO  2019-10-03 12:13:46,824 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Waves/dist/waves.css was not modified
+INFO  2019-10-03 12:13:46,827 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=8pEJ8MWsFzHRDLY0NI5rssf6T6vankxrJDPnnZxOGrg  
+INFO  2019-10-03 12:13:46,829 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/materialize.css was not modified
+INFO  2019-10-03 12:13:46,911 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.4878ms 304 text/css
+INFO  2019-10-03 12:13:46,915 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/style.css was not modified
+INFO  2019-10-03 12:13:46,915 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 93.4227ms 304 text/css
+INFO  2019-10-03 12:13:46,917 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/material-icons/materialicons.css was not modified
+INFO  2019-10-03 12:13:46,924 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 98.2306ms 304 text/css
+INFO  2019-10-03 12:13:46,935 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 99.0125ms 304 text/css
+INFO  2019-10-03 12:13:46,938 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=IT6GQizZpVcaM1_L_mIiNAYVvZErMgfwewf1GGWXG_I  
+INFO  2019-10-03 12:13:46,942 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/animate.css/animate.css was not modified
+INFO  2019-10-03 12:13:46,943 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=xwt8JYbj8Mkb1RNju6XwW_7TfGRHHIDWaSjBggiszMY  
+INFO  2019-10-03 12:13:46,945 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=w3DjWhUtDqy3bSJKv285C-2kagUtW9F64T9z3xRah8g  
+INFO  2019-10-03 12:13:46,948 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.0401ms 304 text/css
+INFO  2019-10-03 12:13:46,948 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=poK-oXF5FUWfhU9hEaEbjLzGQhIVms6YtQoQ3OEZtec  
+INFO  2019-10-03 12:13:46,956 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/_Layout.css was not modified
+INFO  2019-10-03 12:13:46,961 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/Login.css was not modified
+INFO  2019-10-03 12:13:46,963 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.3387ms 304 text/css
+INFO  2019-10-03 12:13:46,967 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/json2/json2.js was not modified
+INFO  2019-10-03 12:13:46,972 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.8848ms 304 text/css
+INFO  2019-10-03 12:13:46,975 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=GcL_g4TBRVIQSi96WoMK71EGaYN9ZfsMIKm-50nlS4s  
+INFO  2019-10-03 12:13:46,982 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=1fo3W6qowq4PinpCsKshaVqewExoFmzrRBGKbSdAVEk  
+INFO  2019-10-03 12:13:46,983 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery/dist/jquery.js was not modified
+INFO  2019-10-03 12:13:46,985 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.5037ms 304 application/javascript
+INFO  2019-10-03 12:13:46,987 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+INFO  2019-10-03 12:13:46,987 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.7978ms 304 application/javascript
+INFO  2019-10-03 12:13:46,993 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=5f0RFtuChrGi6osDzegxXWf5yOkmx45i7J9fM1p6P5w  
+INFO  2019-10-03 12:13:47,001 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=KKcUNqwNyTLaXzvuMyFk6JisiQq6Hk7ZtrciXnEf3Z0  
+INFO  2019-10-03 12:13:47,002 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.9091ms 304 application/javascript
+INFO  2019-10-03 12:13:47,004 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/moment/min/moment-with-locales.js was not modified
+INFO  2019-10-03 12:13:47,009 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.7335ms 304 application/javascript
+INFO  2019-10-03 12:13:47,009 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blockUI/jquery.blockUI.js was not modified
+INFO  2019-10-03 12:13:47,016 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.0246ms 304 application/javascript
+INFO  2019-10-03 12:13:47,080 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=prO6YeBrp6FzpE6glX7_GlSoPssvH4_OmY6Z3YJ2c6c  
+INFO  2019-10-03 12:13:47,081 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.min.js?v=aPktydUv1rN3mouQeXoKi3ioFTIQlULuqYeoTAA2ihY  
+INFO  2019-10-03 12:13:47,082 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=ZDzsHzuLAtqQVxXwbgRtfAPXQ7UAoJRXBAUDvc9G9CI  
+INFO  2019-10-03 12:13:47,140 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=EjNSmvtPSqCVK_xG_aTvOp8hmVM_7vwyd3hg45CAMGk  
+INFO  2019-10-03 12:13:47,141 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/sweetalert/dist/sweetalert.min.js was not modified
+INFO  2019-10-03 12:13:47,143 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/toastr/toastr.js was not modified
+INFO  2019-10-03 12:13:47,145 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/abp.js was not modified
+INFO  2019-10-03 12:13:47,147 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-validation/dist/jquery.validate.js was not modified
+INFO  2019-10-03 12:13:47,148 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 70.4491ms 304 application/javascript
+INFO  2019-10-03 12:13:47,150 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.476ms 304 application/javascript
+INFO  2019-10-03 12:13:47,151 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 68.1618ms 304 application/javascript
+INFO  2019-10-03 12:13:47,154 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=i7H7HL08ldqUANgfQInE7LlU2uWUdQMCJ-Q7-_zLutY  
+INFO  2019-10-03 12:13:47,155 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=b1plKpQIB-XuGyjWec42MhmhpPzEPzFI3OC8Ia0XIoc  
+INFO  2019-10-03 12:13:47,161 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 63.627ms 304 application/javascript
+INFO  2019-10-03 12:13:47,165 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/spin.js/jquery.spin.js was not modified
+INFO  2019-10-03 12:13:47,169 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/spin.js/spin.js was not modified
+INFO  2019-10-03 12:13:47,170 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.9977ms 304 application/javascript
+INFO  2019-10-03 12:13:47,174 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.8435ms 304 application/javascript
+INFO  2019-10-03 12:13:47,397 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=XEXcdRYb4eN3XoQCbnM-BSR6UifHRLsXYDIVFZ7Oc6Q  
+INFO  2019-10-03 12:13:47,398 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=QiSp17ew3zyFmdlcKq4HCIOw7UaqE8MC46Ekv50GzPs  
+INFO  2019-10-03 12:13:47,401 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js?v=Arfe4oER5FiUTDitsyC7vauFkVzED5S2QjygyKFEnZ8  
+INFO  2019-10-03 12:13:47,403 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js was not modified
+INFO  2019-10-03 12:13:47,405 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js was not modified
+INFO  2019-10-03 12:13:47,407 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/admin.js was not modified
+INFO  2019-10-03 12:13:47,409 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.9207ms 304 application/javascript
+INFO  2019-10-03 12:13:47,411 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.203ms 304 application/javascript
+INFO  2019-10-03 12:13:47,415 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.8061ms 304 application/javascript
+INFO  2019-10-03 12:13:47,419 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=fPp3O_ILaqD0UHiR721w1i4iBtxo3NH7yfldI5dg0_I  
+INFO  2019-10-03 12:13:47,428 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=djoKib6ssm5DDzbXLe5pD7ayfFg3siaoEk-BFYzQlvI  
+INFO  2019-10-03 12:13:47,430 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k  
+INFO  2019-10-03 12:13:47,454 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js was not modified
+INFO  2019-10-03 12:13:47,456 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=d1i_8cgvSme5RmoZHPmEdm5wbRG_6nwRWDs5PxidyWc  
+INFO  2019-10-03 12:13:47,456 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637057016102259538  
+INFO  2019-10-03 12:13:47,460 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.6179ms 304 application/javascript
+INFO  2019-10-03 12:13:47,462 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js was not modified
+INFO  2019-10-03 12:13:47,471 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/main.js was not modified
+INFO  2019-10-03 12:13:47,473 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/src/localization/messages_zh_Hans.js?v=XUuMErmB-_cG9KcjKQpdh_se_7xGkbGzQZFXwFWneJg  
+INFO  2019-10-03 12:13:47,476 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 41.5176ms 304 application/javascript
+INFO  2019-10-03 12:13:47,483 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 70.619ms 304 application/javascript
+INFO  2019-10-03 12:13:47,489 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js was not modified
+INFO  2019-10-03 12:13:47,490 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-validation/src/localization/messages_zh_Hans.js was not modified
+INFO  2019-10-03 12:13:47,492 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637057016102259538  
+INFO  2019-10-03 12:13:47,503 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 94.8736ms 304 application/javascript
+INFO  2019-10-03 12:13:47,506 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.4402ms 304 application/javascript
+INFO  2019-10-03 12:13:47,508 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637057016265192291  
+INFO  2019-10-03 12:13:47,515 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=ZOMv1vwqpT_ezNZGhvr9jJTr_jqu3lYHB7vmpxD7HmA  
+INFO  2019-10-03 12:13:47,536 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Waves/dist/waves.js was not modified
+INFO  2019-10-03 12:13:47,541 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-03 12:13:47,546 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-10-03 12:13:47,547 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-03 12:13:47,552 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 46.4819ms 200 application/javascript
+INFO  2019-10-03 12:13:47,557 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.2594ms 304 application/javascript
+INFO  2019-10-03 12:13:47,565 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=fva4_U7JLc8QKq91dLZyvV5oMz9WxjutKXJ_MOl_Dj8  
+INFO  2019-10-03 12:13:47,589 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-03 12:13:47,590 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/Login.js was not modified
+INFO  2019-10-03 12:13:47,595 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.3347ms 304 application/javascript
+INFO  2019-10-03 12:13:47,800 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-03 12:13:47,829 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2019-10-03 12:13:47,857 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/famfamfam-flags/dist/sprite/famfamfam-flags.png was not modified
+INFO  2019-10-03 12:13:47,861 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 31.2341ms 304 image/png
+INFO  2019-10-03 12:13:47,989 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 187.1122ms.
+INFO  2019-10-03 12:13:48,000 [9    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-03 12:13:48,009 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 453.4739ms
+INFO  2019-10-03 12:13:48,011 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 580.1715ms 200 application/x-javascript
+WARN  2019-10-03 12:13:48,247 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:13:48,313 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:13:48,316 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:13:48,317 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:13:48,318 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:13:48,318 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:13:48,318 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:13:48,319 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:13:48,322 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:13:48,351 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 759.5526ms.
+INFO  2019-10-03 12:13:48,353 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:13:48,361 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 810.8055ms
+INFO  2019-10-03 12:13:48,368 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 877.9225ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:13:48,491 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2019-10-03 12:13:48,493 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2019-10-03 12:13:48,498 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/material-icons/materialicons.woff2 was not modified
+INFO  2019-10-03 12:13:48,520 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2 was not modified
+INFO  2019-10-03 12:13:48,602 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 55.444ms 304 font/woff2
+INFO  2019-10-03 12:13:48,625 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 90.8121ms 304 font/woff2
+INFO  2019-10-03 12:13:48,630 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2019-10-03 12:13:48,633 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2 was not modified
+INFO  2019-10-03 12:13:48,646 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 153.2236ms 304 font/woff2
+INFO  2019-10-03 12:21:36,610 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/Account/Login application/x-www-form-urlencoded 256
+INFO  2019-10-03 12:21:36,620 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action JD.CRS.Web.Controllers.AccountController.Login (JD.CRS.Web.Mvc)
+INFO  2019-10-03 12:21:36,774 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.AccountController.Login (JD.CRS.Web.Mvc) with arguments (JD.CRS.Web.Models.Account.LoginViewModel, /, ) - Validation state: Valid
+INFO  2019-10-03 12:21:37,825 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
+INFO  2019-10-03 12:21:37,832 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.AccountController.Login (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.JsonResult in 1055.5158ms.
+INFO  2019-10-03 12:21:37,885 [20   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-10-03 12:21:37,896 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.AccountController.Login (JD.CRS.Web.Mvc) in 1273.4499ms
+INFO  2019-10-03 12:21:37,899 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1288.4476ms 200 application/json; charset=utf-8
+INFO  2019-10-03 12:21:37,935 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-03 12:21:37,988 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-03 12:21:38,040 [22   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-03 12:21:38,062 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-03 12:21:38,064 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5238ms.
+INFO  2019-10-03 12:21:38,128 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-03 12:21:38,333 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,397 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,906 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,910 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,910 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,911 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,912 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,913 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,913 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,916 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,916 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,917 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,917 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,917 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,918 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,921 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,922 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,923 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,923 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,924 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:38,925 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:21:39,410 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1205.8728ms.
+INFO  2019-10-03 12:21:39,421 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/morris.js/morris.css?v=YM2mAT6Z3Bl89X14nBvhOgTo5bZeRXMimN62teEck84  
+INFO  2019-10-03 12:21:39,428 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/themes/all-themes.css?v=eGSl5zNTWrXYfUx_EJW9ksC3CUTUUxvxmPiA3aQDtQo  
+INFO  2019-10-03 12:21:39,433 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 1437.875ms
+INFO  2019-10-03 12:21:39,445 [24   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/themes/all-themes.css was not modified
+INFO  2019-10-03 12:21:39,455 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1499.6589ms 200 text/html; charset=utf-8
+INFO  2019-10-03 12:21:39,473 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.9453ms 304 text/css
+INFO  2019-10-03 12:21:39,481 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.css?v=BLxBuNISlF2O5EBHWdsX039NvnIHy-GtcqeI_MbyIc0  
+INFO  2019-10-03 12:21:39,482 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/css/bootstrap-select.css?v=DeY2lH0e0tmNnO9XZ-gGVOGk6_YoWlZ49y7CnD3ST00  
+INFO  2019-10-03 12:21:39,488 [25   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Shared/_Layout.css was not modified
+INFO  2019-10-03 12:21:39,499 [26   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap-select/dist/css/bootstrap-select.css was not modified
+INFO  2019-10-03 12:21:39,506 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 78.0305ms 304 text/css
+INFO  2019-10-03 12:21:39,510 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 92.1008ms 304 text/css
+INFO  2019-10-03 12:21:39,542 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/morris.js/morris.css was not modified
+INFO  2019-10-03 12:21:39,588 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/js/bootstrap-select.js?v=tXulJKckrq2j2wo8a9hvmXLDEQwhGviPTIYmEzy1dNI  
+INFO  2019-10-03 12:21:39,708 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 132.4879ms 304 text/css
+INFO  2019-10-03 12:21:39,719 [26   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap-select/dist/js/bootstrap-select.js was not modified
+INFO  2019-10-03 12:21:39,729 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/push.js/push.js?v=w347yqiscLjM_TxUKpqeUA1LDR3w5vshQpxpTsgkLhE  
+INFO  2019-10-03 12:21:39,737 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 178.2535ms 304 application/javascript
+INFO  2019-10-03 12:21:39,741 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637057016102259538  
+INFO  2019-10-03 12:21:39,757 [25   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/push.js/push.js was not modified
+INFO  2019-10-03 12:21:39,760 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-03 12:21:39,818 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.5787ms 304 application/javascript
+INFO  2019-10-03 12:21:39,834 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.js?v=RQruqClWPSu7O6l9-bzesJOrIOxROTb3CPVyIIqP_cw  
+INFO  2019-10-03 12:21:39,847 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-03 12:21:39,851 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Shared/_Layout.js was not modified
+INFO  2019-10-03 12:21:39,858 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1281ms.
+INFO  2019-10-03 12:21:39,862 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 142.4323ms 304 application/javascript
+INFO  2019-10-03 12:21:39,865 [20   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-03 12:21:39,874 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user.png  
+INFO  2019-10-03 12:21:39,877 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 106.4693ms
+INFO  2019-10-03 12:21:39,879 [28   ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/user.png was not modified
+INFO  2019-10-03 12:21:39,882 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 146.2928ms 200 application/x-javascript
+INFO  2019-10-03 12:21:39,884 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 310.6617ms 304 image/png
+INFO  2019-10-03 12:21:39,888 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-slimscroll/jquery.slimscroll.js?v=ESVSX4dkOxamaRoYfcqPM2FfErhgfxS60fp1Fa8ou1w  
+INFO  2019-10-03 12:21:39,891 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637057016102259538  
+INFO  2019-10-03 12:21:39,894 [29   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-slimscroll/jquery.slimscroll.js was not modified
+INFO  2019-10-03 12:21:39,897 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 208.0155ms 304 application/javascript
+INFO  2019-10-03 12:21:39,902 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-03 12:21:39,927 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-10-03 12:21:39,941 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,946 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,948 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,948 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,949 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,951 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,986 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,990 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,991 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,992 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,993 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,993 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:21:39,994 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+INFO  2019-10-03 12:21:40,006 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js?v=1yGr-J4NjYMQVt6LP6vocjHIWhO-BFQLfdCs8x1Mv-U  
+INFO  2019-10-03 12:21:40,008 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-countTo/jquery.countTo.js?v=CkgjYx6n1TnvjY7LLp6BcdXQVatpxCq2zyfWEskUzfM  
+WARN  2019-10-03 12:21:40,010 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:40,011 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:40,012 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:40,012 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:40,013 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:21:40,013 [32   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:21:40,024 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/morris.js/morris.js?v=O7ZH97JawAgmG1Seh_Y5I3SYWYihlR9ImDKGQvqOngg  
+INFO  2019-10-03 12:21:40,025 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-countTo/jquery.countTo.js was not modified
+INFO  2019-10-03 12:21:40,034 [28   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/morris.js/morris.js was not modified
+INFO  2019-10-03 12:21:40,057 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/signalr-client/signalr.min.js was not modified
+INFO  2019-10-03 12:21:40,058 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.1244ms 304 application/javascript
+INFO  2019-10-03 12:21:40,059 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.4883ms 304 application/javascript
+INFO  2019-10-03 12:21:40,065 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.2523ms 304 application/javascript
+INFO  2019-10-03 12:21:40,066 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/chart.js/dist/Chart.bundle.js?v=HWknRmQ2zusqaWuzrej93naq1OoycPq7LXRXB54NpN0  
+INFO  2019-10-03 12:21:40,068 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/raphael/raphael.js?v=29sBFLQqLjO75nJ0LYS7Pbb2F-CpSMccw55qO82J2YU  
+INFO  2019-10-03 12:21:40,070 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 90.5933ms.
+INFO  2019-10-03 12:21:40,072 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/chart.js/dist/Chart.bundle.js was not modified
+INFO  2019-10-03 12:21:40,075 [29   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/raphael/raphael.js was not modified
+INFO  2019-10-03 12:21:40,083 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.3823ms 304 application/javascript
+INFO  2019-10-03 12:21:40,093 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 72.2975ms 304 application/javascript
+INFO  2019-10-03 12:21:40,095 [32   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:21:40,108 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js?v=jTdZBAadu6DXq0iDTFX6vsn4q6bFhKm3XfN8Jz6dSmg  
+INFO  2019-10-03 12:21:40,144 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 194.5089ms
+INFO  2019-10-03 12:21:40,150 [33   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js was not modified
+INFO  2019-10-03 12:21:40,171 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.js?v=wslWsV-vfGziuMBzzhupFof-18pfuz4OQgquvDcQbFs  
+INFO  2019-10-03 12:21:40,179 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.categories.js?v=_4iveHXfwKkb3inuYFqzqLOwZNGzuOQ9UT8MRGQZygM  
+INFO  2019-10-03 12:21:40,184 [28   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.js was not modified
+INFO  2019-10-03 12:21:40,199 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-03 12:21:40,202 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.categories.js was not modified
+INFO  2019-10-03 12:21:40,214 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 37.0545ms 304 application/javascript
+INFO  2019-10-03 12:21:40,215 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 51.7263ms 304 application/javascript
+INFO  2019-10-03 12:21:40,223 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 295.9432ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:21:40,224 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.time.js?v=hMx2p_NtbIUcWOmiEdzS204TaDthln32OZp_8bP4DgU  
+INFO  2019-10-03 12:21:40,226 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.resize.js?v=frd2m6PMZSVLif63yR1wZLQh51vHKpU2-VClBasvXE0  
+INFO  2019-10-03 12:21:40,228 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 146.3886ms 304 application/javascript
+INFO  2019-10-03 12:21:40,231 [28   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.time.js was not modified
+INFO  2019-10-03 12:21:40,232 [32   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.resize.js was not modified
+INFO  2019-10-03 12:21:40,245 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.0604ms 304 application/javascript
+INFO  2019-10-03 12:21:40,253 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.1685ms 304 application/javascript
+INFO  2019-10-03 12:21:40,265 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Flot/jquery.flot.pie.js?v=bqatUhcViEOX7SnfTMWPfDOvlLd8aATcUx0PJ8W9Ig8  
+INFO  2019-10-03 12:21:40,274 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-sparkline/dist/jquery.sparkline.js?v=9IaxiwEOUe_4hqw9rGjxHR4fkZkw0aWMq5oZphlhlJ8  
+INFO  2019-10-03 12:21:40,276 [33   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Flot/jquery.flot.pie.js was not modified
+INFO  2019-10-03 12:21:40,278 [32   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-sparkline/dist/jquery.sparkline.js was not modified
+INFO  2019-10-03 12:21:40,283 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 47.9844ms 304 application/javascript
+INFO  2019-10-03 12:21:40,288 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 26.8123ms 304 application/javascript
+INFO  2019-10-03 12:21:40,290 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Home/Index.js?v=twS7CJxF-FbYFNy9f72Cew5eZT5iZ6GayXqk_w59fLw  
+INFO  2019-10-03 12:21:40,293 [34   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Home/Index.js was not modified
+INFO  2019-10-03 12:21:40,296 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.7639ms 304 application/javascript
+INFO  2019-10-03 12:21:40,345 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 163.0599ms 200 application/json
+INFO  2019-10-03 12:21:40,562 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=Xb-QFf96PYrwv7tSZxccwg  
+INFO  2019-10-03 12:21:40,878 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-03 12:21:40,911 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"Xb-QFf96PYrwv7tSZxccwg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-03T12:21:40.902074+08:00","Properties":{}}
+DEBUG 2019-10-03 12:21:40,959 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: Xb-QFf96PYrwv7tSZxccwg
+INFO  2019-10-03 12:22:03,398 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tenants  
+INFO  2019-10-03 12:22:03,414 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Tenants", area = ""}. Executing action JD.CRS.Web.Controllers.TenantsController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-03 12:22:03,415 [24   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-03 12:22:03,635 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.TenantsController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-03 12:22:03,846 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.TenantsController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 209.6666ms.
+INFO  2019-10-03 12:22:03,896 [34   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-03 12:22:03,927 [34   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,928 [34   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,987 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,991 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,992 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,993 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,994 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,994 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,995 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,998 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,998 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,999 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:03,999 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,000 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,000 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,003 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,004 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,005 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,006 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,006 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,007 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:22:04,026 [22   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 134.8379ms.
+INFO  2019-10-03 12:22:04,031 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.TenantsController.Index (JD.CRS.Web.Mvc) in 612.2657ms
+INFO  2019-10-03 12:22:04,033 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 635.3975ms 200 text/html; charset=utf-8
+DEBUG 2019-10-03 12:22:04,090 [34   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: Xb-QFf96PYrwv7tSZxccwg
+INFO  2019-10-03 12:22:04,109 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 23546.4283ms 101 
+INFO  2019-10-03 12:22:04,121 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637057016102259538  
+INFO  2019-10-03 12:22:04,131 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637057016102259538  
+INFO  2019-10-03 12:22:04,186 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-03 12:22:04,194 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-03 12:22:04,291 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Tenants/Index.js?v=4XT_M_gjM2eUDnGqNBzmnlBxdPsXYDwPPOov7WVjvsw  
+INFO  2019-10-03 12:22:04,300 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-10-03 12:22:04,309 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,312 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,313 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,313 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,314 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,314 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,315 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,318 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,319 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,319 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,320 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,320 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,321 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,325 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,326 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,326 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,327 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,327 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:04,328 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:22:04,351 [22   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Tenants/Index.js was not modified
+INFO  2019-10-03 12:22:04,360 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 32.6953ms.
+INFO  2019-10-03 12:22:04,417 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 162.3379ms 304 application/javascript
+INFO  2019-10-03 12:22:04,530 [24   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:22:04,557 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-03 12:22:04,685 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 335.7614ms
+INFO  2019-10-03 12:22:04,715 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0558ms.
+INFO  2019-10-03 12:22:04,727 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 567.3503ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:22:04,730 [34   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-03 12:22:04,791 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 540.3041ms
+INFO  2019-10-03 12:22:04,845 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 676.8663ms 200 application/x-javascript
+INFO  2019-10-03 12:22:04,856 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-03 12:22:04,867 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.0272ms 200 application/json
+INFO  2019-10-03 12:22:04,874 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=BRu87NUJ5su6pjm3LdpeGA  
+INFO  2019-10-03 12:22:04,887 [34   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-03 12:22:04,887 [34   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"BRu87NUJ5su6pjm3LdpeGA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-03T12:22:04.8874047+08:00","Properties":{}}
+DEBUG 2019-10-03 12:22:04,887 [34   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: BRu87NUJ5su6pjm3LdpeGA
+INFO  2019-10-03 12:22:05,901 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Users  
+INFO  2019-10-03 12:22:05,912 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Users", area = ""}. Executing action JD.CRS.Web.Controllers.UsersController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-03 12:22:05,914 [34   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-03 12:22:06,145 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.UsersController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-03 12:22:06,815 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.UsersController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 667.178ms.
+INFO  2019-10-03 12:22:06,861 [24   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-03 12:22:06,879 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,881 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,936 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,939 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,940 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,941 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,942 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,942 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,943 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,946 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,946 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,947 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,947 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,947 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,948 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,951 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,952 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,953 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,953 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,954 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:06,954 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+DEBUG 2019-10-03 12:22:06,987 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: BRu87NUJ5su6pjm3LdpeGA
+INFO  2019-10-03 12:22:07,030 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 110.7806ms.
+INFO  2019-10-03 12:22:07,060 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2118.6557ms 101 
+INFO  2019-10-03 12:22:07,087 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.UsersController.Index (JD.CRS.Web.Mvc) in 1139.2678ms
+INFO  2019-10-03 12:22:07,095 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637057016102259538  
+INFO  2019-10-03 12:22:07,098 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Users/Index.js?v=A3at-9BpXSumfT3vwyd3pPTpbbdHjGAmc0T8ysU3lA4  
+INFO  2019-10-03 12:22:07,100 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637057016102259538  
+INFO  2019-10-03 12:22:07,108 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1198.6748ms 200 text/html; charset=utf-8
+INFO  2019-10-03 12:22:07,110 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-03 12:22:07,113 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-03 12:22:07,114 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Users/Index.js'. Physical path: 'D:\Git\JD.CRS\src\JD.CRS.Web.Mvc\wwwroot\view-resources\Views\Users\Index.js'
+INFO  2019-10-03 12:22:07,117 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 60.8132ms 200 application/javascript
+INFO  2019-10-03 12:22:07,154 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-03 12:22:07,155 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-03 12:22:07,156 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0503ms.
+INFO  2019-10-03 12:22:07,159 [36   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-03 12:22:07,161 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 45.8876ms
+INFO  2019-10-03 12:22:07,170 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 107.4969ms 200 application/x-javascript
+WARN  2019-10-03 12:22:07,170 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,174 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,174 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,175 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,175 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,176 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,176 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,179 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,180 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,180 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,181 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,181 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,182 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,184 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,185 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,185 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,186 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,186 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:07,187 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:22:07,193 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 35.5079ms.
+INFO  2019-10-03 12:22:07,194 [24   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:22:07,199 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 82.3364ms
+INFO  2019-10-03 12:22:07,220 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 129.1908ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:22:07,221 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-03 12:22:07,231 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.7438ms 200 application/json
+INFO  2019-10-03 12:22:07,247 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=IP9RjsXRkcqFlb1M_w2iEg  
+INFO  2019-10-03 12:22:07,259 [24   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-03 12:22:07,260 [24   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"IP9RjsXRkcqFlb1M_w2iEg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-03T12:22:07.2601513+08:00","Properties":{}}
+DEBUG 2019-10-03 12:22:07,260 [24   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: IP9RjsXRkcqFlb1M_w2iEg
+INFO  2019-10-03 12:22:08,425 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Roles  
+INFO  2019-10-03 12:22:08,434 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Roles", area = ""}. Executing action JD.CRS.Web.Controllers.RolesController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-03 12:22:08,436 [24   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-03 12:22:08,660 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.RolesController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+WARN  2019-10-03 12:22:08,784 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,784 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,785 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,785 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,786 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,786 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,786 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,787 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,787 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,788 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,788 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,788 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,789 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,789 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,790 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,791 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+INFO  2019-10-03 12:22:08,856 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.RolesController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 184.2886ms.
+INFO  2019-10-03 12:22:08,908 [22   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-03 12:22:08,928 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,929 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,987 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,990 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,991 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,992 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,992 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,993 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,994 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,997 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,997 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,998 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,998 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,999 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:08,999 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,002 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,003 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,004 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,004 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,005 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,006 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:22:09,036 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 129.4865ms.
+INFO  2019-10-03 12:22:09,075 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.RolesController.Index (JD.CRS.Web.Mvc) in 601.7695ms
+INFO  2019-10-03 12:22:09,086 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 655.0078ms 200 text/html; charset=utf-8
+DEBUG 2019-10-03 12:22:09,092 [43   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: IP9RjsXRkcqFlb1M_w2iEg
+INFO  2019-10-03 12:22:09,095 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1846.1357ms 101 
+INFO  2019-10-03 12:22:09,179 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637057016102259538  
+INFO  2019-10-03 12:22:09,183 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Roles/Index.js?v=jSjlPVvifcDRDxYB_6zhJad2ZpBIYuF504e9TlFQ9GY  
+INFO  2019-10-03 12:22:09,187 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637057016102259538  
+INFO  2019-10-03 12:22:09,192 [24   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Roles/Index.js was not modified
+INFO  2019-10-03 12:22:09,196 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-03 12:22:09,235 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 23.7084ms 304 application/javascript
+INFO  2019-10-03 12:22:09,240 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-03 12:22:09,244 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0743ms.
+INFO  2019-10-03 12:22:09,249 [43   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-03 12:22:09,258 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 52.427ms
+INFO  2019-10-03 12:22:09,264 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-03 12:22:09,268 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 106.0426ms 200 application/x-javascript
+INFO  2019-10-03 12:22:09,343 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-10-03 12:22:09,353 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,360 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,360 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,361 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,362 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,362 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,363 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,366 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,367 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,367 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,368 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,368 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,369 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,378 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,378 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,379 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,379 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,380 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:09,381 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:22:09,462 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 51.6436ms.
+INFO  2019-10-03 12:22:09,471 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:22:09,521 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 205.2033ms
+INFO  2019-10-03 12:22:09,536 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-03 12:22:09,540 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 391.6163ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:22:09,566 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.9186ms 200 application/json
+INFO  2019-10-03 12:22:09,568 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=rqGzZcFTmRXgnfKwnWqDsg  
+INFO  2019-10-03 12:22:09,578 [44   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-03 12:22:09,579 [44   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"rqGzZcFTmRXgnfKwnWqDsg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-03T12:22:09.5791922+08:00","Properties":{}}
+DEBUG 2019-10-03 12:22:09,579 [44   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: rqGzZcFTmRXgnfKwnWqDsg
+INFO  2019-10-03 12:22:12,451 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Office  
+INFO  2019-10-03 12:22:12,458 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.3322ms 404 
+DEBUG 2019-10-03 12:22:12,574 [43   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: rqGzZcFTmRXgnfKwnWqDsg
+INFO  2019-10-03 12:22:12,578 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3009.0633ms 101 
+INFO  2019-10-03 12:22:14,181 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Roles  
+INFO  2019-10-03 12:22:14,191 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Roles", area = ""}. Executing action JD.CRS.Web.Controllers.RolesController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-03 12:22:14,194 [43   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-03 12:22:14,223 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.RolesController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+WARN  2019-10-03 12:22:14,322 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,322 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,323 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,324 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,324 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,325 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,325 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,326 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,326 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,326 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,327 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,327 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,328 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,328 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,329 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,329 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+INFO  2019-10-03 12:22:14,368 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.RolesController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 142.1274ms.
+INFO  2019-10-03 12:22:14,461 [43   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-03 12:22:14,465 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,467 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,642 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,645 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,646 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,647 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,648 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,648 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,649 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,652 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,652 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,653 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,653 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,653 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,654 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,658 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,659 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,660 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,661 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,661 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:14,662 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:22:14,717 [43   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 222.7689ms.
+INFO  2019-10-03 12:22:14,778 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.RolesController.Index (JD.CRS.Web.Mvc) in 526.6218ms
+INFO  2019-10-03 12:22:14,850 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 604.857ms 200 text/html; charset=utf-8
+INFO  2019-10-03 12:22:14,969 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-03 12:22:14,981 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.6364ms 200 application/json
+INFO  2019-10-03 12:22:15,072 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=xTww6fslK3sMrc9cFbVObw  
+INFO  2019-10-03 12:22:15,087 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-03 12:22:15,088 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"xTww6fslK3sMrc9cFbVObw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-03T12:22:15.0885059+08:00","Properties":{}}
+DEBUG 2019-10-03 12:22:15,088 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: xTww6fslK3sMrc9cFbVObw
+INFO  2019-10-03 12:22:17,244 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-03 12:22:17,252 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-03 12:22:17,254 [36   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-03 12:22:17,693 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-03 12:22:17,891 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 195.7682ms.
+INFO  2019-10-03 12:22:17,960 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-03 12:22:17,970 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:17,971 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-03 12:22:17,971 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-03 12:22:17,972 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-03 12:22:17,973 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-03 12:22:17,974 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,016 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,018 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,019 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCode' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,019 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Credits' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Remarks' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,022 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,023 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CRS' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,083 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,086 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,087 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,088 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,089 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,090 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,090 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,094 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,094 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,094 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,095 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,095 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,096 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,099 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,100 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,101 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,102 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,103 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,103 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:22:18,140 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 197.8576ms.
+INFO  2019-10-03 12:22:18,143 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 888.5643ms
+INFO  2019-10-03 12:22:18,145 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 902.7185ms 200 text/html; charset=utf-8
+DEBUG 2019-10-03 12:22:18,167 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: xTww6fslK3sMrc9cFbVObw
+INFO  2019-10-03 12:22:18,191 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3097.9038ms 101 
+INFO  2019-10-03 12:22:18,211 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637057016102259538  
+INFO  2019-10-03 12:22:18,215 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637057016102259538  
+INFO  2019-10-03 12:22:18,246 [42   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-03 12:22:18,251 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-03 12:22:18,276 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Course/Index.js?v=8AV3e2UlDCzbtWA_sUevk_Ih4XAy4DHiJiLUu8Ymf90  
+INFO  2019-10-03 12:22:18,278 [42   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-03 12:22:18,280 [44   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Course/Index.js was not modified
+INFO  2019-10-03 12:22:18,300 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.9767ms 304 application/javascript
+INFO  2019-10-03 12:22:18,303 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-03 12:22:18,305 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0604ms.
+INFO  2019-10-03 12:22:18,309 [43   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-03 12:22:18,313 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 55.1639ms
+INFO  2019-10-03 12:22:18,317 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 101.5589ms 200 application/x-javascript
+WARN  2019-10-03 12:22:18,317 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Data' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,320 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,321 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,321 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Course' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,322 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Instructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,322 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Student' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,323 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Operation' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,327 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,328 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentInstructor' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,328 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,328 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,329 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentCourse' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,329 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Report' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,332 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'OfficeReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,333 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'DepartmentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,333 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'CourseReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,334 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'InstructorReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,334 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'StudentReport' in localization source 'CRS'!
+WARN  2019-10-03 12:22:18,335 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'Setting' in localization source 'CRS'!
+INFO  2019-10-03 12:22:18,341 [42   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 59.9785ms.
+INFO  2019-10-03 12:22:18,343 [42   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:22:18,350 [42   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 96.807ms
+INFO  2019-10-03 12:22:18,370 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 142.3174ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-03 12:22:18,373 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-03 12:22:18,381 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.8091ms 200 application/json
+INFO  2019-10-03 12:22:18,393 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=D-QJuqE3i7SLcCQkrbmvmw  
+INFO  2019-10-03 12:22:18,401 [42   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-03 12:22:18,401 [42   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"D-QJuqE3i7SLcCQkrbmvmw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-03T12:22:18.4017613+08:00","Properties":{}}
+DEBUG 2019-10-03 12:22:18,401 [42   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: D-QJuqE3i7SLcCQkrbmvmw
