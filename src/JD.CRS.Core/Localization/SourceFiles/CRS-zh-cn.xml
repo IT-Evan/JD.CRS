@@ -30,6 +30,10 @@
     <text name="Skins">皮肤</text>
     <text name="Settings">设置</text>
     <text name="WelcomeMessage" value="欢迎使用 CRS!" />
+    <text name="CurrentTenant">当前租户</text>
+    <text name="NotSelected">未选</text>
+    <text name="Change">切换</text>
+    <text name="ChangeTenant">切换租户</text>
     <text name="FormIsNotValidMessage" value="部分输入信息不符合要求，请检查并改正.." />
     <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
     <text name="InvalidUserNameOrPassword" value="用户名或密码无效" />
@@ -42,8 +46,6 @@
     <text name="Password" value="密码" />
     <text name="RememberMe" value="记住我" />
     <text name="ForgetPassword" value="忘记密码"/>
-    <text name="NotSelected" value="未选"/>
-    <text name="ChangeTenant" value="更改租户"/>
     <text name="LeaveEmptyToSwitchToHost" value="留空以切换到Host"/>
     <text name="LogIn" value="登录" />
     <text name="LoginFailed" value="登录失败!" />

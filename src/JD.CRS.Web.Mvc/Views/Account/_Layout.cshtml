@@ -55,7 +55,7 @@
 
     <div class="login-box">
         <div class="logo">
-            <a href="javascript:void(0);">CRS</a>
+            <a href="javascript:void(0);">@L("CRS")</a>
         </div>
 
         @if (MultiTenancyConfig.IsEnabled)
@@ -71,8 +71,8 @@
 
         <div class="row">
             <div class="col-xs-12 text-center" style="color: #e9e9e9">
-                <small>&copy; @DateTime.Now.Year CRS. <b>Version </b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]</small>
-            </div>
+                <small>&copy; @DateTime.Now.Year @L("CRS") <b>@L("Version") </b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]</small>
+</div>
         </div>
 
     </div>
