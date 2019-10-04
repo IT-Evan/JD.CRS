@@ -117,6 +117,7 @@
     <text name="AreYouSureWantToDelete">Are you sure want to delete {0}?</text>
     <text name="Filter">Filter</text>
     <text name="Refresh">Refresh</text>
+    
     <text name="CreateCourse">Create Course</text>
     <text name="EditCourse">Edit Course</text>
     <text name="Code">Code</text>
