@@ -1,5 +1,9 @@
 开源不易，请点个star支持一下吧．
 
+参考博客园
+ABP开发手记
+https://www.cnblogs.com/IT-Evan/p/ABP0.html
+
  **JD.CRS** 
 
  **介绍** 
