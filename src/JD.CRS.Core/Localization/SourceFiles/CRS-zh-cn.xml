@@ -12,10 +12,10 @@
     <text name="Report">管理报表</text>
     <text name="Setting">系统设置</text>
     <text name="Office">办公室信息</text>
-    <text name="Department">院系</text>
-    <text name="Course">课程</text>
-    <text name="Instructor">教职员</text>
-    <text name="Student">学生</text>
+    <text name="Department">院系信息</text>
+    <text name="Course">课程信息</text>
+    <text name="Instructor">教职员信息</text>
+    <text name="Student">学生信息</text>
     <text name="OfficeInstructor">教职员办公室分配</text>
     <text name="DepartmentInstructor">院系主任设置</text>
     <text name="DepartmentCourse">院系课程设置</text>
