@@ -16866,3 +16866,190 @@ INFO  2019-10-04 12:32:01,818 [6    ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2019-10-04 12:32:01,828 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
 DEBUG 2019-10-04 12:32:01,838 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"tgFB8HcQSxtQlkWNYdnSag","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-04T12:32:01.8384144+08:00","Properties":{}}
 DEBUG 2019-10-04 12:32:01,838 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: tgFB8HcQSxtQlkWNYdnSag
+DEBUG 2019-10-04 22:42:49,401 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-04 22:42:49,561 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-10-04 22:42:49,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.CRS.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,580 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.CRS.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,580 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.CRS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.CRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,582 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.EntityFrameworkCore.CRSEntityFrameworkModule, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,582 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,582 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,582 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,582 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,583 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,583 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:49,586 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-10-04 22:42:49,660 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-04 22:42:49,660 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-04 22:42:49,660 [1    ] o.Configuration.LanguageManagementConfig - Converted CRS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-04 22:42:49,660 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-04 22:42:50,045 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: JD.CRS.EntityFrameworkCore.CRSDbContext, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:42:50,988 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-04 22:42:51,362 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-04 22:42:51,413 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-04 22:42:51,437 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRS
+DEBUG 2019-10-04 22:42:51,470 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-04 22:42:51,665 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-04 22:42:51,814 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-10-04 22:42:51,854 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-10-04 22:42:51,854 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-10-04 22:42:51,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.CreateUserDto
+DEBUG 2019-10-04 22:42:51,861 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.UserDto
+DEBUG 2019-10-04 22:42:51,861 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-04 22:42:51,861 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-04 22:42:51,861 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Roles.Dto.PermissionDto
+DEBUG 2019-10-04 22:42:51,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-04 22:42:51,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-04 22:42:51,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CourseDto
+DEBUG 2019-10-04 22:42:51,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CreateUpdateCourseDto
+DEBUG 2019-10-04 22:42:51,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-10-04 22:42:51,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-10-04 22:42:56,381 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-10-04 22:42:56,381 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-04 22:42:56,502 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 94.0053ms 200 
+INFO  2019-10-04 22:43:00,096 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-04 22:43:00,148 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-04 22:43:00,249 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-04 22:43:00,257 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.8345ms.
+INFO  2019-10-04 22:43:00,639 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-04 22:43:01,417 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'PleaseWait' in localization source 'CRS'!
+INFO  2019-10-04 22:43:02,789 [12   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2267.5641ms.
+INFO  2019-10-04 22:43:02,799 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 2699.8755ms
+INFO  2019-10-04 22:43:02,815 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6441.7251ms 200 text/html; charset=utf-8
+INFO  2019-10-04 22:43:03,033 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637058257718151996  
+INFO  2019-10-04 22:43:03,040 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637058257718151996  
+INFO  2019-10-04 22:43:03,069 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-04 22:43:03,074 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-04 22:43:03,131 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-04 22:43:03,182 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-04 22:43:03,387 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 251.6897ms.
+INFO  2019-10-04 22:43:03,393 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-04 22:43:03,402 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 325.878ms
+INFO  2019-10-04 22:43:03,438 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 369.0776ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-04 22:43:03,440 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 239.3711ms.
+INFO  2019-10-04 22:43:03,443 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-04 22:43:03,449 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 369.0575ms
+INFO  2019-10-04 22:43:03,454 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 420.6225ms 200 application/x-javascript
+INFO  2019-10-04 22:43:03,635 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-04 22:43:03,739 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 82.966ms 200 application/json
+INFO  2019-10-04 22:43:03,882 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=PC-yYDrqaYF4jsxUPX3Rvw  
+INFO  2019-10-04 22:43:04,108 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-04 22:43:04,136 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"PC-yYDrqaYF4jsxUPX3Rvw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-04T22:43:04.1294618+08:00","Properties":{}}
+DEBUG 2019-10-04 22:43:04,179 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: PC-yYDrqaYF4jsxUPX3Rvw
+INFO  2019-10-04 22:43:09,597 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Course  
+INFO  2019-10-04 22:43:09,611 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Course", area = ""}. Executing action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-04 22:43:09,614 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-04 22:43:10,026 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-04 22:43:10,259 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 225.1677ms.
+INFO  2019-10-04 22:43:10,313 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-04 22:43:10,407 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'Save' in localization source 'CRS'!
+WARN  2019-10-04 22:43:10,409 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'PleaseWait' in localization source 'CRS'!
+INFO  2019-10-04 22:43:10,507 [9    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 189.5246ms.
+INFO  2019-10-04 22:43:10,563 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.CourseController.Index (JD.CRS.Web.Mvc) in 895.6058ms
+INFO  2019-10-04 22:43:10,592 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 972.4587ms 200 text/html; charset=utf-8
+INFO  2019-10-04 22:43:10,607 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637058257718151996  
+INFO  2019-10-04 22:43:10,637 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637058257718151996  
+INFO  2019-10-04 22:43:10,656 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+DEBUG 2019-10-04 22:43:10,661 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: PC-yYDrqaYF4jsxUPX3Rvw
+INFO  2019-10-04 22:43:10,674 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-04 22:43:10,716 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-04 22:43:10,721 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-04 22:43:10,727 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1643ms.
+INFO  2019-10-04 22:43:10,731 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-04 22:43:10,758 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 74.7067ms
+INFO  2019-10-04 22:43:10,799 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 167.1258ms 200 application/x-javascript
+INFO  2019-10-04 22:43:10,824 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6931.0052ms 101 
+INFO  2019-10-04 22:43:10,826 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 96.2997ms.
+INFO  2019-10-04 22:43:10,828 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-04 22:43:10,856 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 154.0501ms
+INFO  2019-10-04 22:43:10,870 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 263.7811ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-04 22:43:10,872 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-04 22:43:10,890 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.3071ms 200 application/json
+INFO  2019-10-04 22:43:10,894 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=tu22dpXYU8ay82tYCkkxOg  
+INFO  2019-10-04 22:43:10,904 [7    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-04 22:43:10,905 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"tu22dpXYU8ay82tYCkkxOg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-04T22:43:10.9052461+08:00","Properties":{}}
+DEBUG 2019-10-04 22:43:10,905 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: tu22dpXYU8ay82tYCkkxOg
+DEBUG 2019-10-04 22:43:16,536 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: tu22dpXYU8ay82tYCkkxOg
+INFO  2019-10-04 22:43:16,540 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5644.0129ms 101 
+DEBUG 2019-10-04 22:45:12,822 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-04 22:45:12,921 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-10-04 22:45:12,938 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.Web.Startup.CRSWebMvcModule, JD.CRS.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSWebCoreModule, JD.CRS.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSApplicationModule, JD.CRS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,941 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.CRSCoreModule, JD.CRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,941 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,941 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,942 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: JD.CRS.EntityFrameworkCore.CRSEntityFrameworkModule, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,944 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,944 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,944 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:12,947 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-10-04 22:45:13,039 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-04 22:45:13,039 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-04 22:45:13,039 [1    ] o.Configuration.LanguageManagementConfig - Converted CRS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-04 22:45:13,039 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-04 22:45:13,419 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: JD.CRS.EntityFrameworkCore.CRSDbContext, JD.CRS.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-04 22:45:14,367 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-04 22:45:14,742 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-04 22:45:14,787 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-04 22:45:14,809 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRS
+DEBUG 2019-10-04 22:45:14,841 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-04 22:45:15,016 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-04 22:45:15,136 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-10-04 22:45:15,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-10-04 22:45:15,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-10-04 22:45:15,194 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.CreateUserDto
+DEBUG 2019-10-04 22:45:15,194 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Users.Dto.UserDto
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Roles.Dto.PermissionDto
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CourseDto
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Course.Dto.CreateUpdateCourseDto
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-10-04 22:45:15,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - JD.CRS.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-10-04 22:45:20,263 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2019-10-04 22:45:20,263 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-10-04 22:45:20,351 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 90.5763ms 200 
+INFO  2019-10-04 22:45:25,517 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc)
+INFO  2019-10-04 22:45:25,576 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-10-04 22:45:25,684 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) - Validation state: Valid
+INFO  2019-10-04 22:45:25,691 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.1591ms.
+INFO  2019-10-04 22:45:26,056 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-10-04 22:45:27,083 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'PleaseWait' in localization source 'CRS'!
+INFO  2019-10-04 22:45:28,554 [12   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2564.6315ms.
+INFO  2019-10-04 22:45:28,590 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action JD.CRS.Web.Controllers.HomeController.Index (JD.CRS.Web.Mvc) in 3062.4278ms
+INFO  2019-10-04 22:45:28,625 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8371.5346ms 200 text/html; charset=utf-8
+INFO  2019-10-04 22:45:28,690 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637058259151374058  
+INFO  2019-10-04 22:45:28,692 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637058259151374058  
+INFO  2019-10-04 22:45:28,737 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-10-04 22:45:28,754 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-10-04 22:45:28,815 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-10-04 22:45:28,867 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-10-04 22:45:29,137 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 319.9399ms.
+INFO  2019-10-04 22:45:29,149 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-10-04 22:45:29,151 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 280.6505ms.
+INFO  2019-10-04 22:45:29,154 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-10-04 22:45:29,216 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 418.0284ms
+INFO  2019-10-04 22:45:29,225 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 400.8858ms
+INFO  2019-10-04 22:45:29,233 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 528.9208ms 200 application/x-javascript; charset=utf-8
+INFO  2019-10-04 22:45:29,238 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 543.3959ms 200 application/x-javascript
+INFO  2019-10-04 22:45:29,253 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-10-04 22:45:29,342 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 100.2771ms 200 application/json
+INFO  2019-10-04 22:45:29,425 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=DQ1Za66u5za2VYLu13iV3Q  
+INFO  2019-10-04 22:45:29,668 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-10-04 22:45:29,696 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"DQ1Za66u5za2VYLu13iV3Q","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-04T22:45:29.689299+08:00","Properties":{}}
+DEBUG 2019-10-04 22:45:29,747 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: DQ1Za66u5za2VYLu13iV3Q
+DEBUG 2019-10-04 22:45:32,226 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: DQ1Za66u5za2VYLu13iV3Q
+INFO  2019-10-04 22:45:32,245 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2820.6533ms 101 
