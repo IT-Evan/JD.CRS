@@ -122,7 +122,15 @@
     <text name="DefaultPasswordIs">默认密码为：{0}</text>
     <text name="DeleteTenantConfirm">确认删除该租户？</text>
     <text name="EditTenant">编辑租户</text>
-    
+    <text name="Refresh">刷新</text>
+    <text name="AreYouSureWantToDelete">您确定要删除 {0} 吗?</text>
+    <text name="CreateCourse">创建课程</text>
+    <text name="EditCourse">编辑课程</text>
+    <text name="Code">编号</text>
+    <text name="DepartmentCode">院系编号</text>
+    <text name="Credits">学分</text>
+    <text name="Remarks">备注</text>
+    <text name="Status">状态</text>
     
   </texts>
 </localizationDictionary>

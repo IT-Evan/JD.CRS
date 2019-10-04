@@ -108,7 +108,6 @@
     <text name="LabelOptions">Label options</text>
     <text name="Permissions">Permissions</text>
     <text name="RoleDescription">Role description</text>
-    <text name="Refresh">Refresh</text>
     <text name="Create">Create</text>
     <text name="UserDetails">User details</text>
     <text name="UserRoles">User roles</text>
@@ -117,5 +116,13 @@
     <text name="Off">Off</text>
     <text name="AreYouSureWantToDelete">Are you sure want to delete {0}?</text>
     <text name="Filter">Filter</text>
+    <text name="Refresh">Refresh</text>
+    <text name="CreateCourse">Create Course</text>
+    <text name="EditCourse">Edit Course</text>
+    <text name="Code">Code</text>
+    <text name="DepartmentCode">Department Code</text>
+    <text name="Credits">Credits</text>
+    <text name="Remarks">Remarks</text>
+    <text name="Status">Status</text>
   </texts>
 </localizationDictionary>

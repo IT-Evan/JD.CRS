@@ -122,6 +122,16 @@
     <text name="DefaultPasswordIs">預設密碼為：{0}</text>
     <text name="DeleteTenantConfirm">確認刪除該租戶？</text>
     <text name="EditTenant">編輯租戶</text>
+    
+    <text name="Refresh">刷新</text>
+    <text name="AreYouSureWantToDelete">您確定要刪除 {0} 嗎?</text>
+    <text name="CreateCourse">創建課程</text>
+    <text name="EditCourse">編輯課程</text>
+    <text name="Code">編號</text>
+    <text name="DepartmentCode">院系編號</text>
+    <text name="Credits">學分</text>
+    <text name="Remarks">備註</text>
+    <text name="Status">狀態</text>
 
 
   </texts>
