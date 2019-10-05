@@ -154,5 +154,17 @@
     "inputFiles": [
       "wwwroot/view-resources/Views/Course/Index.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/js/L2Dwidget.min.min.min.js",
+    "inputFiles": [
+      "wwwroot/js/L2Dwidget.min.min.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/L2Dwidget.min.min.js",
+    "inputFiles": [
+      "wwwroot/js/L2Dwidget.min.js"
+    ]
   }
 ]

@@ -6,6 +6,10 @@
     <text name="StartTyping">Start Typing</text>
     <text name="Version">Version</text>
     <text name="CopyRight" >© 2019 CRS</text>
+    <text name="Contact">Contact us</text>
+    <text name="QQ">QQ</text>
+    <text name="Wechat">Wechat</text>
+    <text name="DD">DD</text>
     <text name="HomePage" value="Home page" />
     <text name="Data">Data</text>
     <text name="Service">Service</text>

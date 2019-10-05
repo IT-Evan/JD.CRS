@@ -6,6 +6,10 @@
     <text name="StartTyping">开始输入</text>
     <text name="Version">版本</text>
     <text name="CopyRight" >© 2019 排班系统</text>
+    <text name="Contact">联系我们</text>
+    <text name="QQ">QQ</text>
+    <text name="Wechat">微信</text>
+    <text name="DD">钉钉</text>
     <text name="HomePage" value="主页" />
     <text name="Data">基础数据</text>
     <text name="Service">综合服务</text>

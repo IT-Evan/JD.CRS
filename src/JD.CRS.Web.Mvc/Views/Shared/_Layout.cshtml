@@ -128,13 +128,22 @@
 
             <!-- Footer -->
             <div class="legal">
-                <div class="copyright">
-                    &copy; @DateTime.Now.Year <a href="javascript:void(0);">@L("CRS")</a>.
+                <div class="copyright" style="margin-bottom : 10px;">
+                    <a href="javascript:void(0);">@L("Contact")</a>
                 </div>
-                <div class="version">
-                    <b>@L("Version") </b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]
+                <div style="display: flex">
+                    <div style="float:left;width: 33%; text-align: left">
+                        <img src="~/images/QQ.png" width="65" height="65" title="@L("QQ")" alt="@L("QQ")" />
+                    </div>
+                    <div style="float:none;width: 34%; text-align: center">
+                        <img src="~/images/Wechat.png" width="65" height="65" title="@L("Wechat")" alt="@L("Wechat")" />
+                    </div>
+                    <div style="float:left;width: 33%; text-align: right">
+                        <img src="~/images/DD.png" width="65" height="65" title="@L("DD")" alt="@L("DD")" />
+                    </div>
                 </div>
             </div>
+            <div style="clear: both; "></div>
             <!-- #Footer -->
         </aside>
 
