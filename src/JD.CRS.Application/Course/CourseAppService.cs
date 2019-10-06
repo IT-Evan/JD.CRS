@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Course
 {
-    public class CourseAppService : AsyncCrudAppService<Entitys.Course, CourseDto, int, PagedResultRequestDto,
+    public class CourseAppService : AsyncCrudAppService<Entitys.Course, CourseDto, int, PagedCourseResultRequestDto,
                              CreateUpdateCourseDto, CreateUpdateCourseDto>, ICourseAppService
 
     {
@@ -21,5 +21,6 @@ namespace JD.CRS.Course
             //var sin = input;
             return base.Create(input);
         }
+
     }
 }

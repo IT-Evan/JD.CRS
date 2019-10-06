@@ -3,6 +3,7 @@ using Abp.AspNetCore.Mvc.Authorization;
 using JD.CRS.Authorization;
 using JD.CRS.Controllers;
 using JD.CRS.Course;
+using JD.CRS.Course.Dto;
 using JD.CRS.Web.Models.Course;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace JD.CRS.Web.Controllers
         // GET: /<controller>/
         public async Task<ActionResult> Index()
         {
-            var courses = (await _courseAppService.GetAll(new PagedResultRequestDto { MaxResultCount = MaxNum })).Items;
+            var courses = (await _courseAppService.GetAll(new PagedCourseResultRequestDto { MaxResultCount = MaxNum })).Items;
             // Paging not implemented yet
             var model = new CourseListViewModel
             {
