@@ -40,25 +40,5 @@ namespace JD.CRS.Web.Controllers
             };
             return View("_EditCourseModal", model);
         }
-
-        public JsonResult List()
-        {
-            var page = Request.Form["page"].ToString();
-            var size = Request.Form["rows"].ToString();
-            int pageIndex = page == null ? 1 : int.Parse(page);
-            int pageSize = size == null ? 10 : int.Parse(size);
-
-            PagedCourseResultRequestDto paged = new PagedCourseResultRequestDto
-            {
-                MaxResultCount = pageSize,
-                SkipCount = ((pageIndex - 1) < 0 ? 0 : pageIndex - 1) * pageSize
-            };
-            var userList = _courseAppService.GetAll(paged).GetAwaiter().GetResult().Items;
-
-            int total = 1000;
-            var json = JsonEasyUI(userList, total);
-
-            return json;
-        }
     }
 }
