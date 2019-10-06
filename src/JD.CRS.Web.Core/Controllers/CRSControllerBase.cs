@@ -15,18 +15,5 @@ namespace JD.CRS.Controllers
         {
             identityResult.CheckErrors(LocalizationManager);
         }
-
-        protected dynamic JsonEasyUI(dynamic list, int total)
-        {
-
-            var obj = new
-            {
-                total = total,
-                rows = list
-            };
-
-            var json = Json(obj);
-            return json;
-        }
     }
 }
