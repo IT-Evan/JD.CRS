@@ -27,7 +27,7 @@ namespace JD.CRS.Course.Dto
         /// <summary>
         /// 课程积分
         /// </summary>
-        [Range(0, 5)]
+        [Range(0, 10)]
         public int Credits { get; set; }
         /// <summary>
         /// 备注
@@ -37,7 +37,7 @@ namespace JD.CRS.Course.Dto
         /// <summary>
         /// 状态: 0 正常, 1 废弃
         /// </summary>
-        public int? Status { get; set; }
+        public byte Status { get; set; }
         /// <summary>
         /// 创建日期
         /// </summary>

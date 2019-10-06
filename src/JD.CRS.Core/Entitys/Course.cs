@@ -17,7 +17,7 @@ namespace JD.CRS.Entitys
             this.Name = string.Empty;
             this.Credits = 0;
             this.Remarks = string.Empty;
-            this.Status = 0;
+            this.Status = (Byte)StatusCode.Enabled;
             this.CreateDate = null;
             this.CreateName = string.Empty;
             this.UpdateDate = null;
@@ -40,9 +40,9 @@ namespace JD.CRS.Entitys
         [StringLength(150)]
         public string Name { get; set; }
         /// <summary>
-        /// 课程积分
+        /// 课程学分
         /// </summary>
-        [Range(0, 5)]
+        [Range(0, 10)]
         public int Credits { get; set; }
         /// <summary>
         /// 备注
@@ -50,9 +50,9 @@ namespace JD.CRS.Entitys
         [StringLength(200)]
         public string Remarks { get; set; }
         /// <summary>
-        /// 状态: 0 正常, 1 废弃
+        /// 状态: 0 有效, 1 无效
         /// </summary>
-        public int? Status { get; set; }
+        public byte Status { get; set; }
         /// <summary>
         /// 创建日期
         /// </summary>
