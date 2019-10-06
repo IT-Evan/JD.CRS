@@ -102,6 +102,7 @@
     
     <text name="Yes">是</text>
     <text name="No">否</text>
+    <text name="Save">保存</text>
     
     <text name="Cancel">取消</text>
     <text name="OK">确定</text>

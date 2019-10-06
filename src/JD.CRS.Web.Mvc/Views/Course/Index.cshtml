@@ -11,45 +11,7 @@
     <environment names="Staging,Production">
         <script src="~/view-resources/Views/Course/Index.min.js" asp-append-version="true"></script>
     </environment>
-    <script type="text/javascript">
-        $(function () {
-            initable();
-            init();
-            reloaded();
-            updCourseInfo();
-            showCourseDialog();
-            deleteCourse();
-        });
-    </script>
 }
-
-@*
-    <div data-options="region:'center'" style="overflow: hidden;">
-        <div id="containter" style="width: 1000px; height: auto; margin: 0px auto;">
-            <!--toolbar-->
-            <div style="margin-bottom:1px;font-weight:bold;">
-                <a href="#" id="add" class="easyui-linkbutton" data-options="iconCls:'icon-add'"
-                   style="width:100px; height:30px; ">添加</a>
-                <a href="#" id="del" class="easyui-linkbutton" data-options="iconCls:'icon-remove'"
-                   style="width:100px; height:30px; ">删除</a>
-                <a href="#" id="edit" class="easyui-linkbutton" data-options="iconCls:'icon-edit'"
-                   style="width:100px; height:30px; ">修改</a>
-                <a href="#" id="reload" class="easyui-linkbutton" data-options="iconCls:'icon-reload'"
-                   style="width:100px; height:30px; ">刷新</a>
-            </div>
-            <!--panel-->
-            <div data-options="region:'center',split:false" style="height:500px;">
-                <!--表格-->
-
-                <table id="dgCourse"></table>
-
-            </div>
-
-        </div>
-    </div>
-*@
-
-
 <div class="row clearfix">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="card">
