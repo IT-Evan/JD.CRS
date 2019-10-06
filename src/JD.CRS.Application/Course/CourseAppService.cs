@@ -18,7 +18,7 @@ namespace JD.CRS.Course
 
         public override Task<CourseDto> Create(CreateUpdateCourseDto input)
         {
-            var sin = input;
+            //var sin = input;
             return base.Create(input);
         }
     }
