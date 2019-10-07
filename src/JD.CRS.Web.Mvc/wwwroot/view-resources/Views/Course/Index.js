@@ -3,7 +3,7 @@
     var _courseService = abp.services.app.course;
     var _$modal = $('#CourseCreateModal');
     var _$form = _$modal.find('form[name=CourseCreateForm]');
-    //save for create
+    //define save function for create
     function save() {
         if (!_$form.valid()) {
             return;
@@ -17,38 +17,11 @@
             abp.ui.clearBusy(_$modal); //loading-end
         });
     }
-    _$form.validate({});
-    $('#RefreshButton').click(function () {
-        refreshCourseList();
-    });
-    $('.delete-course').click(function () {
-        var courseId = $(this).attr("data-course-id");
-        var courseName = $(this).attr('data-course-name');
-        deleteCourse(courseId, courseName);
-    });
-    $('.edit-course').click(function (e) {
-        var courseId = $(this).attr("data-course-id");
-        e.preventDefault();
-        $.ajax({
-            url: abp.appPath + 'Course/EditCourseModal?courseId=' + courseId,
-            type: 'POST',
-            contentType: 'application/html',
-            success: function (content) {
-                $('#CourseEditModal div.modal-content').html(content);
-            },
-            error: function (e) { }
-        });
-    });
-    _$form.find('button[type="submit"]').click(function (e) {
-        e.preventDefault();
-        save();        
-    });
-    _$modal.on('shown.bs.modal', function () {
-        _$modal.find('input:not([type=hidden]):first').focus();
-    });    
+    //define refresh function
     function refreshCourseList() {
         location.reload(true); //reload page to see new user!
     }
+    //define delete function
     function deleteCourse(courseId, courseName) {
         abp.message.confirm(
             abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'CRS'), courseName),
@@ -63,4 +36,37 @@
             }
         );
     }
+    //call refresh function
+    $('#RefreshButton').click(function () {
+        refreshCourseList();
+    });
+    //call delete function
+    $('.delete-course').click(function () {
+        var courseId = $(this).attr("data-course-id");
+        var courseName = $(this).attr('data-course-name');
+        deleteCourse(courseId, courseName);
+    });
+    //call edit function
+    $('.edit-course').click(function (e) {
+        var courseId = $(this).attr("data-course-id");
+        e.preventDefault();
+        $.ajax({
+            url: abp.appPath + 'Course/EditCourseModal?courseId=' + courseId,
+            type: 'POST',
+            contentType: 'application/html',
+            success: function (content) {
+                $('#CourseEditModal div.modal-content').html(content);
+            },
+            error: function (e) { }
+        });
+    });
+    //call save function
+    _$form.find('button[type="submit"]').click(function (e) {
+        e.preventDefault();
+        save();        
+    });
+    //focus first input
+    _$modal.on('shown.bs.modal', function () {
+        _$modal.find('input:not([type=hidden]):first').focus();
+    });
 });
