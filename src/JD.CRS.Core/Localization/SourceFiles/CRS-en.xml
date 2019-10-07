@@ -129,5 +129,8 @@
     <text name="Credits">Credits</text>
     <text name="Remarks">Remarks</text>
     <text name="Status">Status</text>
+    <text name="StatusCode_Enabled">Enabled</text>
+    <text name="StatusCode_Disabled">Disabled</text>
+
   </texts>
 </localizationDictionary>

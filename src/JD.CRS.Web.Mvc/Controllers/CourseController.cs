@@ -24,8 +24,8 @@ namespace JD.CRS.Web.Controllers
         // GET: /<controller>/
         //public async Task<ActionResult> Index()
         //{
-        //    //var courses = (await _courseAppService.GetAll(new PagedCourseResultRequestDto { MaxResultCount = MaxNum })).Items;
-        //    var courses = (await _courseAppService.GetAll(new PagedCourseResultRequestDto { SkipCount = 3, Keyword = "", MaxResultCount = MaxNum })).Items;
+        //    //var courses = (await _courseAppService.GetAll(new GetAllCoursesInput { MaxResultCount = MaxNum })).Items;
+        //    var courses = (await _courseAppService.GetAll(new GetAllCoursesInput { SkipCount = 3, Keyword = "", MaxResultCount = MaxNum })).Items;
         //    // Paging not implemented yet
         //    var model = new CourseListViewModel
         //    {
@@ -35,38 +35,48 @@ namespace JD.CRS.Web.Controllers
         //}
 
         // GET: /<controller>/
-        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string keyword, int? pageSize, int? pageNumber)
+        //public async Task<IActionResult> Index(string sortOrder, string currentFilter, string keyword, int? pageSize, int? pageNumber)
+        //{
+        //    ViewData["CurrentSort"] = sortOrder;
+
+        //    if (keyword != null)
+        //    {
+        //        pageNumber = 1;
+        //    }
+        //    else
+        //    {
+        //        keyword = currentFilter;
+        //    }
+
+        //    ViewData["CurrentFilter"] = keyword;
+
+        //    if (pageSize == null)
+        //    {
+        //        pageSize = AppConsts.DefaultPageSize;
+        //    }
+
+        //    if (pageNumber == null)
+        //    {
+        //        pageNumber = 1;
+        //    }
+
+        //    var skipCount = (int)(pageSize * (pageNumber - 1));
+
+        //    var courses = (await _courseAppService.GetAll(new GetAllCoursesInput { SkipCount = skipCount, Keyword = keyword, MaxResultCount = MaxNum })).Items;
+
+        //    var model = new CourseListViewModel
+        //    {
+        //        Courses = courses
+        //    };
+        //    return View(model);
+        //}
+
+        public async Task<ActionResult> Index(GetAllCoursesInput input)
         {
-            ViewData["CurrentSort"] = sortOrder;
-
-            if (keyword != null)
+            var output = await _courseAppService.GetAll(input);
+            var model = new CourseListViewModel(output.Items)
             {
-                pageNumber = 1;
-            }
-            else
-            {
-                keyword = currentFilter;
-            }
-
-            ViewData["CurrentFilter"] = keyword;
-
-            if (pageSize == null)
-            {
-                pageSize = AppConsts.DefaultPageSize;
-            }
-
-            if (pageNumber == null)
-            {
-                pageNumber = 1;
-            }
-
-            var skipCount = (int)(pageSize * (pageNumber - 1));
-
-            var courses = (await _courseAppService.GetAll(new PagedCourseResultRequestDto { SkipCount = skipCount, Keyword = keyword, MaxResultCount = MaxNum })).Items;
-
-            var model = new CourseListViewModel
-            {
-                Courses = courses
+                SelectedStatus = input.Status
             };
             return View(model);
         }

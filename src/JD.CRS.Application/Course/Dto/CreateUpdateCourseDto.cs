@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using JD.CRS.Entitys;
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -37,7 +38,7 @@ namespace JD.CRS.Course.Dto
         /// <summary>
         /// 状态: 0 正常, 1 废弃
         /// </summary>
-        public byte Status { get; set; }
+        public StatusCode Status { get; set; }
         /// <summary>
         /// 创建日期
         /// </summary>

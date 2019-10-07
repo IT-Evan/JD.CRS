@@ -7,8 +7,8 @@ using Abp.Application.Services.Dto;
 
 namespace JD.CRS.Course.Dto
 {
-    public class PagedCourseResultRequestDto: PagedResultRequestDto //PagedSortedAndFilteredInputDto
+    public class GetAllCoursesInput: PagedResultRequestDto //PagedSortedAndFilteredInputDto
     {
-        public string Keyword { get; set; }
+        public StatusCode? Status { get; set; }
     }
 }

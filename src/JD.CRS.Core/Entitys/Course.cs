@@ -52,7 +52,7 @@ namespace JD.CRS.Entitys
         /// <summary>
         /// 状态: 0 有效, 1 无效
         /// </summary>
-        public byte Status { get; set; }
+        public StatusCode Status { get; set; }
         /// <summary>
         /// 创建日期
         /// </summary>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Course
 {
-    public class CourseAppService : AsyncCrudAppService<Entitys.Course, CourseDto, int, PagedCourseResultRequestDto,
+    public class CourseAppService : AsyncCrudAppService<Entitys.Course, CourseDto, int, GetAllCoursesInput,
                              CreateUpdateCourseDto, CreateUpdateCourseDto>, ICourseAppService
 
     {

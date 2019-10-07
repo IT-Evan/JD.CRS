@@ -32,12 +32,18 @@
                     </li>
                 </ul>
             </div>
-
-            @*<div class="header">
-                @L("PageSize")<select name="PageSize" class="form-control input-sm"><option value="3">3</option><option value="5">5</option><option value="10">10</option></select>
-                @L("PageNumber")<input name="PageNumber" type="search" class="form-control input-sm">
-                @L("Keyword")<input name="Keyword" type="search" class="form-control input-sm">
-            </div>*@
+            <div class="header">
+                <span>
+                    @Html.DropDownListFor(
+                        model => model.SelectedStatus,
+                        Model.GetStatusList(LocalizationManager),
+                        new
+                        {
+                            @class = "form-control",
+                            id = "StatusCombobox"
+                        })
+                </span>
+            </div>
 
             <div class="body table-responsive">
                 <table class="table">
@@ -72,7 +78,7 @@
                                     @Html.DisplayFor(modelItem => item.Remarks)
                                 </td>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Status)
+                                    @L($"StatusCode_{item.Status}")
                                 </td>
                                 <td class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

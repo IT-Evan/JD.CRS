@@ -1,5 +1,5 @@
 ﻿$(function () {
-    //define var
+    //define variable
     var _courseService = abp.services.app.course;
     var _$modal = $('#CourseCreateModal');
     var _$form = _$modal.find('form[name=CourseCreateForm]');
@@ -68,5 +68,10 @@
     //focus first input
     _$modal.on('shown.bs.modal', function () {
         _$modal.find('input:not([type=hidden]):first').focus();
+    });
+    //Search
+    var _$StatusCombobox = $('#StatusCombobox');
+    _$StatusCombobox.change(function () {
+        location.href = '/Course?status=' + _$StatusCombobox.val();
     });
 });

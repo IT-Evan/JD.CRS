@@ -137,7 +137,8 @@
     <text name="Credits">學分</text>
     <text name="Remarks">備註</text>
     <text name="Status">狀態</text>
-
+    <text name="StatusCode_Enabled">有效</text>
+    <text name="StatusCode_Disabled">无效</text>
 
   </texts>
 </localizationDictionary>

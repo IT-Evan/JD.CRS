@@ -1,5 +1,5 @@
 ﻿$(function () {
-    //define var
+    //define variable
     var _courseService = abp.services.app.course;
     var _$modal = $('#CourseEditModal');
     var _$form = $('form[name=CourseEditForm]');
