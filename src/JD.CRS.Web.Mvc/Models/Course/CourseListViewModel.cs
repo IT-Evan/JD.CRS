@@ -19,16 +19,6 @@ namespace JD.CRS.Web.Models.Course
             Courses = courses;
         }
 
-        //public string GetCourseLabel(CourseDto course)
-        //{
-        //    switch (course.Status)
-        //    {
-        //        case (byte)StatusCode.Disabled:
-        //            return "Disabled";
-        //        default:
-        //            return "Enabled";
-        //    }
-        //}
         public StatusCode? SelectedStatus { get; set; }
 
         public List<SelectListItem> GetStatusList(ILocalizationManager localizationManager)
