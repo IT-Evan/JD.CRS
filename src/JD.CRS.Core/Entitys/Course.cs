@@ -17,7 +17,7 @@ namespace JD.CRS.Entitys
             this.Name = string.Empty;
             this.Credits = 0;
             this.Remarks = string.Empty;
-            this.Status = (Byte)StatusCode.Enabled;
+            this.Status = StatusCode.Enabled;
             this.CreateDate = null;
             this.CreateName = string.Empty;
             this.UpdateDate = null;
