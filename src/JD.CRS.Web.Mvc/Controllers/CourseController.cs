@@ -6,6 +6,7 @@ using JD.CRS.Course;
 using JD.CRS.Course.Dto;
 using JD.CRS.Web.Models.Course;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace JD.CRS.Web.Controllers
@@ -19,11 +20,50 @@ namespace JD.CRS.Web.Controllers
         {
             _courseAppService = courseAppService;
         }
+
         // GET: /<controller>/
-        public async Task<ActionResult> Index()
+        //public async Task<ActionResult> Index()
+        //{
+        //    //var courses = (await _courseAppService.GetAll(new PagedCourseResultRequestDto { MaxResultCount = MaxNum })).Items;
+        //    var courses = (await _courseAppService.GetAll(new PagedCourseResultRequestDto { SkipCount = 3, Keyword = "", MaxResultCount = MaxNum })).Items;
+        //    // Paging not implemented yet
+        //    var model = new CourseListViewModel
+        //    {
+        //        Courses = courses
+        //    };
+        //    return View(model);
+        //}
+
+        // GET: /<controller>/
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string keyword, int? pageSize, int? pageNumber)
         {
-            var courses = (await _courseAppService.GetAll(new PagedCourseResultRequestDto { MaxResultCount = MaxNum })).Items;
-            // Paging not implemented yet
+            ViewData["CurrentSort"] = sortOrder;
+
+            if (keyword != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                keyword = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = keyword;
+
+            if (pageSize == null)
+            {
+                pageSize = AppConsts.DefaultPageSize;
+            }
+
+            if (pageNumber == null)
+            {
+                pageNumber = 1;
+            }
+
+            var skipCount = (int)(pageSize * (pageNumber - 1));
+
+            var courses = (await _courseAppService.GetAll(new PagedCourseResultRequestDto { SkipCount = skipCount, Keyword = keyword, MaxResultCount = MaxNum })).Items;
+
             var model = new CourseListViewModel
             {
                 Courses = courses
