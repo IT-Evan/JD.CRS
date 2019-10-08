@@ -7,6 +7,7 @@ using JD.CRS.Course.Dto;
 using JD.CRS.Web.Models.Course;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace JD.CRS.Web.Controllers
@@ -21,18 +22,24 @@ namespace JD.CRS.Web.Controllers
             _courseAppService = courseAppService;
         }
 
-        // GET: /<controller>/
-        //public async Task<ActionResult> Index()
+        //public async Task<ActionResult> Index(GetAllCoursesInput input)
         //{
-        //    //var courses = (await _courseAppService.GetAll(new GetAllCoursesInput { MaxResultCount = MaxNum })).Items;
-        //    var courses = (await _courseAppService.GetAll(new GetAllCoursesInput { SkipCount = 3, Keyword = "", MaxResultCount = MaxNum })).Items;
-        //    // Paging not implemented yet
-        //    var model = new CourseListViewModel
+        //    var output = await _courseAppService.GetAll(input);
+        //    var model = new CourseListViewModel(output.Items)
         //    {
-        //        Courses = courses
+        //        SelectedStatus = input.Status
         //    };
         //    return View(model);
         //}
+
+        // GET: /<controller>/
+        public async Task<ActionResult> Index(GetAllCoursesInput input)
+        {
+            IReadOnlyList<CourseDto> courses = (await _courseAppService.GetAll(new GetAllCoursesInput { Status = input.Status })).Items;
+            // Paging not implemented yet
+            var model = new CourseListViewModel(courses);
+            return View(model);
+        }
 
         // GET: /<controller>/
         //public async Task<IActionResult> Index(string sortOrder, string currentFilter, string keyword, int? pageSize, int? pageNumber)
@@ -70,16 +77,6 @@ namespace JD.CRS.Web.Controllers
         //    };
         //    return View(model);
         //}
-
-        public async Task<ActionResult> Index(GetAllCoursesInput input)
-        {
-            var output = await _courseAppService.GetAll(input);
-            var model = new CourseListViewModel(output.Items)
-            {
-                SelectedStatus = input.Status
-            };
-            return View(model);
-        }
 
         public async Task<ActionResult> EditCourseModal(int courseId)
         {
