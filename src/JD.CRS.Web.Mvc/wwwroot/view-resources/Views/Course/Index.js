@@ -3,6 +3,11 @@
     var _courseService = abp.services.app.course;
     var _$modal = $('#CourseCreateModal');
     var _$form = _$modal.find('form[name=CourseCreateForm]');
+    var _$statusCombobox = $('#StatusCombobox');
+    //Search
+    _$statusCombobox.change(function () {
+        location.href = '/Course?status=' + _$statusCombobox.val();
+    });
     //define save function for create
     function save() {
         if (!_$form.valid()) {
@@ -68,10 +73,5 @@
     //focus first input
     _$modal.on('shown.bs.modal', function () {
         _$modal.find('input:not([type=hidden]):first').focus();
-    });
-    //Search
-    var _$StatusCombobox = $('#StatusCombobox');
-    _$StatusCombobox.change(function () {
-        location.href = '/Course?status=' + _$StatusCombobox.val();
     });
 });

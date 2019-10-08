@@ -24,18 +24,5 @@ namespace JD.CRS.Course
         {
             return base.Create(input);
         }
-
-        public new ListResultDto<CourseDto> GetAll(GetAllCoursesInput input)
-        {
-            var courses = _courseRepository
-                .GetAll()
-                .WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value)
-                .OrderByDescending(t => t.CreationTime)
-                .ToList();
-
-            return new ListResultDto<CourseDto>(
-                ObjectMapper.Map<List<CourseDto>>(courses)
-            );
-        }
     }
 }

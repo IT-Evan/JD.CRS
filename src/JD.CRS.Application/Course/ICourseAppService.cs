@@ -1,4 +1,5 @@
-﻿using Abp.Application.Services;
+﻿using System.Threading.Tasks;
+using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using JD.CRS.Course.Dto;
 
@@ -11,5 +12,6 @@ namespace JD.CRS.Course
              CreateUpdateCourseDto, //用于创建课程
              CreateUpdateCourseDto> //用于更新课程
     {
+        
     }
 }
