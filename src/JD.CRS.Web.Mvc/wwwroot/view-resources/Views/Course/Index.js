@@ -3,10 +3,12 @@
     var _courseService = abp.services.app.course;
     var _$modal = $('#CourseCreateModal');
     var _$form = _$modal.find('form[name=CourseCreateForm]');
-    var _$statusCombobox = $('#StatusCombobox');
+    var _$status = $('#Status');
+    var _$keyword = $('#Keyword');
+    var _$search = $('#Search');
     //Search
-    _$statusCombobox.change(function () {
-        location.href = '/Course?status=' + _$statusCombobox.val();
+    _$search.click(function () {
+        location.href = '/Course?status=' + _$status.val() + '&keyword=' + _$keyword.val();
     });
     //define save function for create
     function save() {

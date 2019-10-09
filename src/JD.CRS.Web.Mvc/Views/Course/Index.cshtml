@@ -44,10 +44,17 @@
                                 new
                                 {
                                     @class = "form-control",
-                                    id = "StatusCombobox"
+                                    id = "Status"
                                 })
                             </th>
-                            <th class="col-sm-10"></th>
+                            <th class="col-sm-1">@L("Keyword")</th>
+                            <th class="col-sm-4">
+                                <input id="Keyword" name="Keyword" type="text" class="form-control" placeholder="Please enter the keyword..." />
+                            </th>
+                            <th class="col-sm-4"></th>
+                            <th class="col-sm-1">
+                                <button id="Search" class="form-control">@L("Search")</button>
+                            </th>
                         </tr>
                     </thead>
                 </table>

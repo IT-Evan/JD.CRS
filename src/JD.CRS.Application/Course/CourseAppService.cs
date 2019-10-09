@@ -31,7 +31,9 @@ namespace JD.CRS.Course
 
         public override async Task<PagedResultDto<CourseDto>> GetAll(GetAllCoursesInput input)
         {
-            var query = base.CreateFilteredQuery(input).WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value);
+            var query = base.CreateFilteredQuery(input)
+                .WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value)
+                .WhereIf(!input.Keyword.IsNullOrEmpty(), t => t.Name.Contains(input.Keyword));
             //var query = _courseRepository.GetAll().WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value);
             var coursecount = query.Count();
             var courselist = query.ToList();
