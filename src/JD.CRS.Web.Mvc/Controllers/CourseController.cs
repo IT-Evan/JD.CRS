@@ -22,22 +22,15 @@ namespace JD.CRS.Web.Controllers
             _courseAppService = courseAppService;
         }
 
-        //public async Task<ActionResult> Index(GetAllCoursesInput input)
-        //{
-        //    var output = await _courseAppService.GetAll(input);
-        //    var model = new CourseListViewModel(output.Items)
-        //    {
-        //        SelectedStatus = input.Status
-        //    };
-        //    return View(model);
-        //}
-
         // GET: /<controller>/
         public async Task<ActionResult> Index(GetAllCoursesInput input)
         {
-            IReadOnlyList<CourseDto> courses = (await _courseAppService.GetAll(new GetAllCoursesInput { Status = input.Status })).Items;
+            IReadOnlyList<CourseDto> output = (await _courseAppService.GetAll(new GetAllCoursesInput { Status = input.Status })).Items;
             // Paging not implemented yet
-            var model = new CourseListViewModel(courses);
+            var model = new CourseListViewModel(output)
+            {
+                SelectedStatus = input.Status
+            };
             return View(model);
         }
 
