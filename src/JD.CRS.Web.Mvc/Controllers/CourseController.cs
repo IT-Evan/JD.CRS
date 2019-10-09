@@ -31,6 +31,8 @@ namespace JD.CRS.Web.Controllers
             {
                 SelectedStatus = input.Status
             };
+            ViewData["Status"] = input.Status;
+            ViewData["Keyword"] = input.Keyword;
             return View(model);
         }
 
