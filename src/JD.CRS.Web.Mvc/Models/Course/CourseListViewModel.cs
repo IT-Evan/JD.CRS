@@ -19,8 +19,8 @@ namespace JD.CRS.Web.Models.Course
             Courses = courses;
         }
 
-        public StatusCode? SelectedStatus { get; set; }
-        //public string Keyword { get; set; }
+        public StatusCode? Status { get; set; }
+        public string Keyword { get; set; }
 
         public List<SelectListItem> GetStatusList(ILocalizationManager localizationManager)
         {
@@ -30,7 +30,7 @@ namespace JD.CRS.Web.Models.Course
                 {
                     Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "All"),
                     Value = "",
-                    Selected = SelectedStatus == null
+                    Selected = Status == null
                 }
             };
 
@@ -41,7 +41,7 @@ namespace JD.CRS.Web.Models.Course
                     {
                         Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, $"StatusCode_{status}"),
                         Value = status.ToString(),
-                        Selected = status == SelectedStatus
+                        Selected = status == Status
                     })
             );
 

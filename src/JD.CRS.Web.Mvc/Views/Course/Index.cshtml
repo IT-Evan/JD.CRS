@@ -39,7 +39,7 @@
                             <th class="col-sm-1">@L("Status")</th>
                             <th class="col-sm-1">
                                 @Html.DropDownListFor(
-                                model => model.SelectedStatus,
+                                model => model.Status,
                                 Model.GetStatusList(LocalizationManager),
                                 new
                                 {
@@ -49,7 +49,7 @@
                             </th>
                             <th class="col-sm-1">@L("Keyword")</th>
                             <th class="col-sm-4">
-                                <input id="Keyword" name="Keyword" type="text" class="form-control" placeholder="Please enter the keyword..." value="@ViewData["Keyword"]" />
+                                <input id="Keyword" name="Keyword" type="text" class="form-control" placeholder="Please enter the keyword..." value=@Model.Keyword />
                             </th>
                             <th class="col-sm-4"></th>
                             <th class="col-sm-1">

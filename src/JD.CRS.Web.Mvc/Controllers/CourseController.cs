@@ -29,10 +29,9 @@ namespace JD.CRS.Web.Controllers
             // Paging not implemented yet
             var model = new CourseListViewModel(output)
             {
-                SelectedStatus = input.Status
+                Status = input.Status,
+                Keyword = input.Keyword
             };
-            ViewData["Status"] = input.Status;
-            ViewData["Keyword"] = input.Keyword;
             return View(model);
         }
 
