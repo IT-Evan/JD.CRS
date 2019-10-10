@@ -44,6 +44,7 @@
     <PackageReference Include="Abp.RedisCache" Version="4.8.1" />
     <PackageReference Include="Abp.Castle.Log4Net" Version="4.8.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.ViewCompilation" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="7.9.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\view-resources\Views\_Bundles\" />

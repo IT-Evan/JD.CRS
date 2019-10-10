@@ -1,10 +1,12 @@
 ﻿@using JD.CRS.Web.Startup
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
 @model JD.CRS.Web.Models.Course.CourseListViewModel
 @{
     ViewBag.CurrentPageName = PageNames.Course; // The menu item will be active for this page.
 }
 @section scripts
-{
+    {
     <environment names="Development">
         <script src="~/view-resources/Views/Course/Index.js" asp-append-version="true"></script>
     </environment>
@@ -12,177 +14,216 @@
         <script src="~/view-resources/Views/Course/Index.min.js" asp-append-version="true"></script>
     </environment>
 }
-<div class="row clearfix">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="card">
-            <div class="header">
-                <h2>
-                    @L("Course")
-                </h2>
-                <ul class="header-dropdown m-r--5">
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">more_vert</i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li>
-                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="header">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="col-sm-1">@L("Status")</th>
-                            <th class="col-sm-1">
-                                @Html.DropDownListFor(
-                                model => model.Status,
-                                Model.GetStatusList(LocalizationManager),
-                                new
-                                {
-                                    @class = "form-control",
-                                    id = "Status"
-                                })
-                            </th>
-                            <th class="col-sm-1">@L("Keyword")</th>
-                            <th class="col-sm-4">
-                                <input id="Keyword" name="Keyword" type="text" class="form-control" placeholder="Please enter the keyword..." value=@Model.Keyword />
-                            </th>
-                            <th class="col-sm-4"></th>
-                            <th class="col-sm-1">
-                                <button id="Search" class="form-control">@L("Search")</button>
-                            </th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
 
-            <div class="body table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>@L("Code")</th>
-                            <th>@L("DepartmentCode")</th>
-                            <th>@L("Name")</th>
-                            <th>@L("Credits")</th>
-                            <th>@L("Remarks")</th>
-                            <th>@L("Status")</th>
-                            <th>@L("Actions")</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model.Courses)
-                        {
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        @L("Course")
+                    </h2>
+                    <ul class="header-dropdown m-r--5">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header">
+                    <table>
+                        <thead>
                             <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Code)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.DepartmentCode)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Name)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Credits)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Remarks)
-                                </td>
-                                <td>
-                                    @L($"StatusCode_{item.Status}")
-                                </td>
-                                <td class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">menu</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="#" class="waves-effect waves-block edit-course" data-course-id="@item.Id" data-toggle="modal" data-target="#CourseEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
-                                        <li><a href="#" class="waves-effect waves-block delete-course" data-course-id="@item.Id" data-course-name="@item.Name"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
-                                    </ul>
-                                </td>
+                                <th class="col-sm-1">@L("Status")</th>
+                                <th class="col-sm-1">
+                                    @Html.DropDownListFor(
+                                    model => model.Status,
+                                    Model.GetStatusList(LocalizationManager),
+                                    new
+                                    {
+                                        @class = "form-control",
+                                        id = "Status"
+                                    })
+                                </th>
+                                <th class="col-sm-1">@L("Keyword")</th>
+                                <th class="col-sm-4">
+                                    <input id="Keyword" name="Keyword" type="text" class="form-control" placeholder="Please enter the keyword..." value=@Model.Keyword />
+                                </th>
+                                <th class="col-sm-3"></th>
+                                <th class="col-sm-1">
+                                    <button id="Search" class="form-control">@L("Search")</button>
+                                </th>
+                                <th class="col-sm-1">
+                                    <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#CourseCreateModal">
+                                        <i class="material-icons">add</i>
+                                    </button>
+                                </th>
                             </tr>
-                        }
-                    </tbody>
-                </table>
-                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#CourseCreateModal">
-                    <i class="material-icons">add</i>
-                </button>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="body table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>@L("Code")</th>
+                                <th>@L("DepartmentCode")</th>
+                                <th>@L("Name")</th>
+                                <th>@L("Credits")</th>
+                                <th>@L("Remarks")</th>
+                                <th>@L("Status")</th>
+                                <th>@L("Actions")</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Courses)//foreach (var item in ViewBag.OnePageOfCourses)
+                            {
+                                @*
+                                <tr>
+                                    <td>
+                                        @item.Code
+                                    </td>
+                                    <td>
+                                        @item.DepartmentCode
+                                    </td>
+                                    <td>
+                                        @item.Name
+                                    </td>
+                                    <td>
+                                        @item.Credits
+                                    </td>
+                                    <td>
+                                        @item.Remarks
+                                    </td>
+                                    <td>
+                                        @L($"StatusCode_{item.Status}")
+                                    </td>
+                                    <td class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">menu</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="#" class="waves-effect waves-block edit-course" data-course-id="@item.Id" data-toggle="modal" data-target="#CourseEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                            <li><a href="#" class="waves-effect waves-block delete-course" data-course-id="@item.Id" data-course-name="@item.Name"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                *@
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Code)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.DepartmentCode)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Credits)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Remarks)
+                                    </td>
+                                    <td>
+                                        @L($"StatusCode_{item.Status}")
+                                    </td>
+                                    <td class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">menu</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="#" class="waves-effect waves-block edit-course" data-course-id="@item.Id" data-toggle="modal" data-target="#CourseEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                            <li><a href="#" class="waves-effect waves-block delete-course" data-course-id="@item.Id" data-course-name="@item.Name"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    @*@Html.PagedListPager((IPagedList)ViewBag.OnePageOfCourses, page => Url.Action("PagedList", new { page }))*@
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="CourseCreateModal" tabindex="-1" role="dialog" aria-labelledby="CourseCreateModalLabel" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">
-                    <span>@L("CreateCourse")</span>
-                </h4>
-            </div>
-            <div class="modal-body">
-                <form name="CourseCreateForm" role="form" class="form-validation">
-                    <div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label class="form-label">@L("Code")</label>
-                                    <input type="text" name="Code" class="form-control" required maxlength="50" />
+
+    <div class="modal fade" id="CourseCreateModal" tabindex="-1" role="dialog" aria-labelledby="CourseCreateModalLabel" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <span>@L("CreateCourse")</span>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form name="CourseCreateForm" role="form" class="form-validation">
+                        <div>
+                            <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-line">
+                                        <label class="form-label">@L("Code")</label>
+                                        <input type="text" name="Code" class="form-control" required maxlength="50" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-line">
+                                        <label class="form-label">@L("DepartmentCode")</label>
+                                        <input type="text" name="DepartmentCode" class="form-control" required maxlength="50" />
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label class="form-label">@L("DepartmentCode")</label>
-                                    <input type="text" name="DepartmentCode" class="form-control" required maxlength="50" />
+                            <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-line">
+                                        <label class="form-label">@L("Name")</label>
+                                        <input type="text" name="Name" class="form-control" required maxlength="150" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-line">
+                                        <label class="form-label">@L("Credits")</label>
+                                        <input type="text" name="Credits" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-sm-12">
+                                    <div class="form-line">
+                                        <label class="form-label">@L("Remarks")</label>
+                                        <input name="Remarks" type="text" class="form-control" required maxlength="200" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-sm-12">
+                                    <div class="form-line">
+                                        <label class="form-label">@L("Status")</label>
+                                        <input name="Status" type="text" class="form-control" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label class="form-label">@L("Name")</label>
-                                    <input type="text" name="Name" class="form-control" required maxlength="150" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-line">
-                                    <label class="form-label">@L("Credits")</label>
-                                    <input type="text" name="Credits" class="form-control" />
-                                </div>
-                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                            <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
                         </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-12">
-                                <div class="form-line">
-                                    <label class="form-label">@L("Remarks")</label>
-                                    <input name="Remarks" type="text" class="form-control" required maxlength="200" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row clearfix">
-                            <div class="col-sm-12">
-                                <div class="form-line">
-                                    <label class="form-label">@L("Status")</label>
-                                    <input name="Status" type="text" class="form-control" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
-                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="CourseEditModal" tabindex="-1" role="dialog" aria-labelledby="CourseEditModalLabel" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
+
+    <div class="modal fade" id="CourseEditModal" tabindex="-1" role="dialog" aria-labelledby="CourseEditModalLabel" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            </div>
         </div>
     </div>
-</div>
