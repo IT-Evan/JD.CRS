@@ -31,10 +31,14 @@ namespace JD.CRS.Course
 
         public override async Task<PagedResultDto<CourseDto>> GetAll(GetAllCoursesInput input)
         {
-            //LINQ表达式or忽略大小写
             var query = base.CreateFilteredQuery(input)
                 .WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value)
-                .WhereIf(!input.Keyword.IsNullOrEmpty(), t => t.Name.Contains(input.Keyword));
+                .WhereIf(
+                !input.Keyword.IsNullOrEmpty(), t =>
+                t.Code.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按编号查询
+                || t.Name.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按名称查询
+                || t.Remarks.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按备注查询
+                );
             var coursecount = query.Count();
             var courselist = query.ToList();
             return new PagedResultDto<CourseDto>()
