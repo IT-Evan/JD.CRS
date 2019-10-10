@@ -36,7 +36,9 @@ namespace JD.CRS.Course
                 .WhereIf(
                 !input.Keyword.IsNullOrEmpty(), t =>
                 t.Code.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按编号查询
+                || t.DepartmentCode.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按院系编号查询
                 || t.Name.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按名称查询
+                || t.Credits.ToString().Contains((input.Keyword ?? string.Empty).ToLower()) //按学分查询
                 || t.Remarks.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按备注查询
                 );
             var coursecount = query.Count();

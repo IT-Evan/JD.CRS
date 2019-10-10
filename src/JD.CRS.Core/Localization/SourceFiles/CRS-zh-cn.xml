@@ -128,6 +128,7 @@
     <text name="DeleteTenantConfirm">确认删除该租户？</text>
     <text name="EditTenant">编辑租户</text>
     <text name="Refresh">刷新</text>
+    <text name="Search">搜索</text>
     <text name="AreYouSureWantToDelete">您确定要删除 {0} 吗?</text>
     <text name="CreateCourse">创建课程</text>
     <text name="EditCourse">编辑课程</text>

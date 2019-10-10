@@ -129,6 +129,7 @@
     <text name="EditTenant">編輯租戶</text>
     
     <text name="Refresh">刷新</text>
+    <text name="Search">搜索</text>
     <text name="AreYouSureWantToDelete">您確定要刪除 {0} 嗎?</text>
     <text name="CreateCourse">創建課程</text>
     <text name="EditCourse">編輯課程</text>
