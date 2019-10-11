@@ -7,9 +7,42 @@
     var _$keyword = $('#Keyword');
     var _$search = $('#Search');
     var _$dataTable = $('#dataTable');
-    //use DataTable
+    //Set DataTable
     $(document).ready(function () {
-        _$dataTable.DataTable();
+        _$dataTable.DataTable({
+            pagingType: "full_numbers", //Type
+            scrollY: 580, //Scroll
+            //'<'float_left'f>r<'float_right'l>tip', //Layout
+            dom: "<'row'<'col-sm-2'l><'col-sm-4'f><'col-sm-6'B>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
+            //dom: 'Bfrtip', //Layout
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+            language: //Language
+            {　
+                "emptyTable": "No data available in table",
+                "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                "infoEmpty": "Showing 0 to 0 of 0 entries",
+                "infoFiltered": "(filtered from _MAX_ total entries)",
+                "infoPostFix": "",
+                "thousands": ",",
+                "lengthMenu": "PageSize _MENU_",
+                "loadingRecords": "Loading...",
+                "processing": "Processing...",
+                "search": "Search:",
+                "zeroRecords": "No matching records found",
+                "paginate": {
+                    "first": "First",
+                    "last": "Last",
+                    "next": "Next",
+                    "previous": "Previous"
+                },
+                "aria": {
+                    "sortAscending": ": activate to sort column ascending",
+                    "sortDescending": ": activate to sort column descending"
+                }  
+            } 
+        });
     });
     //Search
     _$search.click(function () {
