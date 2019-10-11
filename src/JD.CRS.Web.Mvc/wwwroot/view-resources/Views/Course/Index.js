@@ -12,35 +12,37 @@
         _$dataTable.DataTable({
             pagingType: "full_numbers", //Type
             scrollY: 500, //Scroll
-            dom: "<'row'<'col-sm-8'B><'col-sm-4'lf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-8'i><'col-sm-4'p>>", //Layout
-            //dom: 'Bflrtip', //Layout
-            buttons: [
+            dom: "<'row'<'col-sm-6'B><'col-sm-6'lf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
+            //dom: 'Blfrtip', //Layout
+            buttons: [ //Button
                 'copy', 'csv', 'excel', 'pdf', 'print'
             ],
-            language: //Language
-            {　
-                "emptyTable": "No data available in table",
-                "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-                "infoEmpty": "Showing 0 to 0 of 0 entries",
-                "infoFiltered": "(filtered from _MAX_ total entries)",
-                "infoPostFix": "",
-                "thousands": ",",
-                "lengthMenu": "PageSize _MENU_",
-                "loadingRecords": "Loading...",
-                "processing": "Processing...",
-                "search": "Search:",
-                "zeroRecords": "No matching records found",
-                "paginate": {
-                    "first": "|<",
-                    "last": ">|",
-                    "next": ">",
-                    "previous": "<"
+            'bom': true,
+            aLengthMenu: [[10, 25, 50, -1], [10, 25, 50, "全部"]], //PageSize
+            oLanguage: { //Language
+                //"sUrl": "~/lib/dataTables/Language/zh-cn.json"
+                "sEmptyTable": "无数据",
+                "sInfo": "显示第 _START_ 至 _END_ 项记录，共 _TOTAL_ 项",
+                "sInfoEmpty": "显示第 0 至 0 项记录 / 共 0 项",
+                "sInfoFiltered": "(从 _MAX_ 条记录过滤)",
+                "sInfoPostFix": "",
+                "sThousands": ",",
+                "sLengthMenu": "_MENU_ 项/页",
+                "sLoadingRecords": "载入中...",
+                "sProcessing": "处理中...",
+                "sSearch": "过滤:",
+                "sZeroRecords": "没找到匹配的记录",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页"
                 },
-                "aria": {
-                    "sortAscending": ": activate to sort column ascending",
-                    "sortDescending": ": activate to sort column descending"
-                }  
-            } 
+                "oAria": {
+                    "sSortAscending": ": 升序排序",
+                    "sSortDescending": ": 降序排序"
+                }
+            }
         });
     });
     //Search
