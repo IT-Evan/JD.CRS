@@ -6,6 +6,11 @@
     var _$status = $('#Status');
     var _$keyword = $('#Keyword');
     var _$search = $('#Search');
+    var _$dataTable = $('#dataTable');
+    //use DataTable
+    $(document).ready(function () {
+        _$dataTable.DataTable();
+    });
     //Search
     _$search.click(function () {
         location.href = '/Course?status=' + _$status.val() + '&keyword=' + _$keyword.val();
