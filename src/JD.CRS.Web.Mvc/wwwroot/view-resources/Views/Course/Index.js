@@ -12,8 +12,8 @@
         _$dataTable.DataTable({
             pagingType: "full_numbers", //Type
             scrollY: 500, //Scroll
-            //dom: "<'row'<'col-sm-2'l><'col-sm-4'f><'col-sm-6'B>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
-            dom: 'Blfrtip', //Layout
+            dom: "<'row'<'col-sm-8'B><'col-sm-4'lf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-8'i><'col-sm-4'p>>", //Layout
+            //dom: 'Bflrtip', //Layout
             buttons: [
                 'copy', 'csv', 'excel', 'pdf', 'print'
             ],
@@ -31,10 +31,10 @@
                 "search": "Search:",
                 "zeroRecords": "No matching records found",
                 "paginate": {
-                    "first": "First",
-                    "last": "Last",
-                    "next": "Next",
-                    "previous": "Previous"
+                    "first": "|<",
+                    "last": ">|",
+                    "next": ">",
+                    "previous": "<"
                 },
                 "aria": {
                     "sortAscending": ": activate to sort column ascending",
