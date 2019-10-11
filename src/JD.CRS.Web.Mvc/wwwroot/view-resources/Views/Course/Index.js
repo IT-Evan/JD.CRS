@@ -12,7 +12,7 @@
         _$dataTable.DataTable({
             pagingType: "full_numbers", //Type
             scrollY: 500, //Scroll
-            dom: "<'row'<'col-sm-6'B><'col-sm-6'lf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
+            dom: "<'row'<'col-sm-4'B><'col-sm-2'<'#Create'>><'col-sm-6'lf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
             //dom: 'Blfrtip', //Layout
             buttons: [ //Button
                 'copy', 'csv', 'excel', 'pdf', 'print'

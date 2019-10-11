@@ -37,23 +37,36 @@
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="card">
             <div class="header">
-                <h2>
-                    @L("Course")
-                </h2>
-                <ul class="header-dropdown m-r--5">
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">more_vert</i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li>
-                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-sm-2">
+                                <h2>@L("Course")</h2>
+                            </th>
+                            <th class="col-sm-1">
+                                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#CourseCreateModal">
+                                    <i class="material-icons">add</i>
+                                </button>
+                            </th>
+                            <th class="col-sm-9">
+                                <ul class="header-dropdown m-r--5">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li>
+                                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
-            <div class="header">
+            @*<div class="header">
                 <table>
                     <thead>
                         <tr>
@@ -84,8 +97,7 @@
                         </tr>
                     </thead>
                 </table>
-            </div>
-
+            </div>*@
             <div class="body table-responsive">
                 <table id="dataTable" class="table">
                     <thead>
