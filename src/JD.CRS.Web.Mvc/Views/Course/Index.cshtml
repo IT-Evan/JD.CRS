@@ -1,6 +1,4 @@
 ﻿@using JD.CRS.Web.Startup
-@using X.PagedList;
-@using X.PagedList.Mvc.Core;
 @model JD.CRS.Web.Models.Course.CourseListViewModel
 @{
     ViewBag.CurrentPageName = PageNames.Course; // The menu item will be active for this page.
@@ -14,8 +12,6 @@
         <script src="~/view-resources/Views/Course/Index.min.js" asp-append-version="true"></script>
     </environment>
 }
-
-<link href="~/Content/PagedList.css" rel="stylesheet" />
 
     <div class="row clearfix">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -84,39 +80,8 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model.Courses)//foreach (var item in ViewBag.OnePageOfCourses)
+                            @foreach (var item in Model.Courses)
                             {
-                                @*
-                                <tr>
-                                    <td>
-                                        @item.Code
-                                    </td>
-                                    <td>
-                                        @item.DepartmentCode
-                                    </td>
-                                    <td>
-                                        @item.Name
-                                    </td>
-                                    <td>
-                                        @item.Credits
-                                    </td>
-                                    <td>
-                                        @item.Remarks
-                                    </td>
-                                    <td>
-                                        @L($"StatusCode_{item.Status}")
-                                    </td>
-                                    <td class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            <i class="material-icons">menu</i>
-                                        </a>
-                                        <ul class="dropdown-menu pull-right">
-                                            <li><a href="#" class="waves-effect waves-block edit-course" data-course-id="@item.Id" data-toggle="modal" data-target="#CourseEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
-                                            <li><a href="#" class="waves-effect waves-block delete-course" data-course-id="@item.Id" data-course-name="@item.Name"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                *@
                                 <tr>
                                     <td>
                                         @Html.DisplayFor(modelItem => item.Code)
@@ -149,7 +114,6 @@
                             }
                         </tbody>
                     </table>
-                    @*@Html.PagedListPager((IPagedList)ViewBag.OnePageOfCourses, page => Url.Action("PagedList", new { page }))*@
                 </div>
             </div>
         </div>

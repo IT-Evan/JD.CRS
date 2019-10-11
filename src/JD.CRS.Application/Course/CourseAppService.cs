@@ -1,18 +1,14 @@
 ﻿using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Abp.AutoMapper;
 using Abp.Collections.Extensions;
 using Abp.Domain.Repositories;
 using Abp.Extensions;
+using Abp.Linq.Extensions;
 using Castle.Core.Internal;
 using JD.CRS.Course.Dto;
-using JD.CRS.Paged;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Abp.Linq;
-using Abp.Linq.Extensions;
-using System.Linq.Dynamic;
 
 namespace JD.CRS.Course
 {
@@ -34,7 +30,7 @@ namespace JD.CRS.Course
 
         public override async Task<PagedResultDto<CourseDto>> GetAll(GetAllCoursesInput input)
         {
-            //筛选
+            //组合查询
             var query = base.CreateFilteredQuery(input)
                 .WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value)
                 .WhereIf(
@@ -45,15 +41,11 @@ namespace JD.CRS.Course
                 || t.Credits.ToString().Contains((input.Keyword ?? string.Empty).ToLower()) //按学分查询
                 || t.Remarks.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按备注查询
                 );
-            //排序
-            query = !string.IsNullOrEmpty(input.Sorting) ? query.OrderBy(t => input.Sorting) : query.OrderByDescending(t => t.CreationTime);
-
+            
             //获取总数
             var coursecount = query.Count();
-            //默认的分页方式
-            //var courselist = query.Skip(input.SkipCount).Take(input.MaxResultCount).ToList();
-            //ABP扩展方法PageBy分页方式
-            var courselist = query.PageBy(input).ToList();
+            //获取清单
+            var courselist = query.ToList();
 
             return new PagedResultDto<CourseDto>()
             {

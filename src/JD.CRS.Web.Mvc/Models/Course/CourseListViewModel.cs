@@ -21,7 +21,6 @@ namespace JD.CRS.Web.Models.Course
 
         public StatusCode? Status { get; set; }
         public string Keyword { get; set; }
-        public int PageNumber { get; set; }
 
         public List<SelectListItem> GetStatusList(ILocalizationManager localizationManager)
         {
