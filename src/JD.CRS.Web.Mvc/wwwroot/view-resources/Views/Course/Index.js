@@ -11,10 +11,9 @@
     $(document).ready(function () {
         _$dataTable.DataTable({
             pagingType: "full_numbers", //Type
-            scrollY: 580, //Scroll
-            //'<'float_left'f>r<'float_right'l>tip', //Layout
-            dom: "<'row'<'col-sm-2'l><'col-sm-4'f><'col-sm-6'B>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
-            //dom: 'Bfrtip', //Layout
+            scrollY: 500, //Scroll
+            //dom: "<'row'<'col-sm-2'l><'col-sm-4'f><'col-sm-6'B>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
+            dom: 'Blfrtip', //Layout
             buttons: [
                 'copy', 'csv', 'excel', 'pdf', 'print'
             ],

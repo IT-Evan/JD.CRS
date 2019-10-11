@@ -6,11 +6,8 @@ using JD.CRS.Course;
 using JD.CRS.Course.Dto;
 using JD.CRS.Web.Models.Course;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using X.PagedList;
-using X.PagedList.Mvc.Core;
 
 namespace JD.CRS.Web.Controllers
 {
