@@ -6,14 +6,16 @@
 @section scripts
     {
 <environment names="Development">
-    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <link href="~/lib/dataTables/media/css/jquery.dataTables.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/dataTables/media/js/jquery.dataTables.js" asp-append-version="true"></script>
     <script src="~/view-resources/Views/Course/Index.js" asp-append-version="true"></script>
 </environment>
-    <environment names="Staging,Production">
-        <script src="~/view-resources/Views/Course/Index.min.js" asp-append-version="true"></script>
-    </environment>
-}
-    <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+<environment names="Staging,Production">
+    <link href="~/lib/dataTables/media/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/dataTables/media/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="~/view-resources/Views/Course/Index.min.js" asp-append-version="true"></script>
+</environment>
+}    
     <div class="row clearfix">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
