@@ -43,11 +43,6 @@
                             <th class="col-sm-2">
                                 <h2>@L("Course")</h2>
                             </th>
-                            <th class="col-sm-1">
-                                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#CourseCreateModal">
-                                    <i class="material-icons">add</i>
-                                </button>
-                            </th>
                             <th class="col-sm-9">
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
@@ -99,7 +94,7 @@
                 </table>
             </div>*@
             <div class="body table-responsive">
-                <table id="dataTable" class="table">
+                <table id="dataTable" class="display">@*class="table">*@
                     <thead>
                         <tr>
                             <th>@L("Code")</th>
@@ -202,8 +197,7 @@
                             <div class="col-sm-12">
                                 <div class="form-line">
                                     <label class="form-label">@L("Status")</label>
-                                    <input name="Status" type="text" class="form-control" />
-                                </div>
+                                    <input name="Status" type="text" class="form-control" />                                </div>
                             </div>
                         </div>
                     </div>

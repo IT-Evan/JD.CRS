@@ -31,17 +31,17 @@ namespace JD.CRS.Course
         public override async Task<PagedResultDto<CourseDto>> GetAll(GetAllCoursesInput input)
         {
             //组合查询
-            var query = base.CreateFilteredQuery(input)
-                .WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value)
-                .WhereIf(
-                !input.Keyword.IsNullOrEmpty(), t =>
-                t.Code.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按编号查询
-                || t.DepartmentCode.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按院系编号查询
-                || t.Name.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按名称查询
-                || t.Credits.ToString().Contains((input.Keyword ?? string.Empty).ToLower()) //按学分查询
-                || t.Remarks.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按备注查询
-                );
-            
+            //var query = base.CreateFilteredQuery(input)
+            //    .WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value)
+            //    .WhereIf(
+            //    !input.Keyword.IsNullOrEmpty(), t =>
+            //    t.Code.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按编号查询
+            //    || t.DepartmentCode.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按院系编号查询
+            //    || t.Name.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按名称查询
+            //    || t.Credits.ToString().Contains((input.Keyword ?? string.Empty).ToLower()) //按学分查询
+            //    || t.Remarks.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按备注查询
+            //    );
+            var query = base.CreateFilteredQuery(input);
             //获取总数
             var coursecount = query.Count();
             //获取清单

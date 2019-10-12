@@ -3,21 +3,55 @@
     var _courseService = abp.services.app.course;
     var _$modal = $('#CourseCreateModal');
     var _$form = _$modal.find('form[name=CourseCreateForm]');
-    var _$status = $('#Status');
-    var _$keyword = $('#Keyword');
-    var _$search = $('#Search');
+    //var _$status = $('#Status');
+    //var _$keyword = $('#Keyword');
+    //var _$search = $('#Search');
     var _$dataTable = $('#dataTable');
     //Set DataTable
+    $.fn.dataTable.ext.buttons.alert = {
+        className: 'buttons-alert',
+
+        action: function (e, dt, node, config) {
+            _$modal.modal('show');
+        }
+    };
     $(document).ready(function () {
         _$dataTable.DataTable({
             pagingType: "full_numbers", //Type
-            scrollY: 500, //Scroll
-            dom: "<'row'<'col-sm-4'B><'col-sm-2'<'#Create'>><'col-sm-6'lf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
+            scrollY: 470, //Scroll
             //dom: 'Blfrtip', //Layout
-            buttons: [ //Button
-                'copy', 'csv', 'excel', 'pdf', 'print'
+            dom: "<'row'<'col-sm-8'B><'col-sm-4'lf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
+            //buttons: [ //Button
+            //    'copy', 'csv', 'excel', 'pdf', 'print'
+            //],
+            buttons: [
+                {
+                    extend: 'alert',
+                    text: '+'
+                    //text: '<i class="material-icons">add</i>'
+                },
+                {
+                    extend: 'copy',
+                    text: '复制'
+                },
+                {
+                    extend: 'csv',
+                    text: 'CSV'
+                },
+                {
+                    extend: 'excel',
+                    text: 'Excel'
+                },
+                {
+                    extend: 'pdf',
+                    text: 'PDF'
+                },
+                {
+                    extend: 'print',
+                    text: '打印'
+                }
             ],
-            'bom': true,
+            bom: true,
             aLengthMenu: [[10, 25, 50, -1], [10, 25, 50, "全部"]], //PageSize
             oLanguage: { //Language
                 //"sUrl": "~/lib/dataTables/Language/zh-cn.json"
@@ -46,9 +80,9 @@
         });
     });
     //Search
-    _$search.click(function () {
-        location.href = '/Course?status=' + _$status.val() + '&keyword=' + _$keyword.val();
-    });
+    //_$search.click(function () {
+    //    location.href = '/Course?status=' + _$status.val() + '&keyword=' + _$keyword.val();
+    //});
     //define save function for create
     function save() {
         if (!_$form.valid()) {

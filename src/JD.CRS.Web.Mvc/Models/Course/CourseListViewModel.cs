@@ -19,7 +19,7 @@ namespace JD.CRS.Web.Models.Course
         }
 
         public StatusCode? Status { get; set; }
-        public string Keyword { get; set; }
+        //public string Keyword { get; set; }
 
         public List<SelectListItem> GetStatusList(ILocalizationManager localizationManager)
         {
@@ -27,9 +27,9 @@ namespace JD.CRS.Web.Models.Course
             {
                 new SelectListItem
                 {
-                    Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "All"),
-                    Value = "",
-                    Selected = Status == null
+                    //Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "All"),
+                    //Value = "",
+                    //Selected = Status == null
                 }
             };
 
