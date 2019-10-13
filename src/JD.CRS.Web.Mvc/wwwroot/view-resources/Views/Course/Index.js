@@ -45,7 +45,8 @@
                 },
                 {
                     extend: 'csv',
-                    text: 'CSV'
+                    text: 'CSV',
+                    bom: true
                 },
                 {
                     extend: 'excel',
@@ -53,7 +54,8 @@
                 },
                 {
                     extend: 'pdf',
-                    text: 'PDF'
+                    text: 'PDF',
+                    bom: true
                 },
                 {
                     extend: 'print',
@@ -61,7 +63,6 @@
                     //text: '<i class="material-icons">print</i>'
                 }
             ],
-            bom: true,
             oLanguage: { //Language
                 //"sUrl": "~/lib/dataTables/Language/zh-cn.json"
                 "sEmptyTable": "无数据",
