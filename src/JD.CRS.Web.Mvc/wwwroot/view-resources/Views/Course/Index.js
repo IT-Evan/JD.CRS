@@ -17,14 +17,23 @@
     };
     $(document).ready(function () {
         _$dataTable.DataTable({
+            aLengthMenu: [[10, 25, 50, -1], [10, 25, 50, "全部"]], //PageSize
             pagingType: "full_numbers", //Type
             scrollY: 470, //Scroll
             //dom: 'Blfrtip', //Layout
             dom: "<'row'<'col-sm-8'B><'col-sm-4'lf>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-6'i><'col-sm-6'p>>", //Layout
-            //buttons: [ //Button
-            //    'copy', 'csv', 'excel', 'pdf', 'print'
+            //Button
+            //buttons:
+            //[ 
+            //'copy', //复制到剪贴板
+            //'csv', //导出CSV
+            //'excel', //导出Excel
+            //'pdf', //导出PDF
+            //'print' //打印
             //],
-            buttons: [
+            //Button
+            buttons:
+            [
                 {
                     extend: 'alert',
                     text: '+'
@@ -32,7 +41,7 @@
                 },
                 {
                     extend: 'copy',
-                    text: '复制'
+                    text: 'Copy'
                 },
                 {
                     extend: 'csv',
@@ -48,11 +57,11 @@
                 },
                 {
                     extend: 'print',
-                    text: '打印'
+                    text: 'Print'
+                    //text: '<i class="material-icons">print</i>'
                 }
             ],
             bom: true,
-            aLengthMenu: [[10, 25, 50, -1], [10, 25, 50, "全部"]], //PageSize
             oLanguage: { //Language
                 //"sUrl": "~/lib/dataTables/Language/zh-cn.json"
                 "sEmptyTable": "无数据",
