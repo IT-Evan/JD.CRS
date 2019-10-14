@@ -12,7 +12,7 @@
         className: 'buttons-alert',
 
         action: function (e, dt, node, config) {
-            _$modal.modal('show');
+            _$modal.modal('show'); //Show the CreateModal
         }
     };
     $(document).ready(function () {
@@ -34,29 +34,29 @@
             //Button
             buttons:
             [
-                {
+                {// 自定义按钮-Add
                     extend: 'alert',
                     text: '+'
                     //text: '<i class="material-icons">add</i>'
                 },
-                {
+                { //复制到剪贴板
                     extend: 'copy',
                     text: 'Copy'
                 },
-                {
+                { //导出CSV
                     extend: 'csv',
                     text: 'CSV',
                     bom: true
                 },
-                {
+                { //导出Excel
                     extend: 'excel',
                     text: 'Excel'
                 },
-                {
+                { //导出PDF
                     extend: 'pdf',
                     text: 'PDF'
                 },
-                {
+                { //打印
                     extend: 'print',
                     text: 'Print'
                     //text: '<i class="material-icons">print</i>'
