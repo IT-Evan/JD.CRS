@@ -54,8 +54,7 @@
                 },
                 {
                     extend: 'pdf',
-                    text: 'PDF',
-                    bom: true
+                    text: 'PDF'
                 },
                 {
                     extend: 'print',
@@ -74,20 +73,37 @@
                 "sLengthMenu": "_MENU_ 项/页",
                 "sLoadingRecords": "载入中...",
                 "sProcessing": "处理中...",
-                "sSearch": "过滤:",
+                "sSearch": '<i class="material-icons">search</i>',
                 "sZeroRecords": "没找到匹配的记录",
                 "oPaginate": {
-                    "sFirst": "首页",
-                    "sPrevious": "上页",
-                    "sNext": "下页",
-                    "sLast": "末页"
+                    "sFirst": "|<",
+                    "sPrevious": "<",
+                    "sNext": ">",
+                    "sLast": ">|"
                 },
                 "oAria": {
                     "sSortAscending": ": 升序排序",
                     "sSortDescending": ": 降序排序"
                 }
+                //defaultStyle: {
+                //    font: '微软雅黑'
+                //}
             }
         });
+        //pdfMake.fonts = {
+        //    Roboto: {
+        //        normal: 'Roboto-Regular.ttf',
+        //        bold: 'Roboto-Medium.ttf',
+        //        italics: 'Roboto-Italic.ttf',
+        //        bolditalics: 'Roboto-Italic.ttf'
+        //    },
+        //    微软雅黑: {
+        //        normal: 'msyh.ttf',
+        //        bold: 'msyh.ttf',
+        //        italics: 'msyh.ttf',
+        //        bolditalics: 'msyh.ttf',
+        //    }
+        //};
     });
     //Search
     //_$search.click(function () {
