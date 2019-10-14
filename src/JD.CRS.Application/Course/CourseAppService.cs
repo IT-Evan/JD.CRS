@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Course
 {
-    public class CourseAppService : AsyncCrudAppService<Entitys.Course, CourseDto, int, GetAllCoursesInput,
+    public class CourseAppService : AsyncCrudAppService<Entitys.Course, CourseDto, int, PagedResultRequestDto,// GetAllCoursesInput,
                              CreateUpdateCourseDto, CreateUpdateCourseDto>, ICourseAppService
 
     {
@@ -28,9 +28,9 @@ namespace JD.CRS.Course
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<CourseDto>> GetAll(GetAllCoursesInput input)
+        public override async Task<PagedResultDto<CourseDto>> GetAll(PagedResultRequestDto input)//(GetAllCoursesInput input)
         {
-            //组合查询
+            //组合查询(此服务端查询功能已废弃，由Datatables客户端查询替代)
             //var query = base.CreateFilteredQuery(input)
             //    .WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value)
             //    .WhereIf(
@@ -41,18 +41,19 @@ namespace JD.CRS.Course
             //    || t.Credits.ToString().Contains((input.Keyword ?? string.Empty).ToLower()) //按学分查询
             //    || t.Remarks.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按备注查询
             //    );
+            //查询
             var query = base.CreateFilteredQuery(input);
             //获取总数
             var coursecount = query.Count();
             //获取清单
             var courselist = query.ToList();
 
+            //return new PagedResultDto<CourseDto>(coursecount, courselist.MapTo<List<CourseDto>>());
             return new PagedResultDto<CourseDto>()
             {
                 TotalCount = coursecount,
                 Items = ObjectMapper.Map<List<CourseDto>>(courselist)
             };
-            //return new PagedResultDto<CourseDto>(coursecount, courselist.MapTo<List<CourseDto>>());
         }
     }
 }
