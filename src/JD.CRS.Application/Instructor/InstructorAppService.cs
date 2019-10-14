@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Instructor
 {
-    public class InstructorAppService : AsyncCrudAppService<Entitys.Instructor, InstructorDto, int, PagedResultRequestDto,// GetAllInstructorsInput,
-                             CreateUpdateInstructorDto, CreateUpdateInstructorDto>, IInstructorAppService
+    public class InstructorAppService : AsyncCrudAppService<Entitys.Instructor, InstructorReadDto, int, PagedResultRequestDto,// GetAllInstructorsInput,
+                             InstructorWriteDto, InstructorWriteDto>, IInstructorAppService
 
     {
         private readonly IRepository<Entitys.Instructor, int> _InstructorRepository;
@@ -23,12 +23,12 @@ namespace JD.CRS.Instructor
             _InstructorRepository = InstructorRepository;
         }
 
-        public override Task<InstructorDto> Create(CreateUpdateInstructorDto input)
+        public override Task<InstructorReadDto> Create(InstructorWriteDto input)
         {
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<InstructorDto>> GetAll(PagedResultRequestDto input)//(GetAllInstructorsInput input)
+        public override async Task<PagedResultDto<InstructorReadDto>> GetAll(PagedResultRequestDto input)//(GetAllInstructorsInput input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -38,10 +38,10 @@ namespace JD.CRS.Instructor
             var Instructorlist = query.ToList();
 
             //return new PagedResultDto<InstructorDto>(Instructorcount, Instructorlist.MapTo<List<InstructorDto>>());
-            return new PagedResultDto<InstructorDto>()
+            return new PagedResultDto<InstructorReadDto>()
             {
                 TotalCount = Instructorcount,
-                Items = ObjectMapper.Map<List<InstructorDto>>(Instructorlist)
+                Items = ObjectMapper.Map<List<InstructorReadDto>>(Instructorlist)
             };
         }
     }

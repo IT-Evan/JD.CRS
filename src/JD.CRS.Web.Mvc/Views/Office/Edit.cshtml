@@ -1,0 +1,62 @@
+﻿@using JD.CRS.Web.Models.Common.Modals
+@model JD.CRS.Web.Models.Office.Edit
+@{
+    Layout = null;
+}
+@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditOffice")))
+
+<div class="modal-body">
+    <form name="EditForm" role="form" novalidate class="form-validation">
+        <input type="hidden" name="Id" value="@Model.Office.Id" />
+        <div>
+            <div class="row clearfix">
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("Code")</label>
+                        <input type="text" name="Code" value="@Model.Office.Code" class="form-control" required maxlength="50" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-line">
+                        <label class="form-label">@L("Name")</label>
+                        <input type="text" name="Name" value="@Model.Office.Name" class="form-control" required maxlength="150" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-line">
+                        <label class="form-label">@L("Location")</label>
+                        <input type="text" name="Location" value="@Model.Office.Location" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-line">
+                        <label class="form-label">@L("Remarks")</label>
+                        <input name="Remarks" type="text" value="@Model.Office.Remarks" class="form-control" required maxlength="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-sm-12">
+                    <div class="form-line">
+                        <label class="form-label">@L("Status")</label>
+                        @Html.DropDownListFor(
+                        model => model.Status,
+                        Model.GetStatusList(LocalizationManager),
+                        new
+                        {
+                            @class = "form-control",
+                            id = "Status"
+                        })
+                        @*<input name="Status" type="text" value="@Model.Office.Status" class="form-control" />*@
+                    </div>
+                </div>
+            </div>
+</form>
+</div>
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<script src="~/view-resources/Views/Office/Edit.js" asp-append-version="true"></script>

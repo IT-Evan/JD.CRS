@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Department
 {
-    public class DepartmentAppService : AsyncCrudAppService<Entitys.Department, DepartmentDto, int, PagedResultRequestDto,// GetAllDepartmentsInput,
-                             CreateUpdateDepartmentDto, CreateUpdateDepartmentDto>, IDepartmentAppService
+    public class DepartmentAppService : AsyncCrudAppService<Entitys.Department, DepartmentReadDto, int, PagedResultRequestDto,// GetAllDepartmentsInput,
+                             DepartmentWriteDto, DepartmentWriteDto>, IDepartmentAppService
 
     {
         private readonly IRepository<Entitys.Department, int> _DepartmentRepository;
@@ -23,12 +23,12 @@ namespace JD.CRS.Department
             _DepartmentRepository = DepartmentRepository;
         }
 
-        public override Task<DepartmentDto> Create(CreateUpdateDepartmentDto input)
+        public override Task<DepartmentReadDto> Create(DepartmentWriteDto input)
         {
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<DepartmentDto>> GetAll(PagedResultRequestDto input)//(GetAllDepartmentsInput input)
+        public override async Task<PagedResultDto<DepartmentReadDto>> GetAll(PagedResultRequestDto input)//(GetAllDepartmentsInput input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -38,10 +38,10 @@ namespace JD.CRS.Department
             var Departmentlist = query.ToList();
 
             //return new PagedResultDto<DepartmentDto>(Departmentcount, Departmentlist.MapTo<List<DepartmentDto>>());
-            return new PagedResultDto<DepartmentDto>()
+            return new PagedResultDto<DepartmentReadDto>()
             {
                 TotalCount = Departmentcount,
-                Items = ObjectMapper.Map<List<DepartmentDto>>(Departmentlist)
+                Items = ObjectMapper.Map<List<DepartmentReadDto>>(Departmentlist)
             };
         }
     }

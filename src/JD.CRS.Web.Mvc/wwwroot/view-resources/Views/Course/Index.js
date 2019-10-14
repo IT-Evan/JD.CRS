@@ -1,8 +1,8 @@
 ﻿$(function () {
     //define variable
     var _courseService = abp.services.app.course;
-    var _$modal = $('#CourseCreateModal');
-    var _$form = _$modal.find('form[name=CourseCreateForm]');
+    var _$modal = $('#CreateModal');
+    var _$form = _$modal.find('form[name=CreateForm]');
     //var _$status = $('#Status');
     //var _$keyword = $('#Keyword');
     //var _$search = $('#Search');
@@ -158,11 +158,11 @@
         var courseId = $(this).attr("data-course-id");
         e.preventDefault();
         $.ajax({
-            url: abp.appPath + 'Course/EditCourseModal?courseId=' + courseId,
+            url: abp.appPath + 'Course/Edit?courseId=' + courseId,
             type: 'POST',
             contentType: 'application/html',
             success: function (content) {
-                $('#CourseEditModal div.modal-content').html(content);
+                $('#EditModal div.modal-content').html(content);
             },
             error: function (e) { }
         });

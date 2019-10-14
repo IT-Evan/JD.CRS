@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Student
 {
-    public class StudentAppService : AsyncCrudAppService<Entitys.Student, StudentDto, int, PagedResultRequestDto,// GetAllStudentsInput,
-                             CreateUpdateStudentDto, CreateUpdateStudentDto>, IStudentAppService
+    public class StudentAppService : AsyncCrudAppService<Entitys.Student, StudentReadDto, int, PagedResultRequestDto,// GetAllStudentsInput,
+                             StudentWriteDto, StudentWriteDto>, IStudentAppService
 
     {
         private readonly IRepository<Entitys.Student, int> _StudentRepository;
@@ -23,12 +23,12 @@ namespace JD.CRS.Student
             _StudentRepository = StudentRepository;
         }
 
-        public override Task<StudentDto> Create(CreateUpdateStudentDto input)
+        public override Task<StudentReadDto> Create(StudentWriteDto input)
         {
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<StudentDto>> GetAll(PagedResultRequestDto input)//(GetAllStudentsInput input)
+        public override async Task<PagedResultDto<StudentReadDto>> GetAll(PagedResultRequestDto input)//(GetAllStudentsInput input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -38,10 +38,10 @@ namespace JD.CRS.Student
             var Studentlist = query.ToList();
 
             //return new PagedResultDto<StudentDto>(Studentcount, Studentlist.MapTo<List<StudentDto>>());
-            return new PagedResultDto<StudentDto>()
+            return new PagedResultDto<StudentReadDto>()
             {
                 TotalCount = Studentcount,
-                Items = ObjectMapper.Map<List<StudentDto>>(Studentlist)
+                Items = ObjectMapper.Map<List<StudentReadDto>>(Studentlist)
             };
         }
     }

@@ -23,29 +23,29 @@ namespace JD.CRS.Web.Controllers
         // GET: /<controller>/
         public async Task<ActionResult> Index(PagedResultRequestDto input)//(GetAllCoursesInput input)
         {
-            IReadOnlyList<CourseDto> output = (await _courseAppService.GetAll(new PagedResultRequestDto { })).Items;
-            var model = new CourseListViewModel(output)
+            IReadOnlyList<CourseReadDto> output = (await _courseAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Index(output)
             {
                 
             };
             return View(model);
             //IReadOnlyList<CourseDto> output = (await _courseAppService.GetAll(new GetAllCoursesInput { Status = input.Status, Keyword = input.Keyword })).Items;
-            //var model = new CourseListViewModel(output)
+            //var model = new Index(output)
             //{
             //    Status = input.Status,
             //    Keyword = input.Keyword
             //};
             //return View(model);
         }
-        public async Task<ActionResult> EditCourseModal(int courseId)
+        public async Task<ActionResult> Edit(int courseId)
         {
             var course = await _courseAppService.Get(new EntityDto<int>(courseId));
-            var model = new EditCourseModalViewModel
+            var model = new Edit
             {
                 Course = course,
                 Status = course.Status
             };
-            return View("_EditCourseModal", model);
+            return View("Edit", model);
         }
     }
 }

@@ -1079,8 +1079,6 @@ namespace JD.CRS.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("AdministratorId");
-
                     b.Property<decimal>("Budget")
                         .HasColumnType("money");
 
@@ -1093,6 +1091,9 @@ namespace JD.CRS.Migrations
                         .HasMaxLength(50);
 
                     b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("InstructorCode")
+                        .HasMaxLength(50);
 
                     b.Property<string>("Name")
                         .HasMaxLength(150);
@@ -1108,8 +1109,6 @@ namespace JD.CRS.Migrations
                         .HasMaxLength(50);
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AdministratorId");
 
                     b.ToTable("Department");
                 });
@@ -1421,13 +1420,6 @@ namespace JD.CRS.Migrations
                     b.HasOne("JD.CRS.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
-                });
-
-            modelBuilder.Entity("JD.CRS.Entitys.Department", b =>
-                {
-                    b.HasOne("JD.CRS.Entitys.Instructor", "Administrator")
-                        .WithMany()
-                        .HasForeignKey("AdministratorId");
                 });
 
             modelBuilder.Entity("JD.CRS.MultiTenancy.Tenant", b =>

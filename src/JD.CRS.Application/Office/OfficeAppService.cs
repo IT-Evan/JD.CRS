@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Office
 {
-    public class OfficeAppService : AsyncCrudAppService<Entitys.Office, OfficeDto, int, PagedResultRequestDto,// GetAllOfficesInput,
-                             CreateUpdateOfficeDto, CreateUpdateOfficeDto>, IOfficeAppService
+    public class OfficeAppService : AsyncCrudAppService<Entitys.Office, OfficeReadDto, int, PagedResultRequestDto,// GetAllOfficesInput,
+                             OfficeWriteDto, OfficeWriteDto>, IOfficeAppService
 
     {
         private readonly IRepository<Entitys.Office, int> _OfficeRepository;
@@ -23,12 +23,12 @@ namespace JD.CRS.Office
             _OfficeRepository = OfficeRepository;
         }
 
-        public override Task<OfficeDto> Create(CreateUpdateOfficeDto input)
+        public override Task<OfficeReadDto> Create(OfficeWriteDto input)
         {
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<OfficeDto>> GetAll(PagedResultRequestDto input)//(GetAllOfficesInput input)
+        public override async Task<PagedResultDto<OfficeReadDto>> GetAll(PagedResultRequestDto input)//(GetAllOfficesInput input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -38,10 +38,10 @@ namespace JD.CRS.Office
             var Officelist = query.ToList();
 
             //return new PagedResultDto<OfficeDto>(Officecount, Officelist.MapTo<List<OfficeDto>>());
-            return new PagedResultDto<OfficeDto>()
+            return new PagedResultDto<OfficeReadDto>()
             {
                 TotalCount = Officecount,
-                Items = ObjectMapper.Map<List<OfficeDto>>(Officelist)
+                Items = ObjectMapper.Map<List<OfficeReadDto>>(Officelist)
             };
         }
     }

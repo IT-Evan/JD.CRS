@@ -14,7 +14,7 @@ namespace JD.CRS.Entitys
         {
             this.Code = string.Empty;
             this.Name = string.Empty;
-            this.Administrator = null;
+            this.InstructorCode = null;
             this.Budget = 0;
             this.Remarks = string.Empty;
             this.Status = StatusCode.Enabled;
@@ -39,7 +39,7 @@ namespace JD.CRS.Entitys
         /// 院系主任
         /// </summary>
         [StringLength(50)]
-        public Instructor Administrator { get; set; }
+        public string InstructorCode { get; set; }
         /// <summary>
         /// 开支预算
         /// </summary>
