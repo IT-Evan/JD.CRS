@@ -13,9 +13,4 @@
   <ItemGroup>
     <ProjectReference Include="..\JD.CRS.Core\JD.CRS.Core.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Department\Dto\" />
-    <Folder Include="Instructor\Dto\" />
-    <Folder Include="Student\Dto\" />
-  </ItemGroup>
 </Project>

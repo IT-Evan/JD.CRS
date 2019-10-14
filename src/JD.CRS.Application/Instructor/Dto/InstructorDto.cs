@@ -1,52 +1,42 @@
-﻿using Abp.Domain.Entities;
-using Abp.Domain.Entities.Auditing;
-using Abp.Timing;
+﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
+using JD.CRS.Entitys;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace JD.CRS.Entitys
+namespace JD.CRS.Instructor.Dto
 {
-    public class Instructor : Entity<int>, IHasCreationTime
+
+    [AutoMapFrom(typeof(Entitys.Instructor))]
+    public class InstructorDto : EntityDto<int>
     {
-        public Instructor()
-        {
-            this.Code = string.Empty;
-            this.Name = string.Empty;
-            this.HireDate = null;
-            this.Remarks = string.Empty;
-            this.Status = StatusCode.Enabled;
-            this.CreateDate = null;
-            this.CreateName = string.Empty;
-            this.UpdateDate = null;
-            this.UpdateName = string.Empty;
-            this.CreationTime = Clock.Now;
-        }
-        
         /// <summary>
-        /// 教职员编号
+        /// 课程编号
         /// </summary>
         [StringLength(50)]
         public string Code { get; set; }
         /// <summary>
-        /// 教职员姓名
+        /// 院系编号
+        /// </summary>
+        [StringLength(50)]
+        public string DepartmentCode { get; set; }
+        /// <summary>
+        /// 课程名称
         /// </summary>
         [StringLength(150)]
         public string Name { get; set; }
         /// <summary>
-        /// 入职日期
+        /// 课程积分
         /// </summary>
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime? HireDate { get; set; }
+        [Range(0, 10)]
+        public int Credits { get; set; }
         /// <summary>
         /// 备注
         /// </summary>
         [StringLength(200)]
         public string Remarks { get; set; }
         /// <summary>
-        /// 状态: 0 有效, 1 无效
+        /// 状态: 0 正常, 1 废弃
         /// </summary>
         public StatusCode Status { get; set; }
         /// <summary>

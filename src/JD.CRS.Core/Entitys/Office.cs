@@ -8,13 +8,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JD.CRS.Entitys
 {
-    public class Instructor : Entity<int>, IHasCreationTime
+    public class Office : Entity<int>, IHasCreationTime
     {
-        public Instructor()
+        public Office()
         {
             this.Code = string.Empty;
             this.Name = string.Empty;
-            this.HireDate = null;
+            this.Location = string.Empty;
             this.Remarks = string.Empty;
             this.Status = StatusCode.Enabled;
             this.CreateDate = null;
@@ -23,23 +23,21 @@ namespace JD.CRS.Entitys
             this.UpdateName = string.Empty;
             this.CreationTime = Clock.Now;
         }
-        
         /// <summary>
-        /// 教职员编号
+        /// 办公室编号
         /// </summary>
         [StringLength(50)]
         public string Code { get; set; }
         /// <summary>
-        /// 教职员姓名
+        /// 办公室名称
         /// </summary>
         [StringLength(150)]
         public string Name { get; set; }
         /// <summary>
-        /// 入职日期
+        /// 办公室位置
         /// </summary>
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime? HireDate { get; set; }
+        [StringLength(150)]
+        public string Location { get; set; }
         /// <summary>
         /// 备注
         /// </summary>
