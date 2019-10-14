@@ -19,12 +19,12 @@ namespace JD.CRS.Web.Models.Course
         {
             var list = new List<SelectListItem>
             {
-                new SelectListItem
-                {
-                    //Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "All"),
-                    //Value = "",
-                    //Selected = Status == null
-                }
+                //new SelectListItem
+                //{
+                //    Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "PleaseSelect"),
+                //    Value = "",
+                //    Selected = Status == null
+                //}
             };
 
             list.AddRange(Enum.GetValues(typeof(StatusCode))

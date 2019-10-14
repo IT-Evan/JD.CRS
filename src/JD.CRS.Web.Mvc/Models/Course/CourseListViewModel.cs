@@ -27,9 +27,9 @@ namespace JD.CRS.Web.Models.Course
             {
                 new SelectListItem
                 {
-                    //Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "All"),
-                    //Value = "",
-                    //Selected = Status == null
+                    Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "PleaseSelect"),
+                    Value = "",
+                    Selected = Status == null
                 }
             };
 

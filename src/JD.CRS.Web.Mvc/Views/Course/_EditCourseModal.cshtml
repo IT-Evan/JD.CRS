@@ -49,7 +49,15 @@
                 <div class="col-sm-12">
                     <div class="form-line">
                         <label class="form-label">@L("Status")</label>
-                        <input name="Status" type="text" value="@Model.Course.Status" class="form-control" />
+                        @Html.DropDownListFor(
+                        model => model.Status,
+                        Model.GetStatusList(LocalizationManager),
+                        new
+                        {
+                            @class = "form-control",
+                            id = "Status"
+                        })
+                        @*<input name="Status" type="text" value="@Model.Course.Status" class="form-control" />*@
                     </div>
                 </div>
             </div>

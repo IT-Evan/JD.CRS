@@ -7,7 +7,7 @@
     //var _$keyword = $('#Keyword');
     //var _$search = $('#Search');
     var _$dataTable = $('#dataTable');
-    //Set DataTable
+    //Bind Add Button to CreateModal
     $.fn.dataTable.ext.buttons.alert = {
         className: 'buttons-alert',
 
@@ -15,6 +15,7 @@
             _$modal.modal('show'); //Show the CreateModal
         }
     };
+    //Set DataTable
     $(document).ready(function () {
         _$dataTable.DataTable({
             aLengthMenu: [[10, 25, 50, -1], [10, 25, 50, "全部"]], //PageSize

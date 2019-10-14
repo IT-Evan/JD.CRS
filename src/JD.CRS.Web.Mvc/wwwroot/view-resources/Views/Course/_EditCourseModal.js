@@ -3,6 +3,7 @@
     var _courseService = abp.services.app.course;
     var _$modal = $('#CourseEditModal');
     var _$form = $('form[name=CourseEditForm]');
+    var _$status = $('#Status');
     //define save function for create
     function save() {
         if (!_$form.valid()) {
@@ -22,9 +23,9 @@
         e.preventDefault();
         save();
     });
-    //focus first input
+    //Initial form
     _$modal.on('shown.bs.modal', function () {
-        _$form.find('input[type=text]:first').focus();
-
+        _$form.find('input[type=text]:first').focus();//focus first input
+        _$status.val() = status;//Status value
     });
 });

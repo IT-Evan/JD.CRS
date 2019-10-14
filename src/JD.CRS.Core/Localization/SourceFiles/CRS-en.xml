@@ -122,6 +122,7 @@
     <text name="Filter">Filter</text>
     <text name="Refresh">Refresh</text>
     <text name="Search">Search</text>
+    <text name="PleaseSelect">Please Select</text>
     
     <text name="CreateCourse">Create Course</text>
     <text name="EditCourse">Edit Course</text>

@@ -5,7 +5,7 @@ namespace JD.CRS.Course.Dto
 {
     public class GetAllCoursesInput: PagedResultRequestDto
     {
-        //public StatusCode? Status { get; set; }        
+        public StatusCode? Status { get; set; }        
         //public string Keyword { get; set; }
     }
 }
