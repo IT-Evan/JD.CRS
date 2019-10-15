@@ -141,6 +141,11 @@
     <text name="Status">狀態</text>
     <text name="StatusCode_Enabled">有效</text>
     <text name="StatusCode_Disabled">无效</text>
+    <text name="Location">位置</text>
+    <text name="Administrator">主任</text>
+    <text name="Budget">預算</text>
+    <text name="HireDate">入職日期</text>
+    <text name="EnrollmentDate">註冊日期</text>
 
   </texts>
 </localizationDictionary>

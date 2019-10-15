@@ -140,6 +140,11 @@
     <text name="Status">状态</text>
     <text name="StatusCode_Enabled">有效</text>
     <text name="StatusCode_Disabled">无效</text>
+    <text name="Location">位置</text>
+    <text name="Administrator">主任</text>
+    <text name="Budget">预算</text>
+    <text name="HireDate">入职日期</text>
+    <text name="EnrollmentDate">注册日期</text>
 
   </texts>
 </localizationDictionary>

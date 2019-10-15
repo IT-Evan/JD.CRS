@@ -24,10 +24,10 @@
                 </div>
             </div>
             <div class="row clearfix">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                     <div class="form-line">
                         <label class="form-label">@L("EnrollmentDate")</label>
-                        <input type="text" id="EnrollmentDate" name="EnrollmentDate" value="@Model.Student.EnrollmentDate" class="form-control"/>
+                        <input type="text" id="EnrollmentDate" name="EnrollmentDate" value="@Model.Student.EnrollmentDate" class="form-control" />
                     </div>
                 </div>
             </div>
@@ -55,8 +55,7 @@
                     </div>
                 </div>
             </div>
-</form>
+    </form>
 </div>
 @Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
-
 <script src="~/view-resources/Views/Student/Edit.js" asp-append-version="true"></script>

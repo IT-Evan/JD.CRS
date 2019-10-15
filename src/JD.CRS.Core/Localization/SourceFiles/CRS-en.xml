@@ -133,6 +133,11 @@
     <text name="Status">Status</text>
     <text name="StatusCode_Enabled">Enabled</text>
     <text name="StatusCode_Disabled">Disabled</text>
+    <text name="Location">Location</text>
+    <text name="Administrator">Administrator</text>
+    <text name="Budget">Budget</text>
+    <text name="HireDate">HireDate</text>
+    <text name="EnrollmentDate">EnrollmentDate</text>
 
   </texts>
 </localizationDictionary>
