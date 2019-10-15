@@ -6,6 +6,7 @@
 @section scripts
     {
 <environment names="Development">
+    <script src="~/view-resources/Views/Instructor/Index.js" asp-append-version="true"></script>
     <link href="~/lib/dataTables/DataTables/css/jquery.dataTables.css" rel="stylesheet" asp-append-version="true" />
     <link href="~/lib/dataTables/Buttons/css/buttons.dataTables.css" rel="stylesheet" asp-append-version="true" />
     <script src="~/lib/dataTables/DataTables/js/jquery.dataTables.js" asp-append-version="true"></script>
@@ -16,9 +17,9 @@
     <script src="~/lib/dataTables/JSZip/jszip.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/pdfmake.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
-    <script src="~/view-resources/Views/Instructor/Index.js" asp-append-version="true"></script>
 </environment>
 <environment names="Staging,Production">
+    <script src="~/view-resources/Views/Instructor/Index.min.js" asp-append-version="true"></script>
     <link href="~/lib/dataTables/DataTables/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
     <link href="~/lib/dataTables/Buttons/css/buttons.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
     <script src="~/lib/dataTables/DataTables/js/jquery.dataTables.min.js" asp-append-version="true"></script>
@@ -29,7 +30,6 @@
     <script src="~/lib/dataTables/JSZip/jszip.min.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/pdfmake.min.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
-    <script src="~/view-resources/Views/Instructor/Index.min.js" asp-append-version="true"></script>
 </environment>
 }
 
@@ -139,7 +139,7 @@
                             <div class="col-sm-12">
                                 <div class="form-line">
                                     <label class="form-label">@L("HireDate")</label>
-                                    <input type="text" name="HireDate" class="form-control" />
+                                    <input type="text" id="HireDate" name="HireDate" class="form-control" />
                                 </div>
                             </div>
                         </div>

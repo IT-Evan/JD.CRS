@@ -166,5 +166,11 @@
     "inputFiles": [
       "wwwroot/js/L2Dwidget.min.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/laydate/laydate.min.js",
+    "inputFiles": [
+      "wwwroot/lib/laydate/laydate.js"
+    ]
   }
 ]

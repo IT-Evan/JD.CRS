@@ -172,8 +172,11 @@
         e.preventDefault();
         save();        
     });
-    //focus first input
+    //initial form
     _$modal.on('shown.bs.modal', function () {
-        _$modal.find('input:not([type=hidden]):first').focus();
+        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
+        laydate.render({
+            elem: '#EnrollmentDate' //bind laydate
+        });
     });
 });

@@ -2,7 +2,7 @@
     //define variable
     var _instructorService = abp.services.app.instructor;
     var _$modal = $('#CreateModal');
-    var _$form = _$modal.find('form[name=CreateForm]');
+    var _$form = _$modal.find('form[name=CreateForm]'); 
     //var _$status = $('#Status');
     //var _$keyword = $('#Keyword');
     //var _$search = $('#Search');
@@ -172,8 +172,11 @@
         e.preventDefault();
         save();        
     });
-    //focus first input
+    //initial form
     _$modal.on('shown.bs.modal', function () {
-        _$modal.find('input:not([type=hidden]):first').focus();
+        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
+        laydate.render({
+            elem: '#HireDate' //bind laydate
+        });
     });
 });
