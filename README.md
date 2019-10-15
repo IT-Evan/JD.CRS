@@ -69,14 +69,30 @@ F5运行即可.
  **效果预览** 
 
 登录
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1004/124013_e84d55f5_2265734.png "CRS1.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231430_a2dc7880_2265734.png "CRS1.png")
 首页
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1004/124026_6063944d_2265734.png "CRS2.png")
-查询
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1004/124056_caa80067_2265734.png "CRS3.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231547_0f227baa_2265734.png "CRS2.png")
+办公室信息
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231555_87a30d0a_2265734.png "CRS3.png")
+院系信息
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231604_411867d5_2265734.png "CRS4.png")
+课程信息
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231613_d1e09627_2265734.png "CRS5.png")
+教职员信息
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231623_f8b6902b_2265734.png "CRS6.png")
+学生信息
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231630_14fb422f_2265734.png "CRS7.png")
 新增
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1004/124104_bafda9be_2265734.png "CRS4.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231640_bf44a5d9_2265734.png "CRS8.png")
 修改
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1004/124111_c967093b_2265734.png "CRS5.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231647_7703457d_2265734.png "CRS9.png")
 删除
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1004/124118_3dbdc40d_2265734.png "CRS6.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231654_57a1fdc3_2265734.png "CRS10.png")
+查询
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231701_26aac2aa_2265734.png "CRS11.png")
+复制
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231752_e16c87ad_2265734.png "CRS12.png")
+导出
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231800_daede9df_2265734.png "CRS13.png")
+打印
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1015/231807_df32c8a5_2265734.png "CRS14.png")
