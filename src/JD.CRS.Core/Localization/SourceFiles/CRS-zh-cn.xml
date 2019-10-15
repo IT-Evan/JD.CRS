@@ -130,8 +130,16 @@
     <text name="Refresh">刷新</text>
     <text name="Search">搜索</text>
     <text name="AreYouSureWantToDelete">您确定要删除 {0} 吗?</text>
+    <text name="CreateOffice">创建办公室</text>
+    <text name="EditOffice">编辑办公室</text>
+    <text name="CreateDepartment">创建院系</text>
+    <text name="EditDepartment">编辑院系</text>
     <text name="CreateCourse">创建课程</text>
     <text name="EditCourse">编辑课程</text>
+    <text name="CreateInstructor">创建教职员</text>
+    <text name="EditInstructor">编辑教职员</text>
+    <text name="CreateStudent">创建学生</text>
+    <text name="EditStudent">编辑学生</text>
     <text name="PleaseSelect">请选择</text>
     <text name="Code">编号</text>
     <text name="DepartmentCode">院系编号</text>

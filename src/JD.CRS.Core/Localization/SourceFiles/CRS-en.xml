@@ -123,9 +123,17 @@
     <text name="Refresh">Refresh</text>
     <text name="Search">Search</text>
     <text name="PleaseSelect">Please Select</text>
-    
+
+    <text name="CreateOffice">Create Office</text>
+    <text name="EditOffice">Edit Office</text>
+    <text name="CreateDepartment">Create Department</text>
+    <text name="EditDepartment">Edit Department</text>
     <text name="CreateCourse">Create Course</text>
     <text name="EditCourse">Edit Course</text>
+    <text name="CreateInstructor">Create Instructor</text>
+    <text name="EditInstructor">Edit Instructor</text>
+    <text name="CreateStudent">Create Student</text>
+    <text name="EditStudent">Edit Student</text>
     <text name="Code">Code</text>
     <text name="DepartmentCode">Department Code</text>
     <text name="Credits">Credits</text>
