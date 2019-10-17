@@ -10,7 +10,7 @@
     <text name="QQ">QQ</text>
     <text name="Wechat">微信</text>
     <text name="DD">釘釘</text>
-    <text name="HomePage" value="主頁" />
+    <text name="Home" value="主頁" />
     <text name="Data">基礎資料</text>
     <text name="Service">綜合服務</text>
     <text name="Report">管理報表</text>
@@ -120,7 +120,9 @@
     <text name="Surname">姓</text>
     <text name="DeleteUserConfirm">確認刪除該用戶？</text>
     <text name="EditUser">編輯用戶</text>
-
+    <text name="FullName" value="全名" />
+    <text name="Permissions">權限</text>
+    <text name="RoleDescription">角色描述</text>
     <text name="CreateNewTenant">創建新租戶</text>
     <text name="DatabaseConnectionString">資料庫連接</text>
     <text name="AdminEmailAddress">管理員郵箱地址</text>

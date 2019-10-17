@@ -10,7 +10,7 @@
     <text name="QQ">QQ</text>
     <text name="Wechat">微信</text>
     <text name="DD">钉钉</text>
-    <text name="HomePage" value="主页" />
+    <text name="Home" value="主页" />
     <text name="Data">基础数据</text>
     <text name="Service">综合服务</text>
     <text name="Report">管理报表</text>
@@ -110,8 +110,11 @@
     <text name="RoleDetails">角色详情</text>
     <text name="RolePermission">角色权限</text>
     <text name="EditRole">编辑角色</text>
+    <text name="FullName" value="全名" />
     <text name="DeleteRolesConfirm">确认删除该角色？</text>
 
+    <text name="Permissions">权限</text>
+    <text name="RoleDescription">角色描述</text>
     <text name="CreateNewUser">创建新用户</text>
     <text name="UserDetails">用户详情</text>
     <text name="UserRoles">用户角色</text>
@@ -120,7 +123,7 @@
     <text name="Surname">姓</text>
     <text name="DeleteUserConfirm">确认删除该用户？</text>
     <text name="EditUser">编辑用户</text>
-
+    
     <text name="CreateNewTenant">创建新租户</text>
     <text name="DatabaseConnectionString">数据库连接</text>
     <text name="AdminEmailAddress">管理员邮箱地址</text>

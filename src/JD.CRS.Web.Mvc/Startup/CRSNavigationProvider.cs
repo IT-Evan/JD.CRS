@@ -15,7 +15,7 @@ namespace JD.CRS.Web.Startup
                 .AddItem( //一级菜单 - 首页
                     new MenuItemDefinition(
                         PageNames.Home,
-                        L("HomePage"),
+                        L("Home"),
                         url: "",
                         icon: "home",
                         requiredPermissionName: PermissionNames.Pages_Home
