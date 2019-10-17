@@ -6,13 +6,33 @@
 }
 @section scripts
 {
-    <environment names="Development">
-        <script src="~/view-resources/Views/Users/Index.js" asp-append-version="true"></script>
-    </environment>
+<environment names="Development">
+    <link href="~/lib/dataTables/DataTables/css/jquery.dataTables.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/dataTables/Buttons/css/buttons.dataTables.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/dataTables/DataTables/js/jquery.dataTables.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/dataTables.buttons.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.flash.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.html5.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.print.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/JSZip/jszip.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/pdfmake/pdfmake.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
+    <script src="~/view-resources/Views/Users/Index.js" asp-append-version="true"></script>
+</environment>
 
-    <environment names="Staging,Production">
-        <script src="~/view-resources/Views/Users/Index.min.js" asp-append-version="true"></script>
-    </environment>
+<environment names="Staging,Production">
+    <link href="~/lib/dataTables/DataTables/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/dataTables/Buttons/css/buttons.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/dataTables/DataTables/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/dataTables.buttons.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.flash.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.html5.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.print.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/JSZip/jszip.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/pdfmake/pdfmake.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
+    <script src="~/view-resources/Views/Users/Index.min.js" asp-append-version="true"></script>
+</environment>
 }
 <div class="row clearfix">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -33,7 +53,7 @@
                 </ul>
             </div>
             <div class="body table-responsive">
-                <table class="table">
+                <table id="dataTable" class="table">
                     <thead>
                         <tr>
                             <th>@L("UserName")</th>
@@ -64,9 +84,9 @@
                         }
                     </tbody>
                 </table>
-                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#UserCreateModal">
+                @*<button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#UserCreateModal">
                     <i class="material-icons">add</i>
-                </button>
+                </button>*@
             </div>
         </div>
     </div>
