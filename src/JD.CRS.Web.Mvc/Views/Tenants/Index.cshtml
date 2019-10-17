@@ -94,13 +94,13 @@
 <div class="modal fade" id="TenantCreateModal" tabindex="-1" role="dialog" aria-labelledby="TenantCreateModalLabel" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form name="tenantCreateForm" role="form" novalidate class="form-validation">
-                <div class="modal-header">
-                    <h4 class="modal-title">
-                        <span>@L("CreateNewTenant")</span>
-                    </h4>
-                </div>
-                <div class="modal-body">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span>@L("CreateNewTenant")</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form name="tenantCreateForm" role="form" novalidate class="form-validation">
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input class="form-control" type="text" name="TenancyName" required maxlength="@AbpTenantBase.MaxTenancyNameLength" minlength="2">
@@ -130,12 +130,12 @@
                         <label for="CreateTenantIsActive">@L("IsActive")</label>
                     </div>
                     <p>@L("DefaultPasswordIs", JD.CRS.Authorization.Users.User.DefaultPassword)</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
-                    <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
-                </div>
-            </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
