@@ -34,6 +34,7 @@
     <text name="Skins">皮肤</text>
     <text name="Settings">设置</text>
     <text name="WelcomeMessage" value="欢迎使用 CRS!" />
+    
     <text name="CurrentTenant">当前租户</text>
     <text name="NotSelected">未选</text>
     <text name="Change">切换</text>
@@ -123,7 +124,8 @@
     <text name="Surname">姓</text>
     <text name="DeleteUserConfirm">确认删除该用户？</text>
     <text name="EditUser">编辑用户</text>
-    
+
+    <text name="Dashboard">工作台</text>
     <text name="CreateNewTenant">创建新租户</text>
     <text name="DatabaseConnectionString">数据库连接</text>
     <text name="AdminEmailAddress">管理员邮箱地址</text>

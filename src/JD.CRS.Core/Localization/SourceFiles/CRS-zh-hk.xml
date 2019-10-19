@@ -34,6 +34,7 @@
     <text name="Skins">皮膚</text>
     <text name="Settings">設置</text>
     <text name="WelcomeMessage" value="歡迎使用 CRS!" />
+    
     <text name="CurrentTenant">當前租戶</text>
     <text name="NotSelected">未選</text>
     <text name="Change">切換</text>
@@ -129,7 +130,8 @@
     <text name="DefaultPasswordIs">預設密碼為：{0}</text>
     <text name="DeleteTenantConfirm">確認刪除該租戶？</text>
     <text name="EditTenant">編輯租戶</text>
-    
+
+    <text name="Dashboard">工作臺</text>
     <text name="Refresh">刷新</text>
     <text name="Search">搜索</text>
     <text name="AreYouSureWantToDelete">您確定要刪除 {0} 嗎?</text>

@@ -34,6 +34,11 @@
     <text name="Skins">Skins</text>
     <text name="Settings">Settings</text>
     <text name="WelcomeMessage" value="Welcome to CRS!" />
+
+    <text name="CurrentTenant">Current tenant</text>
+    <text name="NotSelected">Not selected</text>
+    <text name="Change">Change</text>
+    <text name="ChangeTenant">Change tenant</text>
     <text name="FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />
     <text name="TenantNameCanNotBeEmpty" value="Tenant name can not be empty" />
     <text name="InvalidUserNameOrPassword" value="Invalid user name or password" />
@@ -82,10 +87,6 @@
     <text name="No" value="No" />
     <text name="Optional" value="Optional" />
     <text name="LeaveEmptyToSwitchToHost">Leave empty to switch to the host</text>
-    <text name="CurrentTenant">Current tenant</text>
-    <text name="NotSelected">Not selected</text>
-    <text name="Change">Change</text>
-    <text name="ChangeTenant">Change tenant</text>
     <text name="MultiLevelMenu">Multi Level Menu</text>
     <text name="Back">Back</text>
     <text name="SuccessfullyRegistered">Successfully registered</text>
@@ -124,6 +125,7 @@
     <text name="Search">Search</text>
     <text name="PleaseSelect">Please Select</text>
 
+    <text name="Dashboard">Dashboard</text>
     <text name="CreateOffice">Create Office</text>
     <text name="EditOffice">Edit Office</text>
     <text name="CreateDepartment">Create Department</text>
