@@ -16,14 +16,15 @@ namespace JD.CRS.EntityFrameworkCore
         {
         }
 
-        public DbSet<Course> Course { get; set; }
-        public DbSet<Instructor> Instructor { get; set; }
-        public DbSet<Student> Student { get; set; }
         public DbSet<Department> Department { get; set; }
         public DbSet<Office> Office { get; set; }
-        //public DbSet<Enrollment> Enrollment { get; set; }
-        //public DbSet<OfficeAssignment> OfficeAssignment { get; set; }
-        //public DbSet<CourseAssignment> CourseAssignment { get; set; }
+        public DbSet<Instructor> Instructor { get; set; }
+        public DbSet<Student> Student { get; set; }
+        public DbSet<Course> Course { get; set; }
+        public DbSet<DepartmentInstructor> DepartmentInstructor { get; set; }
+        public DbSet<OfficeInstructor> OfficeInstructor { get; set; }
+        public DbSet<InstructorCourse> InstructorCourse { get; set; }
+        public DbSet<StudentCourse> StudentCourse { get; set; }
 
     }
 }
