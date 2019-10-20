@@ -22,6 +22,7 @@ namespace JD.CRS.EntityFrameworkCore
         public DbSet<Student> Student { get; set; }
         public DbSet<Course> Course { get; set; }
         public DbSet<DepartmentInstructor> DepartmentInstructor { get; set; }
+        public DbSet<DepartmentCourse> DepartmentCourse { get; set; }        
         public DbSet<OfficeInstructor> OfficeInstructor { get; set; }
         public DbSet<InstructorCourse> InstructorCourse { get; set; }
         public DbSet<StudentCourse> StudentCourse { get; set; }
