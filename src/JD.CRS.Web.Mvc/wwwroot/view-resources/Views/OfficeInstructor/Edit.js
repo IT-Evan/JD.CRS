@@ -1,6 +1,6 @@
 ﻿$(function () {
     //define variable
-    var _officeInstructoreService = abp.services.app.officeInstructore;
+    var _officeInstructorService = abp.services.app.officeInstructor;
     var _$modal = $('#EditModal');
     var _$form = $('form[name=EditForm]');
     var _$status = $('#Status');
@@ -9,9 +9,9 @@
         if (!_$form.valid()) {
             return;
         }
-        var officeInstructore = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
+        var officeInstructor = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
         abp.ui.setBusy(_$form); //loading-begin
-        _officeInstructoreService.update(officeInstructore).done(function () {
+        _officeInstructorService.update(officeInstructor).done(function () {
             _$modal.modal('hide');
             location.reload(true); //reload page
         }).always(function () {

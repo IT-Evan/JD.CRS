@@ -1,6 +1,6 @@
 ﻿$(function () {
     //define variable
-    var _officeInstructoreService = abp.services.app.officeInstructore;
+    var _officeInstructorService = abp.services.app.officeInstructor;
     var _$modal = $('#CreateModal');
     var _$form = _$modal.find('form[name=CreateForm]');
     //var _$status = $('#Status');
@@ -108,16 +108,16 @@
     });
     //Search
     //_$search.click(function () {
-    //    location.href = '/OfficeInstructore?status=' + _$status.val() + '&keyword=' + _$keyword.val();
+    //    location.href = '/OfficeInstructor?status=' + _$status.val() + '&keyword=' + _$keyword.val();
     //});
     //define save function for create
     function save() {
         if (!_$form.valid()) {
             return;
         }
-        var officeInstructore = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
+        var officeInstructor = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
         abp.ui.setBusy(_$form); //loading-begin
-        _officeInstructoreService.create(officeInstructore).done(function () {
+        _officeInstructorService.create(officeInstructor).done(function () {
             _$modal.modal('hide');
             location.reload(true); //reload page
         }).always(function () {
@@ -125,19 +125,19 @@
         });
     }
     //define refresh function
-    function refreshOfficeInstructoreList() {
+    function refreshOfficeInstructorList() {
         location.reload(true); //reload page to see new user!
     }
     //define delete function
-    function deleteOfficeInstructore(officeInstructoreId, officeInstructoreName) {
+    function deleteOfficeInstructor(officeInstructorId, officeInstructorName) {
         abp.message.confirm(
-            abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'CRS'), officeInstructoreName),
+            abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'CRS'), officeInstructorName),
             function (isConfirmed) {
                 if (isConfirmed) {
-                    _officeInstructoreService.delete({
-                        id: officeInstructoreId
+                    _officeInstructorService.delete({
+                        id: officeInstructorId
                     }).done(function () {
-                        refreshOfficeInstructoreList();
+                        refreshOfficeInstructorList();
                     });
                 }
             }
@@ -145,20 +145,20 @@
     }
     //call refresh function
     $('#RefreshButton').click(function () {
-        refreshOfficeInstructoreList();
+        refreshOfficeInstructorList();
     });
     //call delete function
-    $('.delete-officeInstructore').click(function () {
-        var officeInstructoreId = $(this).attr("data-officeInstructore-id");
-        var officeInstructoreName = $(this).attr('data-officeInstructore-name');
-        deleteOfficeInstructore(officeInstructoreId, officeInstructoreName);
+    $('.delete-officeInstructor').click(function () {
+        var officeInstructorId = $(this).attr("data-officeInstructor-id");
+        var officeInstructorName = $(this).attr('data-officeInstructor-name');
+        deleteOfficeInstructor(officeInstructorId, officeInstructorName);
     });
     //call edit function
-    $('.edit-officeInstructore').click(function (e) {
-        var officeInstructoreId = $(this).attr("data-officeInstructore-id");
+    $('.edit-officeInstructor').click(function (e) {
+        var officeInstructorId = $(this).attr("data-officeInstructor-id");
         e.preventDefault();
         $.ajax({
-            url: abp.appPath + 'OfficeInstructore/Edit?officeInstructoreId=' + officeInstructoreId,
+            url: abp.appPath + 'OfficeInstructor/Edit?officeInstructorId=' + officeInstructorId,
             type: 'POST',
             contentType: 'application/html',
             success: function (content) {

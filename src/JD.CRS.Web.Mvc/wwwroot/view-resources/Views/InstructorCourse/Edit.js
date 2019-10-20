@@ -1,6 +1,6 @@
 ﻿$(function () {
     //define variable
-    var _instructoreCourseService = abp.services.app.instructoreCourse;
+    var _instructorCourseService = abp.services.app.instructorCourse;
     var _$modal = $('#EditModal');
     var _$form = $('form[name=EditForm]');
     var _$status = $('#Status');
@@ -9,9 +9,9 @@
         if (!_$form.valid()) {
             return;
         }
-        var instructoreCourse = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
+        var instructorCourse = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
         abp.ui.setBusy(_$form); //loading-begin
-        _instructoreCourseService.update(instructoreCourse).done(function () {
+        _instructorCourseService.update(instructorCourse).done(function () {
             _$modal.modal('hide');
             location.reload(true); //reload page
         }).always(function () {

@@ -1,6 +1,6 @@
 ﻿$(function () {
     //define variable
-    var _instructoreCourseService = abp.services.app.instructoreCourse;
+    var _instructorCourseService = abp.services.app.instructorCourse;
     var _$modal = $('#CreateModal');
     var _$form = _$modal.find('form[name=CreateForm]');
     //var _$status = $('#Status');
@@ -108,16 +108,16 @@
     });
     //Search
     //_$search.click(function () {
-    //    location.href = '/InstructoreCourse?status=' + _$status.val() + '&keyword=' + _$keyword.val();
+    //    location.href = '/InstructorCourse?status=' + _$status.val() + '&keyword=' + _$keyword.val();
     //});
     //define save function for create
     function save() {
         if (!_$form.valid()) {
             return;
         }
-        var instructoreCourse = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
+        var instructorCourse = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js   
         abp.ui.setBusy(_$form); //loading-begin
-        _instructoreCourseService.create(instructoreCourse).done(function () {
+        _instructorCourseService.create(instructorCourse).done(function () {
             _$modal.modal('hide');
             location.reload(true); //reload page
         }).always(function () {
@@ -125,19 +125,19 @@
         });
     }
     //define refresh function
-    function refreshInstructoreCourseList() {
+    function refreshInstructorCourseList() {
         location.reload(true); //reload page to see new user!
     }
     //define delete function
-    function deleteInstructoreCourse(instructoreCourseId, instructoreCourseName) {
+    function deleteInstructorCourse(instructorCourseId, instructorCourseName) {
         abp.message.confirm(
-            abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'CRS'), instructoreCourseName),
+            abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'CRS'), instructorCourseName),
             function (isConfirmed) {
                 if (isConfirmed) {
-                    _instructoreCourseService.delete({
-                        id: instructoreCourseId
+                    _instructorCourseService.delete({
+                        id: instructorCourseId
                     }).done(function () {
-                        refreshInstructoreCourseList();
+                        refreshInstructorCourseList();
                     });
                 }
             }
@@ -145,20 +145,20 @@
     }
     //call refresh function
     $('#RefreshButton').click(function () {
-        refreshInstructoreCourseList();
+        refreshInstructorCourseList();
     });
     //call delete function
-    $('.delete-instructoreCourse').click(function () {
-        var instructoreCourseId = $(this).attr("data-instructoreCourse-id");
-        var instructoreCourseName = $(this).attr('data-instructoreCourse-name');
-        deleteInstructoreCourse(instructoreCourseId, instructoreCourseName);
+    $('.delete-instructorCourse').click(function () {
+        var instructorCourseId = $(this).attr("data-instructorCourse-id");
+        var instructorCourseName = $(this).attr('data-instructorCourse-name');
+        deleteInstructorCourse(instructorCourseId, instructorCourseName);
     });
     //call edit function
-    $('.edit-instructoreCourse').click(function (e) {
-        var instructoreCourseId = $(this).attr("data-instructoreCourse-id");
+    $('.edit-instructorCourse').click(function (e) {
+        var instructorCourseId = $(this).attr("data-instructorCourse-id");
         e.preventDefault();
         $.ajax({
-            url: abp.appPath + 'InstructoreCourse/Edit?instructoreCourseId=' + instructoreCourseId,
+            url: abp.appPath + 'InstructorCourse/Edit?instructorCourseId=' + instructorCourseId,
             type: 'POST',
             contentType: 'application/html',
             success: function (content) {
