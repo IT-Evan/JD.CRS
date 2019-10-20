@@ -22,7 +22,7 @@ namespace JD.CRS.Entitys
         }
 
         /// <summary>
-        /// 教师编号
+        /// 教职员编号
         /// </summary>
         [StringLength(50)]
         public string InstructorCode { get; set; }

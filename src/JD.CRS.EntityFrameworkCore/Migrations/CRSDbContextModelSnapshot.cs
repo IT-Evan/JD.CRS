@@ -1113,6 +1113,74 @@ namespace JD.CRS.Migrations
                     b.ToTable("Department");
                 });
 
+            modelBuilder.Entity("JD.CRS.Entitys.DepartmentCourse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CourseCode")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("CreateDate");
+
+                    b.Property<string>("CreateName")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("DepartmentCode")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(200);
+
+                    b.Property<byte>("Status");
+
+                    b.Property<DateTime?>("UpdateDate");
+
+                    b.Property<string>("UpdateName")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DepartmentCourse");
+                });
+
+            modelBuilder.Entity("JD.CRS.Entitys.DepartmentInstructor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("CreateDate");
+
+                    b.Property<string>("CreateName")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("DepartmentCode")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("InstructorCode")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(200);
+
+                    b.Property<byte>("Status");
+
+                    b.Property<DateTime?>("UpdateDate");
+
+                    b.Property<string>("UpdateName")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DepartmentInstructor");
+                });
+
             modelBuilder.Entity("JD.CRS.Entitys.Instructor", b =>
                 {
                     b.Property<int>("Id")
@@ -1147,6 +1215,40 @@ namespace JD.CRS.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Instructor");
+                });
+
+            modelBuilder.Entity("JD.CRS.Entitys.InstructorCourse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CourseCode")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("CreateDate");
+
+                    b.Property<string>("CreateName")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("InstructorCode")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(200);
+
+                    b.Property<byte>("Status");
+
+                    b.Property<DateTime?>("UpdateDate");
+
+                    b.Property<string>("UpdateName")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("InstructorCourse");
                 });
 
             modelBuilder.Entity("JD.CRS.Entitys.Office", b =>
@@ -1186,6 +1288,40 @@ namespace JD.CRS.Migrations
                     b.ToTable("Office");
                 });
 
+            modelBuilder.Entity("JD.CRS.Entitys.OfficeInstructor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("CreateDate");
+
+                    b.Property<string>("CreateName")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("InstructorCode")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("OfficeCode")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(200);
+
+                    b.Property<byte>("Status");
+
+                    b.Property<DateTime?>("UpdateDate");
+
+                    b.Property<string>("UpdateName")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OfficeInstructor");
+                });
+
             modelBuilder.Entity("JD.CRS.Entitys.Student", b =>
                 {
                     b.Property<int>("Id")
@@ -1220,6 +1356,40 @@ namespace JD.CRS.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Student");
+                });
+
+            modelBuilder.Entity("JD.CRS.Entitys.StudentCourse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CourseCode")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("CreateDate");
+
+                    b.Property<string>("CreateName")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("Remarks")
+                        .HasMaxLength(200);
+
+                    b.Property<byte>("Status");
+
+                    b.Property<string>("StudentCode")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime?>("UpdateDate");
+
+                    b.Property<string>("UpdateName")
+                        .HasMaxLength(50);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StudentCourse");
                 });
 
             modelBuilder.Entity("JD.CRS.MultiTenancy.Tenant", b =>

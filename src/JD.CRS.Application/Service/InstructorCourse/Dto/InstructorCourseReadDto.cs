@@ -12,12 +12,12 @@ namespace JD.CRS.InstructorCourse.Dto
     public class InstructorCourseReadDto : EntityDto<int>
     {
         /// <summary>
-        /// 院系编号
+        /// 教职员编号
         /// </summary>
         [StringLength(50)]
         public string InstructorCode { get; set; }
         /// <summary>
-        /// 院系主任
+        /// 课程编号
         /// </summary>
         [StringLength(50)]
         public string CourseCode { get; set; }

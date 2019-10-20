@@ -22,12 +22,12 @@ namespace JD.CRS.Entitys
         }
 
         /// <summary>
-        /// 课程编号
+        /// 院系编号
         /// </summary>
         [StringLength(50)]
         public string DepartmentCode { get; set; }
         /// <summary>
-        /// 教师编号
+        /// 教职员编号
         /// </summary>
         [StringLength(50)]
         public string InstructorCode { get; set; }

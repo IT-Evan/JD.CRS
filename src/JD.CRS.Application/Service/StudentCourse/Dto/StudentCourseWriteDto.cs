@@ -12,15 +12,15 @@ namespace JD.CRS.StudentCourse.Dto
     public class StudentCourseWriteDto : EntityDto<int>
     {
         /// <summary>
-        /// 院系编号
+        /// 学生编号
         /// </summary>
         [StringLength(50)]
-        public string DepartmentCode { get; set; }
+        public string StudentCode { get; set; }
         /// <summary>
-        /// 院系主任
+        /// 课程编号
         /// </summary>
         [StringLength(50)]
-        public string InstructorCode { get; set; }
+        public string CourseCode { get; set; }
         /// <summary>
         /// 备注
         /// </summary>

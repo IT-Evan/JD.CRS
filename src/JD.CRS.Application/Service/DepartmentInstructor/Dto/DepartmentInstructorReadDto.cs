@@ -17,7 +17,7 @@ namespace JD.CRS.DepartmentInstructor.Dto
         [StringLength(50)]
         public string DepartmentCode { get; set; }
         /// <summary>
-        /// 院系主任
+        /// 教职员编号
         /// </summary>
         [StringLength(50)]
         public string InstructorCode { get; set; }

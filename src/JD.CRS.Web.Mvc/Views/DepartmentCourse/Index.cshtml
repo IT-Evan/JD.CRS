@@ -1,0 +1,174 @@
+﻿@using JD.CRS.Web.Startup
+@model JD.CRS.Web.Models.DepartmentCourse.Index
+@{
+    ViewBag.CurrentPageName = PageNames.DepartmentCourse; // The menu item will be active for this page.
+}
+@section scripts
+    {
+<environment names="Development">
+    <link href="~/lib/dataTables/DataTables/css/jquery.dataTables.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/dataTables/Buttons/css/buttons.dataTables.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/dataTables/DataTables/js/jquery.dataTables.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/dataTables.buttons.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.flash.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.html5.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.print.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/JSZip/jszip.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/pdfmake/pdfmake.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
+    <script src="~/view-resources/Views/DepartmentCourse/Index.js" asp-append-version="true"></script>
+</environment>
+<environment names="Staging,Production">
+    <link href="~/lib/dataTables/DataTables/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/dataTables/Buttons/css/buttons.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/dataTables/DataTables/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/dataTables.buttons.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.flash.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.html5.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/Buttons/js/buttons.print.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/JSZip/jszip.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/pdfmake/pdfmake.min.js" asp-append-version="true"></script>
+    <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
+    <script src="~/view-resources/Views/DepartmentCourse/Index.min.js" asp-append-version="true"></script>
+</environment>
+}
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-sm-2">
+                                <h2>@L("DepartmentCourse")</h2>
+                            </th>
+                            <th class="col-sm-9">
+                                <ul class="header-dropdown m-r--5">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li>
+                                                <a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="body table-responsive">
+                <table id="dataTable" class="display">@*class="table">*@
+                    <thead>
+                        <tr>
+                            <th>@L("DepartmentCode")</th>
+                            <th>@L("CourseCode")</th>
+                            <th>@L("Remarks")</th>
+                            <th>@L("Status")</th>
+                            <th>@L("Actions")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.DepartmentCourses)
+                        {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DepartmentCode)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CourseCode)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Remarks)
+                            </td>
+                            <td>
+                                @L($"StatusCode_{item.Status}")
+                            </td>
+                            <td class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#" class="waves-effect waves-block edit-departmentCourse" data-departmentCourse-id="@item.Id" data-toggle="modal" data-target="#EditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                    <li><a href="#" class="waves-effect waves-block delete-departmentCourse" data-departmentCourse-id="@item.Id" data-departmentCourse-name="@item.DepartmentCode+@item.CourseCode"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="CreateModal" tabindex="-1" role="dialog" aria-labelledby="CreateModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span>@L("CreateDepartmentCourse")</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form name="CreateForm" role="form" class="form-validation">
+                    <div>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("DepartmentCode")</label>
+                                    <input type="text" name="DepartmentCode" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-line">
+                                    <label class="form-label">@L("CourseCode")</label>
+                                    <input type="text" name="CourseCode" class="form-control" required maxlength="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Remarks")</label>
+                                    <input name="Remarks" type="text" class="form-control" required maxlength="200" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-line">
+                                    <label class="form-label">@L("Status")</label>
+                                    @Html.DropDownListFor(
+                                    model => model.Status,
+                                    Model.GetStatusList(LocalizationManager),
+                                    new
+                                    {
+                                        @class = "form-control",
+                                        id = "Status"
+                                    })
+                                    @*<input name="Status" type="text" class="form-control" />*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
+                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="EditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
