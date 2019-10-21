@@ -66,9 +66,7 @@
     <text name="LabelOptions" >页签操作</text>
     <text name="ClearAll" >关闭所有</text>
     <text name="ClearOthers" >关闭其他</text>
-    <text name="Create" >创建</text>
     <text name="Add" >添加</text>
-    <text name="Edit" >编辑</text>
     <text name="Delete">删除</text>
     <text name="Find" >查找</text>
     <text name="CreationTime">创建时间</text>
@@ -107,44 +105,30 @@
     
     <text name="Cancel">取消</text>
     <text name="OK">确定</text>
-    <text name="CreateNewRole">创建新角色</text>
     <text name="RoleDetails">角色详情</text>
     <text name="RolePermission">角色权限</text>
-    <text name="EditRole">编辑角色</text>
     <text name="FullName" value="全名" />
     <text name="DeleteRolesConfirm">确认删除该角色？</text>
 
     <text name="Permissions">权限</text>
     <text name="RoleDescription">角色描述</text>
-    <text name="CreateNewUser">创建新用户</text>
     <text name="UserDetails">用户详情</text>
     <text name="UserRoles">用户角色</text>
     <text name="ConfirmPassword">确认密码</text>
     <text name="EmailAddress">邮箱地址</text>
     <text name="Surname">姓</text>
     <text name="DeleteUserConfirm">确认删除该用户？</text>
-    <text name="EditUser">编辑用户</text>
 
+    <text name="Create" >创建</text>
+    <text name="Edit" >编辑</text>
     <text name="Dashboard">工作台</text>
-    <text name="CreateNewTenant">创建新租户</text>
     <text name="DatabaseConnectionString">数据库连接</text>
     <text name="AdminEmailAddress">管理员邮箱地址</text>
     <text name="DefaultPasswordIs">默认密码为：{0}</text>
     <text name="DeleteTenantConfirm">确认删除该租户？</text>
-    <text name="EditTenant">编辑租户</text>
     <text name="Refresh">刷新</text>
     <text name="Search">搜索</text>
     <text name="AreYouSureWantToDelete">您确定要删除 {0} 吗?</text>
-    <text name="CreateOffice">创建办公室</text>
-    <text name="EditOffice">编辑办公室</text>
-    <text name="CreateDepartment">创建院系</text>
-    <text name="EditDepartment">编辑院系</text>
-    <text name="CreateCourse">创建课程</text>
-    <text name="EditCourse">编辑课程</text>
-    <text name="CreateInstructor">创建教职员</text>
-    <text name="EditInstructor">编辑教职员</text>
-    <text name="CreateStudent">创建学生</text>
-    <text name="EditStudent">编辑学生</text>
     <text name="PleaseSelect">请选择</text>
     <text name="Code">编号</text>
     <text name="DepartmentCode">院系编号</text>

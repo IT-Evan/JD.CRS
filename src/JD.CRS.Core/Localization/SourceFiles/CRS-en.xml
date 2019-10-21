@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="en">
   <texts>
+    <!--系统-->
     <text name="AppName" >CRS</text>
     <text name="CRS" value="CRS" />
     <text name="StartTyping">Start Typing</text>
@@ -20,11 +21,11 @@
     <text name="Course">Course</text>
     <text name="Instructor">Instructor</text>
     <text name="Student">Student</text>
-    <text name="OfficeInstructor">Office-Allocation</text>
-    <text name="DepartmentInstructor">Department-Instructor</text>
-    <text name="DepartmentCourse">Department-Course</text>
-    <text name="InstructorCourse">Instructor-Course</text>
-    <text name="StudentCourse">Student-Course</text>
+    <text name="OfficeInstructor">Office Allocation</text>
+    <text name="DepartmentInstructor">Department Administrator</text>
+    <text name="DepartmentCourse">Department Course</text>
+    <text name="InstructorCourse">Instructor Course</text>
+    <text name="StudentCourse">Student Course</text>
     <text name="OfficeReport">Office Report</text>
     <text name="DepartmentReport">Department Report</text>
     <text name="CourseReport">Course Report</text>
@@ -34,7 +35,7 @@
     <text name="Skins">Skins</text>
     <text name="Settings">Settings</text>
     <text name="WelcomeMessage" value="Welcome to CRS!" />
-
+    <!--页面-->
     <text name="CurrentTenant">Current tenant</text>
     <text name="NotSelected">Not selected</text>
     <text name="Change">Change</text>
@@ -63,7 +64,6 @@
     <text name="EmailAddress" value="Email address" />
     <text name="Tenants" value="Tenants" />
     <text name="SavedSuccessfully" value="Saved successfully" />
-    <text name="CreateNewTenant" value="Create new tenant" />
     <text name="AdminEmailAddress" value="Admin email address" />
     <text name="AdminPassword" value="Admin password" />
     <text name="Save" value="Save" />
@@ -82,7 +82,6 @@
     <text name="Users" value="Users" />
     <text name="IsActive" value="Is active" />
     <text name="FullName" value="Full name" />
-    <text name="CreateNewUser" value="Create new user" />
     <text name="Yes" value="Yes" />
     <text name="No" value="No" />
     <text name="Optional" value="Optional" />
@@ -93,16 +92,11 @@
     <text name="WaitingForEmailActivation">Your email address should be activated</text>
     <text name="Roles">Roles</text>
     <text name="DisplayName">Display Name</text>
-    <text name="Edit">Edit</text>
     <text name="Delete">Delete</text>
-    <text name="CreateNewRole">Create new role</text>
     <text name="RoleName">Role Name</text>
     <text name="Actions">Actions</text>
     <text name="CouldNotCompleteLoginOperation">Could not complete login operation. Please try again later.</text>
     <text name="CouldNotValidateExternalUser">Could not validate external user</text>
-    <text name="EditRole">Edit role</text>
-    <text name="EditTenant">Edit tenant</text>
-    <text name="EditUser">Edit user</text>
     <text name="TenantIdIsNotActive{0}">TenantId {0} is not active</text>
     <text name="UnknownTenantId{0}">Unknown tenantId {0}</text>
     <text name="ThisFieldIsRequired">This field is required</text>
@@ -113,7 +107,6 @@
     <text name="LabelOptions">Label options</text>
     <text name="Permissions">Permissions</text>
     <text name="RoleDescription">Role description</text>
-    <text name="Create">Create</text>
     <text name="UserDetails">User details</text>
     <text name="UserRoles">User roles</text>
     <text name="ConfirmPassword">Confirm password</text>
@@ -125,17 +118,9 @@
     <text name="Search">Search</text>
     <text name="PleaseSelect">Please Select</text>
 
+    <text name="Create">Create</text>
+    <text name="Edit">Edit</text>
     <text name="Dashboard">Dashboard</text>
-    <text name="CreateOffice">Create Office</text>
-    <text name="EditOffice">Edit Office</text>
-    <text name="CreateDepartment">Create Department</text>
-    <text name="EditDepartment">Edit Department</text>
-    <text name="CreateCourse">Create Course</text>
-    <text name="EditCourse">Edit Course</text>
-    <text name="CreateInstructor">Create Instructor</text>
-    <text name="EditInstructor">Edit Instructor</text>
-    <text name="CreateStudent">Create Student</text>
-    <text name="EditStudent">Edit Student</text>
     <text name="Code">Code</text>
     <text name="DepartmentCode">Department Code</text>
     <text name="Credits">Credits</text>
