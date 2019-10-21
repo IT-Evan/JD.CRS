@@ -123,19 +123,19 @@
     <text name="DefaultPasswordIs">預設密碼為：{0}</text>
     <text name="DeleteTenantConfirm">確認刪除該租戶？</text>
 
+    <text name="Dashboard">工作臺</text>
     <text name="Create" >創建</text>
     <text name="Edit" >編輯</text>
-    <text name="Dashboard">工作臺</text>
-    <text name="Refresh">刷新</text>
-    <text name="Search">搜索</text>
-    <text name="AreYouSureWantToDelete">您確定要刪除 {0} 嗎?</text>
-    <text name="PleaseSelect">請選擇</text>
     <text name="Code">編號</text>
     <text name="DepartmentCode">院系編號</text>
     <text name="OfficeCode">办公室編號</text>
     <text name="CourseCode">课程編號</text>
     <text name="InstructorCode">教职员編號</text>
     <text name="StudentCode">学生編號</text>
+    <text name="Refresh">刷新</text>
+    <text name="Search">搜索</text>
+    <text name="AreYouSureWantToDelete">您確定要刪除 {0} 嗎?</text>
+    <text name="PleaseSelect">請選擇</text>
     <text name="Credits">學分</text>
     <text name="Remarks">備註</text>
     <text name="Status">狀態</text>

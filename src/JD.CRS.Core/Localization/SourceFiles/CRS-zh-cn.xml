@@ -119,9 +119,15 @@
     <text name="Surname">姓</text>
     <text name="DeleteUserConfirm">确认删除该用户？</text>
 
+    <text name="Dashboard">工作台</text>
     <text name="Create" >创建</text>
     <text name="Edit" >编辑</text>
-    <text name="Dashboard">工作台</text>
+    <text name="Code">编号</text>
+    <text name="DepartmentCode">院系编号</text>
+    <text name="OfficeCode">办公室编号</text>
+    <text name="CourseCode">课程编号</text>
+    <text name="InstructorCode">教职员编号</text>
+    <text name="StudentCode">学生编号</text>
     <text name="DatabaseConnectionString">数据库连接</text>
     <text name="AdminEmailAddress">管理员邮箱地址</text>
     <text name="DefaultPasswordIs">默认密码为：{0}</text>
@@ -130,8 +136,6 @@
     <text name="Search">搜索</text>
     <text name="AreYouSureWantToDelete">您确定要删除 {0} 吗?</text>
     <text name="PleaseSelect">请选择</text>
-    <text name="Code">编号</text>
-    <text name="DepartmentCode">院系编号</text>
     <text name="Credits">学分</text>
     <text name="Remarks">备注</text>
     <text name="Status">状态</text>

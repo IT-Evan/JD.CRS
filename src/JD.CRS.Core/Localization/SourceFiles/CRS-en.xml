@@ -118,11 +118,15 @@
     <text name="Search">Search</text>
     <text name="PleaseSelect">Please Select</text>
 
+    <text name="Dashboard">Dashboard</text>
     <text name="Create">Create</text>
     <text name="Edit">Edit</text>
-    <text name="Dashboard">Dashboard</text>
     <text name="Code">Code</text>
     <text name="DepartmentCode">Department Code</text>
+    <text name="OfficeCode">Office Code</text>
+    <text name="CourseCode">Course Code</text>
+    <text name="InstructorCode">Instructor Code</text>
+    <text name="StudentCode">Student Code</text>
     <text name="Credits">Credits</text>
     <text name="Remarks">Remarks</text>
     <text name="Status">Status</text>
