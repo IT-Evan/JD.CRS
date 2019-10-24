@@ -22,7 +22,7 @@ namespace JD.CRS.Web.Controllers
 
         public async Task<ActionResult> Index()
         {
-            var users = (await _userAppService.GetAll(new PagedUserResultRequestDto {MaxResultCount = int.MaxValue})).Items; // Paging not implemented yet
+            var users = (await _userAppService.GetAll(new PagedUserResultRequestDto {MaxResultCount = int.MaxValue})).Items;
             var roles = (await _userAppService.GetRoles()).Items;
             var model = new UserListViewModel
             {

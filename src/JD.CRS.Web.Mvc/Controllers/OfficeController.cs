@@ -21,7 +21,7 @@ namespace JD.CRS.Web.Controllers
         }
 
         // GET: /<controller>/
-        public async Task<ActionResult> Index(PagedResultRequestDto input)//(GetAllOfficesInput input)
+        public async Task<ActionResult> Index(PagedResultRequestDto input)
         {
             IReadOnlyList<OfficeReadDto> output = (await _officeAppService.GetAll(new PagedResultRequestDto { })).Items;
             var model = new Index(output)

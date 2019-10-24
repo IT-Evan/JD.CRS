@@ -21,7 +21,7 @@ namespace JD.CRS.Web.Controllers
 
         public async Task<ActionResult> Index()
         {
-            var output = await _tenantAppService.GetAll(new PagedTenantResultRequestDto { MaxResultCount = int.MaxValue }); // Paging not implemented yet
+            var output = await _tenantAppService.GetAll(new PagedTenantResultRequestDto { MaxResultCount = int.MaxValue });
             return View(output);
         }
 

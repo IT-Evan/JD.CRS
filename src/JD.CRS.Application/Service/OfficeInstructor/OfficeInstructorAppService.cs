@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.OfficeInstructor
 {
-    public class OfficeInstructorAppService : AsyncCrudAppService<Entitys.OfficeInstructor, OfficeInstructorReadDto, int, PagedResultRequestDto,// GetAllOfficeInstructorsInput,
+    public class OfficeInstructorAppService : AsyncCrudAppService<Entitys.OfficeInstructor, OfficeInstructorReadDto, int, PagedResultRequestDto,
                              OfficeInstructorWriteDto, OfficeInstructorWriteDto>, IOfficeInstructorAppService
 
     {
@@ -28,7 +28,7 @@ namespace JD.CRS.OfficeInstructor
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<OfficeInstructorReadDto>> GetAll(PagedResultRequestDto input)//(GetAllOfficeInstructorsInput input)
+        public override async Task<PagedResultDto<OfficeInstructorReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);

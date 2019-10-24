@@ -21,7 +21,7 @@ namespace JD.CRS.Web.Controllers
         }
 
         // GET: /<controller>/
-        public async Task<ActionResult> Index(PagedResultRequestDto input)//(GetAllInstructorCoursesInput input)
+        public async Task<ActionResult> Index(PagedResultRequestDto input)
         {
             IReadOnlyList<InstructorCourseReadDto> output = (await _instructorCourseAppService.GetAll(new PagedResultRequestDto { })).Items;
             var model = new Index(output)
