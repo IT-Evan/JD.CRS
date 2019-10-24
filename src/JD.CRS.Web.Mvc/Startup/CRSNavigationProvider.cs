@@ -72,31 +72,36 @@ namespace JD.CRS.Web.Startup
                         new MenuItemDefinition(
                             PageNames.OfficeInstructor,
                             L("OfficeInstructor"),
-                            url: "OfficeInstructor"
+                            url: "OfficeInstructor",
+                            requiredPermissionName: PermissionNames.Pages_OfficeInstructor
                         )
                     ).AddItem( //二级菜单 - 院系主任设置
                         new MenuItemDefinition(
                             PageNames.DepartmentInstructor,
                             L("DepartmentInstructor"),
-                            url: "DepartmentInstructor"
+                            url: "DepartmentInstructor",
+                            requiredPermissionName: PermissionNames.Pages_DepartmentInstructor
                         )
                     ).AddItem( //二级菜单 - 院系课程设置
                         new MenuItemDefinition(
                             PageNames.DepartmentCourse,
                             L("DepartmentCourse"),
-                            url: "DepartmentCourse"
+                            url: "DepartmentCourse",
+                            requiredPermissionName: PermissionNames.Pages_DepartmentCourse
                         )
                     ).AddItem( //二级菜单 - 教职员课程设置
                         new MenuItemDefinition(
                             PageNames.InstructorCourse,
                             L("InstructorCourse"),
-                            url: "InstructorCourse"
+                            url: "InstructorCourse",
+                            requiredPermissionName: PermissionNames.Pages_InstructorCourse
                         )
                     ).AddItem( //二级菜单 - 学生课程设置
                         new MenuItemDefinition(
                             PageNames.StudentCourse,
                             L("StudentCourse"),
-                            url: "StudentCourse"
+                            url: "StudentCourse",
+                            requiredPermissionName: PermissionNames.Pages_StudentCourse
                         )
                     )
                 )
