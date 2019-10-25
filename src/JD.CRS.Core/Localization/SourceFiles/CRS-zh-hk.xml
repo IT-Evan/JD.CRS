@@ -33,8 +33,7 @@
     <text name="About" value="關於" />
     <text name="Skins">皮膚</text>
     <text name="Settings">設置</text>
-    <text name="WelcomeMessage" value="歡迎使用 CRS!" />
-    
+    <text name="WelcomeMessage" value="歡迎使用 CRS!" />    
     <text name="CurrentTenant">當前租戶</text>
     <text name="NotSelected">未選</text>
     <text name="Change">切換</text>
@@ -94,21 +93,17 @@
     <text name="DisplayName">顯示名</text>
     <text name="Description">描述</text>
     <text name="IsStatic">是否內置</text>
-
     <text name="All">全部</text>
     <text name="Actived">啟用</text>
     <text name="NoActive">未啟用</text>
-
     <text name="Yes">是</text>
     <text name="No">否</text>
     <text name="Save">保存</text>
-
     <text name="Cancel">取消</text>
     <text name="OK">確定</text>
     <text name="RoleDetails">角色詳情</text>
     <text name="RolePermission">角色許可權</text>
     <text name="DeleteRolesConfirm">確認刪除該角色？</text>
-
     <text name="UserDetails">用戶詳情</text>
     <text name="UserRoles">用戶角色</text>
     <text name="ConfirmPassword">確認密碼</text>

@@ -94,22 +94,18 @@
     <text name="DisplayName">显示名</text>
     <text name="Description">描述</text>
     <text name="IsStatic">是否内置</text>
-
     <text name="All">全部</text>
     <text name="Actived">启用</text>
-    <text name="NoActive">未启用</text>
-    
+    <text name="NoActive">未启用</text>    
     <text name="Yes">是</text>
     <text name="No">否</text>
-    <text name="Save">保存</text>
-    
+    <text name="Save">保存</text>    
     <text name="Cancel">取消</text>
     <text name="OK">确定</text>
     <text name="RoleDetails">角色详情</text>
     <text name="RolePermission">角色权限</text>
     <text name="FullName" value="全名" />
     <text name="DeleteRolesConfirm">确认删除该角色？</text>
-
     <text name="Permissions">权限</text>
     <text name="RoleDescription">角色描述</text>
     <text name="UserDetails">用户详情</text>
@@ -118,7 +114,6 @@
     <text name="EmailAddress">邮箱地址</text>
     <text name="Surname">姓</text>
     <text name="DeleteUserConfirm">确认删除该用户？</text>
-
     <text name="Dashboard">工作台</text>
     <text name="Create" >创建</text>
     <text name="Edit" >编辑</text>
