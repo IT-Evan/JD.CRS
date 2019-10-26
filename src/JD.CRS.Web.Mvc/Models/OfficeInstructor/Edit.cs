@@ -58,7 +58,7 @@ namespace JD.CRS.Web.Models.OfficeInstructor
                 .Select(office =>
                     new SelectListItem
                     {
-                        Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, $"{office.Name}"),
+                        Text = office.Name.ToString(),
                         Value = office.Code.ToString(),
                         Selected = office.Equals(OfficeCode)
                     })
@@ -77,7 +77,7 @@ namespace JD.CRS.Web.Models.OfficeInstructor
                 .Select(instructor =>
                     new SelectListItem
                     {
-                        Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, $"{instructor.Name}"),
+                        Text = instructor.Name.ToString(),
                         Value = instructor.Code.ToString(),
                         Selected = instructor.Equals(InstructorCode)
                     })
