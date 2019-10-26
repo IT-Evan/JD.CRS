@@ -23,13 +23,13 @@ namespace JD.CRS.Web.Controllers
         // GET: /<controller>/
         public async Task<ActionResult> Index(PagedResultRequestDto input)//(GetAllCoursesInput input)
         {
-            IReadOnlyList<CourseReadDto> output = (await _courseAppService.GetAll(new PagedResultRequestDto { })).Items;
-            var model = new Index(output)
+            IReadOnlyList<CourseReadDto> courseList = (await _courseAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Index(courseList)
             {
                 
             };
             return View(model);
-            //IReadOnlyList<CourseDto> output = (await _courseAppService.GetAll(new GetAllCoursesInput { Status = input.Status, Keyword = input.Keyword })).Items;
+            //IReadOnlyList<CourseDto> course = (await _courseAppService.GetAll(new GetAllCoursesInput { Status = input.Status, Keyword = input.Keyword })).Items;
             //var model = new Index(output)
             //{
             //    Status = input.Status,

@@ -31,10 +31,10 @@ namespace JD.CRS.Web.Controllers
         // GET: /<controller>/
         public async Task<ActionResult> Index(PagedResultRequestDto input)
         {
-            IReadOnlyList<OfficeInstructorReadDto> officeInstructor = (await _officeInstructorAppService.GetAll(new PagedResultRequestDto { })).Items;
-            IReadOnlyList<OfficeReadDto> office = (await _officeAppService.GetAll(new PagedResultRequestDto { })).Items;
-            IReadOnlyList<InstructorReadDto> instructor = (await _instructorAppService.GetAll(new PagedResultRequestDto { })).Items;
-            var model = new Index(officeInstructor, office, instructor)
+            IReadOnlyList<OfficeInstructorReadDto> officeInstructorList = (await _officeInstructorAppService.GetAll(new PagedResultRequestDto { })).Items;
+            IReadOnlyList<OfficeReadDto> officeList = (await _officeAppService.GetAll(new PagedResultRequestDto { })).Items;
+            IReadOnlyList<InstructorReadDto> instructorList = (await _instructorAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Index(officeInstructorList, officeList, instructorList)
             {
 
             };
