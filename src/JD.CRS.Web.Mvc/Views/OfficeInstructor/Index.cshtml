@@ -121,13 +121,29 @@
                             <div class="col-sm-6">
                                 <div class="form-line">
                                     <label class="form-label">@L("OfficeCode")</label>
-                                    <input type="text" name="OfficeCode" class="form-control" required maxlength="50" />
+                                    @Html.DropDownListFor(
+                                    model => model.Office,
+                                    Model.GetOfficeList(LocalizationManager),
+                                    new
+                                    {
+                                        @class = "form-control",
+                                        id = "Office"
+                                    })
+                                    @*<input type="text" name="OfficeCode" class="form-control" required maxlength="50" />*@
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-line">
                                     <label class="form-label">@L("InstructorCode")</label>
-                                    <input type="text" name="InstructorCode" class="form-control" required maxlength="50" />
+                                    @Html.DropDownListFor(
+                                    model => model.Instructor,
+                                    Model.GetInstructorList(LocalizationManager),
+                                    new
+                                    {
+                                        @class = "form-control",
+                                        id = "Instructor"
+                                    })
+                                    @*<input type="text" name="InstructorCode" class="form-control" required maxlength="50" />*@
                                 </div>
                             </div>
                         </div>

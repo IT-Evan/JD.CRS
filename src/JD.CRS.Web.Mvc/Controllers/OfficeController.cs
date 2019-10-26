@@ -2,8 +2,12 @@
 using Abp.AspNetCore.Mvc.Authorization;
 using JD.CRS.Authorization;
 using JD.CRS.Controllers;
+using JD.CRS.Instructor;
+using JD.CRS.Instructor.Dto;
 using JD.CRS.Office;
 using JD.CRS.Office.Dto;
+using JD.CRS.OfficeInstructor;
+using JD.CRS.OfficeInstructor.Dto;
 using JD.CRS.Web.Models.Office;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -23,8 +27,8 @@ namespace JD.CRS.Web.Controllers
         // GET: /<controller>/
         public async Task<ActionResult> Index(PagedResultRequestDto input)
         {
-            IReadOnlyList<OfficeReadDto> output = (await _officeAppService.GetAll(new PagedResultRequestDto { })).Items;
-            var model = new Index(output)
+            IReadOnlyList<OfficeReadDto> office = (await _officeAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Index(office)
             {
                 
             };

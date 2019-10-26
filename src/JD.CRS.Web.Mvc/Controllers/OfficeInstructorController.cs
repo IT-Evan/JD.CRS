@@ -2,6 +2,10 @@
 using Abp.AspNetCore.Mvc.Authorization;
 using JD.CRS.Authorization;
 using JD.CRS.Controllers;
+using JD.CRS.Instructor;
+using JD.CRS.Instructor.Dto;
+using JD.CRS.Office;
+using JD.CRS.Office.Dto;
 using JD.CRS.OfficeInstructor;
 using JD.CRS.OfficeInstructor.Dto;
 using JD.CRS.Web.Models.OfficeInstructor;
@@ -15,16 +19,22 @@ namespace JD.CRS.Web.Controllers
     public class OfficeInstructorController : CRSControllerBase
     {
         private readonly IOfficeInstructorAppService _officeInstructorAppService;
-        public OfficeInstructorController(IOfficeInstructorAppService officeInstructorAppService)
+        private readonly IOfficeAppService _officeAppService;
+        private readonly IInstructorAppService _instructorAppService;
+        public OfficeInstructorController(IOfficeInstructorAppService officeInstructorAppService, IOfficeAppService officeAppService, IInstructorAppService instructorAppService)
         {
             _officeInstructorAppService = officeInstructorAppService;
+            _officeAppService = officeAppService;
+            _instructorAppService = instructorAppService;
         }
 
         // GET: /<controller>/
         public async Task<ActionResult> Index(PagedResultRequestDto input)
         {
-            IReadOnlyList<OfficeInstructorReadDto> output = (await _officeInstructorAppService.GetAll(new PagedResultRequestDto { })).Items;
-            var model = new Index(output)
+            IReadOnlyList<OfficeInstructorReadDto> officeInstructor = (await _officeInstructorAppService.GetAll(new PagedResultRequestDto { })).Items;
+            IReadOnlyList<OfficeReadDto> office = (await _officeAppService.GetAll(new PagedResultRequestDto { })).Items;
+            IReadOnlyList<InstructorReadDto> instructor = (await _instructorAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Index(officeInstructor, office, instructor)
             {
 
             };

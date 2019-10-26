@@ -19,7 +19,6 @@ namespace JD.CRS.Web.Models.Student
         }
 
         public StatusCode? Status { get; set; }
-        //public string Keyword { get; set; }
 
         public List<SelectListItem> GetStatusList(ILocalizationManager localizationManager)
         {
