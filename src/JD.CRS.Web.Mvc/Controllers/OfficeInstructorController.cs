@@ -43,7 +43,9 @@ namespace JD.CRS.Web.Controllers
         public async Task<ActionResult> Edit(int officeInstructorId)
         {
             var officeInstructor = await _officeInstructorAppService.Get(new EntityDto<int>(officeInstructorId));
-            var model = new Edit
+            IReadOnlyList<OfficeReadDto> officeList = (await _officeAppService.GetAll(new PagedResultRequestDto { })).Items;
+            IReadOnlyList<InstructorReadDto> instructorList = (await _instructorAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Edit(officeInstructor, officeList, instructorList)
             {
                 OfficeInstructor = officeInstructor,
                 Status = officeInstructor.Status,

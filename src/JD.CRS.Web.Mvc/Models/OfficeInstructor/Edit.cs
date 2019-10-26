@@ -16,6 +16,13 @@ namespace JD.CRS.Web.Models.OfficeInstructor
         public OfficeInstructorReadDto OfficeInstructor { get; set; }
         public IReadOnlyList<OfficeReadDto> Offices { get; set; }
         public IReadOnlyList<InstructorReadDto> Instructors { get; set; }
+        public Edit(OfficeInstructorReadDto officeInstructor, IReadOnlyList<OfficeReadDto> offices, IReadOnlyList<InstructorReadDto> instructors)
+        {
+            OfficeInstructor = officeInstructor;
+            Offices = offices;
+            Instructors = instructors;
+        }
+
         public StatusCode? Status { get; set; }
         public string OfficeCode { get; set; }
         public string InstructorCode { get; set; }
