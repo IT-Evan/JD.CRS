@@ -122,12 +122,12 @@
                                 <div class="form-line">
                                     <label class="form-label">@L("OfficeCode")</label>
                                     @Html.DropDownListFor(
-                                    model => model.Office,
+                                    model => model.OfficeCode,
                                     Model.GetOfficeList(LocalizationManager),
                                     new
                                     {
                                         @class = "form-control",
-                                        id = "Office"
+                                        id = "OfficeCode"
                                     })
                                     @*<input type="text" name="OfficeCode" class="form-control" required maxlength="50" />*@
                                 </div>
@@ -136,12 +136,12 @@
                                 <div class="form-line">
                                     <label class="form-label">@L("InstructorCode")</label>
                                     @Html.DropDownListFor(
-                                    model => model.Instructor,
+                                    model => model.InstructorCode,
                                     Model.GetInstructorList(LocalizationManager),
                                     new
                                     {
                                         @class = "form-control",
-                                        id = "Instructor"
+                                        id = "InstructorCode"
                                     })
                                     @*<input type="text" name="InstructorCode" class="form-control" required maxlength="50" />*@
                                 </div>

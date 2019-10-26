@@ -24,8 +24,8 @@ namespace JD.CRS.Web.Models.OfficeInstructor
         }
 
         public StatusCode? Status { get; set; }
-        public string Office { get; set; }
-        public string Instructor { get; set; }
+        public string OfficeCode { get; set; }
+        public string InstructorCode { get; set; }
 
         public List<SelectListItem> GetStatusList(ILocalizationManager localizationManager)
         {
@@ -60,7 +60,7 @@ namespace JD.CRS.Web.Models.OfficeInstructor
                 {
                     Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "PleaseSelect"),
                     Value = "",
-                    Selected = Office == null
+                    Selected = OfficeCode == null
                 }
             };
             var officeList = Offices.ToList();
@@ -70,7 +70,7 @@ namespace JD.CRS.Web.Models.OfficeInstructor
                     {
                         Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, $"{office.Name}"),
                         Value = office.Code.ToString(),
-                        Selected = office.Equals(Office)
+                        Selected = office.Equals(OfficeCode)
                     })
             );
 
@@ -84,7 +84,7 @@ namespace JD.CRS.Web.Models.OfficeInstructor
                 {
                     Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "PleaseSelect"),
                     Value = "",
-                    Selected = Instructor == null
+                    Selected = InstructorCode == null
                 }
             };
             var instructorList = Instructors.ToList();
@@ -94,7 +94,7 @@ namespace JD.CRS.Web.Models.OfficeInstructor
                     {
                         Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, $"{instructor.Name}"),
                         Value = instructor.Code.ToString(),
-                        Selected = instructor.Equals(Instructor)
+                        Selected = instructor.Equals(InstructorCode)
                     })
             );
 

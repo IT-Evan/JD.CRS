@@ -46,7 +46,9 @@ namespace JD.CRS.Web.Controllers
             var model = new Edit
             {
                 OfficeInstructor = officeInstructor,
-                Status = officeInstructor.Status
+                Status = officeInstructor.Status,
+                OfficeCode = officeInstructor.OfficeCode,
+                InstructorCode = officeInstructor.InstructorCode
             };
             return View("Edit", model);
         }

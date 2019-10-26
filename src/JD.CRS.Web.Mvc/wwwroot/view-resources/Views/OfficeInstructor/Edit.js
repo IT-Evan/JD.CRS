@@ -4,6 +4,8 @@
     var _$modal = $('#EditModal');
     var _$form = $('form[name=EditForm]');
     var _$status = $('#Status');
+    var _$office = $('#OfficeCode');
+    var _$instructor = $('#InstructorCode');
     //define save function for create
     function save() {
         if (!_$form.valid()) {
@@ -27,5 +29,7 @@
     _$modal.on('shown.bs.modal', function () {
         _$form.find('input[type=text]:first').focus();//focus first input
         _$status.val() = status;//Status value
+        _$office.val() = office;//Office value
+        _$instructor.val() = instructor;//Instructor value
     });
 });
