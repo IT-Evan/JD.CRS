@@ -27,8 +27,6 @@ namespace JD.CRS.Web.Controllers
             _officeAppService = officeAppService;
             _instructorAppService = instructorAppService;
         }
-
-        // GET: /<controller>/
         public async Task<ActionResult> Index(PagedResultRequestDto input)
         {
             IReadOnlyList<OfficeInstructorReadDto> officeInstructorList = (await _officeInstructorAppService.GetAll(new PagedResultRequestDto { })).Items;
