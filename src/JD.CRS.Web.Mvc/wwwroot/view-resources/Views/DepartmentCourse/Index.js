@@ -7,6 +7,39 @@
     //var _$keyword = $('#Keyword');
     //var _$search = $('#Search');
     var _$dataTable = $('#dataTable');
+    //initial form    
+    _$modal.on('shown.bs.modal', function () {
+        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
+    });
+    //call refresh function
+    $('#RefreshButton').click(function () {
+        refreshDepartmentCourseList();
+    });
+    //call delete function
+    $('.delete-departmentCourse').click(function () {
+        var departmentCourseId = $(this).attr("data-departmentCourse-id");
+        var departmentCourseName = $(this).attr('data-departmentCourse-name');
+        deleteDepartmentCourse(departmentCourseId, departmentCourseName);
+    });
+    //call edit function
+    $('.edit-departmentCourse').click(function (e) {
+        var departmentCourseId = $(this).attr("data-departmentCourse-id");
+        e.preventDefault();
+        $.ajax({
+            url: abp.appPath + 'DepartmentCourse/Edit?departmentCourseId=' + departmentCourseId,
+            type: 'POST',
+            contentType: 'application/html',
+            success: function (content) {
+                $('#EditModal div.modal-content').html(content);
+            },
+            error: function (e) { }
+        });
+    });
+    //call save function
+    _$form.find('button[type="submit"]').click(function (e) {
+        e.preventDefault();
+        save();
+    });
     //Bind Add Button to CreateModal
     $.fn.dataTable.ext.buttons.alert = {
         className: 'buttons-alert',
@@ -143,37 +176,4 @@
             }
         );
     }
-    //call refresh function
-    $('#RefreshButton').click(function () {
-        refreshDepartmentCourseList();
-    });
-    //call delete function
-    $('.delete-departmentCourse').click(function () {
-        var departmentCourseId = $(this).attr("data-departmentCourse-id");
-        var departmentCourseName = $(this).attr('data-departmentCourse-name');
-        deleteDepartmentCourse(departmentCourseId, departmentCourseName);
-    });
-    //call edit function
-    $('.edit-departmentCourse').click(function (e) {
-        var departmentCourseId = $(this).attr("data-departmentCourse-id");
-        e.preventDefault();
-        $.ajax({
-            url: abp.appPath + 'DepartmentCourse/Edit?departmentCourseId=' + departmentCourseId,
-            type: 'POST',
-            contentType: 'application/html',
-            success: function (content) {
-                $('#EditModal div.modal-content').html(content);
-            },
-            error: function (e) { }
-        });
-    });
-    //call save function
-    _$form.find('button[type="submit"]').click(function (e) {
-        e.preventDefault();
-        save();        
-    });
-    //initial form    
-    _$modal.on('shown.bs.modal', function () {
-        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
-    });
 });

@@ -7,6 +7,42 @@
     //var _$keyword = $('#Keyword');
     //var _$search = $('#Search');
     var _$dataTable = $('#dataTable');
+    //initial form
+    _$modal.on('shown.bs.modal', function () {
+        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
+        laydate.render({
+            elem: '#HireDate' //bind laydate
+        });
+    });
+    //call refresh function
+    $('#RefreshButton').click(function () {
+        refreshInstructorList();
+    });
+    //call delete function
+    $('.delete-instructor').click(function () {
+        var instructorId = $(this).attr("data-instructor-id");
+        var instructorName = $(this).attr('data-instructor-name');
+        deleteInstructor(instructorId, instructorName);
+    });
+    //call edit function
+    $('.edit-instructor').click(function (e) {
+        var instructorId = $(this).attr("data-instructor-id");
+        e.preventDefault();
+        $.ajax({
+            url: abp.appPath + 'Instructor/Edit?instructorId=' + instructorId,
+            type: 'POST',
+            contentType: 'application/html',
+            success: function (content) {
+                $('#EditModal div.modal-content').html(content);
+            },
+            error: function (e) { }
+        });
+    });
+    //call save function
+    _$form.find('button[type="submit"]').click(function (e) {
+        e.preventDefault();
+        save();
+    });
     //Bind Add Button to CreateModal
     $.fn.dataTable.ext.buttons.alert = {
         className: 'buttons-alert',
@@ -143,40 +179,4 @@
             }
         );
     }
-    //call refresh function
-    $('#RefreshButton').click(function () {
-        refreshInstructorList();
-    });
-    //call delete function
-    $('.delete-instructor').click(function () {
-        var instructorId = $(this).attr("data-instructor-id");
-        var instructorName = $(this).attr('data-instructor-name');
-        deleteInstructor(instructorId, instructorName);
-    });
-    //call edit function
-    $('.edit-instructor').click(function (e) {
-        var instructorId = $(this).attr("data-instructor-id");
-        e.preventDefault();
-        $.ajax({
-            url: abp.appPath + 'Instructor/Edit?instructorId=' + instructorId,
-            type: 'POST',
-            contentType: 'application/html',
-            success: function (content) {
-                $('#EditModal div.modal-content').html(content);
-            },
-            error: function (e) { }
-        });
-    });
-    //call save function
-    _$form.find('button[type="submit"]').click(function (e) {
-        e.preventDefault();
-        save();        
-    });
-    //initial form
-    _$modal.on('shown.bs.modal', function () {
-        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
-        laydate.render({
-            elem: '#HireDate' //bind laydate
-        });
-    });
 });

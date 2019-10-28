@@ -7,6 +7,42 @@
     //var _$keyword = $('#Keyword');
     //var _$search = $('#Search');
     var _$dataTable = $('#dataTable');
+    //initial form
+    _$modal.on('shown.bs.modal', function () {
+        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
+        laydate.render({
+            elem: '#EnrollmentDate' //bind laydate
+        });
+    });
+    //call refresh function
+    $('#RefreshButton').click(function () {
+        refreshStudentList();
+    });
+    //call delete function
+    $('.delete-student').click(function () {
+        var studentId = $(this).attr("data-student-id");
+        var studentName = $(this).attr('data-student-name');
+        deleteStudent(studentId, studentName);
+    });
+    //call edit function
+    $('.edit-student').click(function (e) {
+        var studentId = $(this).attr("data-student-id");
+        e.preventDefault();
+        $.ajax({
+            url: abp.appPath + 'Student/Edit?studentId=' + studentId,
+            type: 'POST',
+            contentType: 'application/html',
+            success: function (content) {
+                $('#EditModal div.modal-content').html(content);
+            },
+            error: function (e) { }
+        });
+    });
+    //call save function
+    _$form.find('button[type="submit"]').click(function (e) {
+        e.preventDefault();
+        save();
+    });
     //Bind Add Button to CreateModal
     $.fn.dataTable.ext.buttons.alert = {
         className: 'buttons-alert',
@@ -143,40 +179,4 @@
             }
         );
     }
-    //call refresh function
-    $('#RefreshButton').click(function () {
-        refreshStudentList();
-    });
-    //call delete function
-    $('.delete-student').click(function () {
-        var studentId = $(this).attr("data-student-id");
-        var studentName = $(this).attr('data-student-name');
-        deleteStudent(studentId, studentName);
-    });
-    //call edit function
-    $('.edit-student').click(function (e) {
-        var studentId = $(this).attr("data-student-id");
-        e.preventDefault();
-        $.ajax({
-            url: abp.appPath + 'Student/Edit?studentId=' + studentId,
-            type: 'POST',
-            contentType: 'application/html',
-            success: function (content) {
-                $('#EditModal div.modal-content').html(content);
-            },
-            error: function (e) { }
-        });
-    });
-    //call save function
-    _$form.find('button[type="submit"]').click(function (e) {
-        e.preventDefault();
-        save();        
-    });
-    //initial form
-    _$modal.on('shown.bs.modal', function () {
-        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
-        laydate.render({
-            elem: '#EnrollmentDate' //bind laydate
-        });
-    });
 });

@@ -7,6 +7,39 @@
     //var _$keyword = $('#Keyword');
     //var _$search = $('#Search');
     var _$dataTable = $('#dataTable');
+    //initial form    
+    _$modal.on('shown.bs.modal', function () {
+        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
+    });
+    //call refresh function
+    $('#RefreshButton').click(function () {
+        refreshOfficeInstructorList();
+    });
+    //call delete function
+    $('.delete-officeInstructor').click(function () {
+        var officeInstructorId = $(this).attr("data-officeInstructor-id");
+        var officeInstructorName = $(this).attr('data-officeInstructor-name');
+        deleteOfficeInstructor(officeInstructorId, officeInstructorName);
+    });
+    //call edit function
+    $('.edit-officeInstructor').click(function (e) {
+        var officeInstructorId = $(this).attr("data-officeInstructor-id");
+        e.preventDefault();
+        $.ajax({
+            url: abp.appPath + 'OfficeInstructor/Edit?officeInstructorId=' + officeInstructorId,
+            type: 'POST',
+            contentType: 'application/html',
+            success: function (content) {
+                $('#EditModal div.modal-content').html(content);
+            },
+            error: function (e) { }
+        });
+    });
+    //call save function
+    _$form.find('button[type="submit"]').click(function (e) {
+        e.preventDefault();
+        save();
+    });
     //Bind Add Button to CreateModal
     $.fn.dataTable.ext.buttons.alert = {
         className: 'buttons-alert',
@@ -143,37 +176,4 @@
             }
         );
     }
-    //call refresh function
-    $('#RefreshButton').click(function () {
-        refreshOfficeInstructorList();
-    });
-    //call delete function
-    $('.delete-officeInstructor').click(function () {
-        var officeInstructorId = $(this).attr("data-officeInstructor-id");
-        var officeInstructorName = $(this).attr('data-officeInstructor-name');
-        deleteOfficeInstructor(officeInstructorId, officeInstructorName);
-    });
-    //call edit function
-    $('.edit-officeInstructor').click(function (e) {
-        var officeInstructorId = $(this).attr("data-officeInstructor-id");
-        e.preventDefault();
-        $.ajax({
-            url: abp.appPath + 'OfficeInstructor/Edit?officeInstructorId=' + officeInstructorId,
-            type: 'POST',
-            contentType: 'application/html',
-            success: function (content) {
-                $('#EditModal div.modal-content').html(content);
-            },
-            error: function (e) { }
-        });
-    });
-    //call save function
-    _$form.find('button[type="submit"]').click(function (e) {
-        e.preventDefault();
-        save();        
-    });
-    //initial form    
-    _$modal.on('shown.bs.modal', function () {
-        _$modal.find('input:not([type=hidden]):first').focus();//focus first input
-    });
 });
