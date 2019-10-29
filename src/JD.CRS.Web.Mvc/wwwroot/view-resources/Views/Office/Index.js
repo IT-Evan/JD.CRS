@@ -3,9 +3,6 @@
     var _officeService = abp.services.app.office;
     var _$modal = $('#CreateModal');
     var _$form = _$modal.find('form[name=CreateForm]');
-    //var _$status = $('#Status');
-    //var _$keyword = $('#Keyword');
-    //var _$search = $('#Search');
     var _$dataTable = $('#dataTable');
     //initial form    
     _$modal.on('shown.bs.modal', function () {
