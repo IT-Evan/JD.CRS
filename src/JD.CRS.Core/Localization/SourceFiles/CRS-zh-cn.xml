@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="zh-Hans">
   <texts>
+    <!--系统-->
     <text name="AppName" >排班系统</text>
     <text name="CRS" value="排班系统" />
     <text name="StartTyping">开始输入</text>
@@ -34,7 +35,7 @@
     <text name="Skins">皮肤</text>
     <text name="Settings">设置</text>
     <text name="WelcomeMessage" value="欢迎使用 CRS!" />
-    
+    <!--页面-->
     <text name="CurrentTenant">当前租户</text>
     <text name="NotSelected">未选</text>
     <text name="Change">切换</text>
