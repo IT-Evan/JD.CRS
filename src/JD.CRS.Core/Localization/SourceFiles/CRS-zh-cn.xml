@@ -11,6 +11,7 @@
     <text name="QQ">QQ</text>
     <text name="Wechat">微信</text>
     <text name="DD">钉钉</text>
+    <!--菜单-->
     <text name="Home" value="主页" />
     <text name="Data">基础数据</text>
     <text name="Service">综合服务</text>

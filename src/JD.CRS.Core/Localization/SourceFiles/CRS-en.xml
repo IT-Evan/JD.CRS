@@ -11,6 +11,7 @@
     <text name="QQ">QQ</text>
     <text name="Wechat">Wechat</text>
     <text name="DD">DD</text>
+    <!--菜单-->
     <text name="Home" value="Home" />
     <text name="Data">Data</text>
     <text name="Service">Service</text>

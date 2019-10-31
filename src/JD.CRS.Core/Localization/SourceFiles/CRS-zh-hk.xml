@@ -11,6 +11,7 @@
     <text name="QQ">QQ</text>
     <text name="Wechat">微信</text>
     <text name="DD">釘釘</text>
+    <!--菜单-->
     <text name="Home" value="主頁" />
     <text name="Data">基礎資料</text>
     <text name="Service">綜合服務</text>
