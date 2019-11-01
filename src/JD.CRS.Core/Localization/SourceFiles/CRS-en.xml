@@ -10,7 +10,10 @@
     <text name="Contact">Contact us</text>
     <text name="QQ">QQ</text>
     <text name="Wechat">Wechat</text>
-    <text name="DD">DD</text>
+    <text name="DD">DD</text>    
+    <text name="Skins">Skins</text>
+    <text name="Settings">Settings</text>
+    <text name="WelcomeMessage" value="Welcome to CRS!" />
     <!--菜单-->
     <text name="Home" value="Home" />
     <text name="Data">Data</text>
@@ -33,9 +36,6 @@
     <text name="InstructorReport">Instructor Report</text>
     <text name="StudentReport">Student Report</text>
     <text name="About" value="About" />
-    <text name="Skins">Skins</text>
-    <text name="Settings">Settings</text>
-    <text name="WelcomeMessage" value="Welcome to CRS!" />
     <!--页面-->
     <text name="CurrentTenant">Current tenant</text>
     <text name="NotSelected">Not selected</text>

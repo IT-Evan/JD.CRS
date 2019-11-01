@@ -11,6 +11,9 @@
     <text name="QQ">QQ</text>
     <text name="Wechat">微信</text>
     <text name="DD">钉钉</text>
+    <text name="Skins">皮肤</text>
+    <text name="Settings">设置</text>
+    <text name="WelcomeMessage" value="欢迎使用 CRS!" />
     <!--菜单-->
     <text name="Home" value="主页" />
     <text name="Data">基础数据</text>
@@ -33,9 +36,6 @@
     <text name="InstructorReport">教职员报表</text>
     <text name="StudentReport">学生报表</text>
     <text name="About" value="关于" />
-    <text name="Skins">皮肤</text>
-    <text name="Settings">设置</text>
-    <text name="WelcomeMessage" value="欢迎使用 CRS!" />
     <!--页面-->
     <text name="CurrentTenant">当前租户</text>
     <text name="NotSelected">未选</text>
