@@ -17,6 +17,8 @@
     <script src="~/lib/dataTables/JSZip/jszip.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/pdfmake.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
+    <link href="~/lib/multi-select/css/multi-select.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/multi-select/js/jquery.multi-select.js" asp-append-version="true"></script>
 </environment>
 <environment names="Staging,Production">
     <script src="~/view-resources/Views/OfficeInstructor/Index.min.js" asp-append-version="true"></script>
@@ -141,7 +143,8 @@
                                     new
                                     {
                                         @class = "form-control",
-                                        id = "InstructorCode"
+                                        id = "InstructorCode",
+                                        multiple = "multiple"
                                     })
                                     @*<input type="text" name="InstructorCode" class="form-control" required maxlength="50" />*@
                                 </div>
