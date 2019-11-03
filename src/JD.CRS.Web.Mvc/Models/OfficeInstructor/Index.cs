@@ -80,12 +80,7 @@ namespace JD.CRS.Web.Models.OfficeInstructor
         {
             var list = new List<SelectListItem>
             {
-                new SelectListItem
-                {
-                    Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "PleaseSelect"),
-                    Value = "",
-                    Selected = InstructorCode == null
-                }
+                
             };
             var instructorList = Instructors.ToList();
             list.AddRange(instructorList

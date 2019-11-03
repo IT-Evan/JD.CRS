@@ -17,6 +17,8 @@
     <script src="~/lib/dataTables/JSZip/jszip.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/pdfmake.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
+    <link href="~/lib/multi-select/css/multi-select.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/multi-select/js/jquery.multi-select.js" asp-append-version="true"></script>
 </environment>
 <environment names="Staging,Production">
     <script src="~/view-resources/Views/InstructorCourse/Index.min.js" asp-append-version="true"></script>
@@ -30,6 +32,8 @@
     <script src="~/lib/dataTables/JSZip/jszip.min.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/pdfmake.min.js" asp-append-version="true"></script>
     <script src="~/lib/dataTables/pdfmake/vfs_fonts.js" asp-append-version="true"></script>
+    <link href="~/lib/multi-select/css/multi-select.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/multi-select/js/jquery.multi-select.js" asp-append-version="true"></script>
 </environment>
 }
 
@@ -121,13 +125,30 @@
                             <div class="col-sm-6">
                                 <div class="form-line">
                                     <label class="form-label">@L("InstructorCode")</label>
-                                    <input type="text" name="InstructorCode" class="form-control" required maxlength="50" />
+                                    @Html.DropDownListFor(
+                                    model => model.InstructorCode,
+                                    Model.GetInstructorList(LocalizationManager),
+                                    new
+                                    {
+                                        @class = "form-control",
+                                        id = "InstructorCode"
+                                    })
+                                    @*<input type="text" name="InstructorCode" class="form-control" required maxlength="50" />*@
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-line">
                                     <label class="form-label">@L("CourseCode")</label>
-                                    <input type="text" name="CourseCode" class="form-control" required maxlength="50" />
+                                    @Html.DropDownListFor(
+                                    model => model.CourseCode,
+                                    Model.GetCourseList(LocalizationManager),
+                                    new
+                                    {
+                                        @class = "form-control",
+                                        id = "CourseCode",
+                                        multiple = "multiple"
+                                    })
+                                    @*<input type="text" name="CourseCode" class="form-control" required maxlength="50" />*@
                                 </div>
                             </div>
                         </div>
