@@ -4,6 +4,7 @@ using System.Linq;
 using Abp.Localization;
 using JD.CRS.DepartmentInstructor.Dto;
 using JD.CRS.Entitys;
+using JD.CRS.Instructor.Dto;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace JD.CRS.Web.Models.DepartmentInstructor
@@ -12,14 +13,16 @@ namespace JD.CRS.Web.Models.DepartmentInstructor
     public class Index
     {
         public IReadOnlyList<DepartmentInstructorReadDto> DepartmentInstructors { get; set; }
+        public IReadOnlyList<InstructorReadDto> Instructors { get; set; }
 
-        public Index(IReadOnlyList<DepartmentInstructorReadDto> departmentInstructors)
+        public Index(IReadOnlyList<DepartmentInstructorReadDto> departmentInstructors, IReadOnlyList<InstructorReadDto> instructors)
         {
             DepartmentInstructors = departmentInstructors;
+            Instructors = instructors;
         }
 
         public StatusCode? Status { get; set; }
-        //public string Keyword { get; set; }
+        public string InstructorCode { get; set; }
 
         public List<SelectListItem> GetStatusList(ILocalizationManager localizationManager)
         {
@@ -41,6 +44,30 @@ namespace JD.CRS.Web.Models.DepartmentInstructor
                         Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, $"StatusCode_{status}"),
                         Value = status.ToString(),
                         Selected = status == Status
+                    })
+            );
+
+            return list;
+        }
+        public List<SelectListItem> GetInstructorList(ILocalizationManager localizationManager)
+        {
+            var list = new List<SelectListItem>
+            {
+                new SelectListItem
+                {
+                    Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "PleaseSelect"),
+                    Value = "",
+                    Selected = InstructorCode == null
+                }
+            };
+            var instructorList = Instructors.ToList();
+            list.AddRange(instructorList
+                .Select(instructor =>
+                    new SelectListItem
+                    {
+                        Text = instructor.Name.ToString(),
+                        Value = instructor.Code.ToString(),
+                        Selected = instructor.Equals(InstructorCode)
                     })
             );
 

@@ -4,6 +4,8 @@ using JD.CRS.Authorization;
 using JD.CRS.Controllers;
 using JD.CRS.DepartmentInstructor;
 using JD.CRS.DepartmentInstructor.Dto;
+using JD.CRS.Instructor;
+using JD.CRS.Instructor.Dto;
 using JD.CRS.Web.Models.DepartmentInstructor;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -15,16 +17,19 @@ namespace JD.CRS.Web.Controllers
     public class DepartmentInstructorController : CRSControllerBase
     {
         private readonly IDepartmentInstructorAppService _departmentInstructorAppService;
-        public DepartmentInstructorController(IDepartmentInstructorAppService departmentInstructorAppService)
+        private readonly IInstructorAppService _instructorAppService;
+        public DepartmentInstructorController(IDepartmentInstructorAppService departmentInstructorAppService, IInstructorAppService instructorAppService)
         {
             _departmentInstructorAppService = departmentInstructorAppService;
+            _instructorAppService = instructorAppService;
         }
 
         // GET: /<controller>/
         public async Task<ActionResult> Index(PagedResultRequestDto input)
         {
             IReadOnlyList<DepartmentInstructorReadDto> departmentInstructorList = (await _departmentInstructorAppService.GetAll(new PagedResultRequestDto { })).Items;
-            var model = new Index(departmentInstructorList)
+            IReadOnlyList<InstructorReadDto> instructorList = (await _instructorAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Index(departmentInstructorList, instructorList)
             {
 
             };
@@ -33,10 +38,12 @@ namespace JD.CRS.Web.Controllers
         public async Task<ActionResult> Edit(int departmentInstructorId)
         {
             var departmentInstructor = await _departmentInstructorAppService.Get(new EntityDto<int>(departmentInstructorId));
-            var model = new Edit
+            IReadOnlyList<InstructorReadDto> instructorList = (await _instructorAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Edit(departmentInstructor, instructorList)
             {
                 DepartmentInstructor = departmentInstructor,
-                Status = departmentInstructor.Status
+                Status = departmentInstructor.Status,
+                InstructorCode = departmentInstructor.InstructorCode
             };
             return View("Edit", model);
         }

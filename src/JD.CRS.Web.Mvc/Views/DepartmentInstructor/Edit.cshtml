@@ -19,7 +19,15 @@
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label class="form-label">@L("InstructorCode")</label>
-                        <input type="text" name="InstructorCode" value="@Model.DepartmentInstructor.InstructorCode" class="form-control" required maxlength="50" />
+                        @Html.DropDownListFor(
+                                    model => model.InstructorCode,
+                                    Model.GetInstructorList(LocalizationManager),
+                                    new
+                                    {
+                                        @class = "form-control",
+                                        id = "InstructorCode"
+                                    })
+                        @*<input type="text" name="InstructorCode" value="@Model.DepartmentInstructor.InstructorCode" class="form-control" required maxlength="50" />*@
                     </div>
                 </div>
             </div>
