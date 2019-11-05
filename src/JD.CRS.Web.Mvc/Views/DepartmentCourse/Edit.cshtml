@@ -13,13 +13,29 @@
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label class="form-label">@L("DepartmentCode")</label>
-                        <input type="text" name="DepartmentCode" value="@Model.DepartmentCourse.DepartmentCode" class="form-control" required maxlength="50" />
+                        @Html.DropDownListFor(
+                        model => model.DepartmentCode,
+                        Model.GetDepartmentList(LocalizationManager),
+                        new
+                        {
+                            @class = "form-control",
+                            id = "DepartmentCode"
+                        })
+                        @*<input type="text" name="DepartmentCode" value="@Model.DepartmentCourse.DepartmentCode" class="form-control" required maxlength="50" />*@
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-line">
                         <label class="form-label">@L("CourseCode")</label>
-                        <input type="text" name="CourseCode" value="@Model.DepartmentCourse.CourseCode" class="form-control" required maxlength="50" />
+                        @Html.DropDownListFor(
+                        model => model.CourseCode,
+                        Model.GetCourseList(LocalizationManager),
+                        new
+                        {
+                            @class = "form-control",
+                            id = "CourseCode"
+                        })
+                        @*<input type="text" name="CourseCode" value="@Model.DepartmentCourse.CourseCode" class="form-control" required maxlength="50" />*@
                     </div>
                 </div>
             </div>
