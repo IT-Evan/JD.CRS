@@ -2,6 +2,10 @@
 using Abp.AspNetCore.Mvc.Authorization;
 using JD.CRS.Authorization;
 using JD.CRS.Controllers;
+using JD.CRS.Course;
+using JD.CRS.Course.Dto;
+using JD.CRS.Student;
+using JD.CRS.Student.Dto;
 using JD.CRS.StudentCourse;
 using JD.CRS.StudentCourse.Dto;
 using JD.CRS.Web.Models.StudentCourse;
@@ -15,16 +19,22 @@ namespace JD.CRS.Web.Controllers
     public class StudentCourseController : CRSControllerBase
     {
         private readonly IStudentCourseAppService _studentCourseAppService;
-        public StudentCourseController(IStudentCourseAppService studentCourseAppService)
+        private readonly IStudentAppService _studentAppService;
+        private readonly ICourseAppService _courseAppService;
+        public StudentCourseController(IStudentCourseAppService studentCourseAppService, IStudentAppService studentAppService, ICourseAppService courseAppService)
         {
             _studentCourseAppService = studentCourseAppService;
+            _studentAppService = studentAppService;
+            _courseAppService = courseAppService;
         }
 
         // GET: /<controller>/
         public async Task<ActionResult> Index(PagedResultRequestDto input)
         {
             IReadOnlyList<StudentCourseReadDto> studentCourseList = (await _studentCourseAppService.GetAll(new PagedResultRequestDto { })).Items;
-            var model = new Index(studentCourseList)
+            IReadOnlyList<StudentReadDto> studentList = (await _studentAppService.GetAll(new PagedResultRequestDto { })).Items;
+            IReadOnlyList<CourseReadDto> courseList = (await _courseAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Index(studentCourseList, studentList, courseList)
             {
 
             };
@@ -33,10 +43,14 @@ namespace JD.CRS.Web.Controllers
         public async Task<ActionResult> Edit(int studentCourseId)
         {
             var studentCourse = await _studentCourseAppService.Get(new EntityDto<int>(studentCourseId));
-            var model = new Edit
+            IReadOnlyList<StudentReadDto> studentList = (await _studentAppService.GetAll(new PagedResultRequestDto { })).Items;
+            IReadOnlyList<CourseReadDto> courseList = (await _courseAppService.GetAll(new PagedResultRequestDto { })).Items;
+            var model = new Edit(studentCourse, studentList, courseList)
             {
                 StudentCourse = studentCourse,
-                Status = studentCourse.Status
+                Status = studentCourse.Status,
+                StudentCode = studentCourse.StudentCode,
+                CourseCode = studentCourse.CourseCode
             };
             return View("Edit", model);
         }
