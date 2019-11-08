@@ -57,7 +57,12 @@ namespace JD.CRS.Web.Models.DepartmentInstructor
         {
             var list = new List<SelectListItem>
             {
-
+                new SelectListItem
+                {
+                    Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "PleaseSelect"),
+                    Value = "",
+                    Selected = DepartmentCode == null
+                }
             };
             var departmentList = Departments.ToList();
             list.AddRange(departmentList
