@@ -57,7 +57,12 @@ namespace JD.CRS.Web.Models.StudentCourse
         {
             var list = new List<SelectListItem>
             {
-
+                new SelectListItem
+                {
+                    Text = localizationManager.GetString(CRSConsts.LocalizationSourceName, "PleaseSelect"),
+                    Value = "",
+                    Selected = StudentCode == null
+                }
             };
             var studentList = Students.ToList();
             list.AddRange(studentList
