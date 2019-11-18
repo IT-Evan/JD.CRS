@@ -120,6 +120,7 @@
     <text name="AdminEmailAddress">管理員郵箱地址</text>
     <text name="DefaultPasswordIs">預設密碼為：{0}</text>
     <text name="DeleteTenantConfirm">確認刪除該租戶？</text>
+    <!--工作台-->
     <text name="Dashboard">工作臺</text>
     <text name="Create" >創建</text>
     <text name="Edit" >編輯</text>

@@ -116,6 +116,7 @@
     <text name="EmailAddress">邮箱地址</text>
     <text name="Surname">姓</text>
     <text name="DeleteUserConfirm">确认删除该用户？</text>
+    <!--工作台-->
     <text name="Dashboard">工作台</text>
     <text name="Create" >创建</text>
     <text name="Edit" >编辑</text>
