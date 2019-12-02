@@ -37,7 +37,6 @@ namespace JD.CRS.Department
             //获取清单
             var Departmentlist = query.ToList();
 
-            //return new PagedResultDto<DepartmentDto>(Departmentcount, Departmentlist.MapTo<List<DepartmentDto>>());
             return new PagedResultDto<DepartmentReadDto>()
             {
                 TotalCount = Departmentcount,
