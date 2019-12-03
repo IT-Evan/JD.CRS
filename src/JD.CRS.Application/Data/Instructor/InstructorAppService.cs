@@ -37,7 +37,6 @@ namespace JD.CRS.Instructor
             //获取清单
             var Instructorlist = query.ToList();
 
-            //return new PagedResultDto<InstructorDto>(Instructorcount, Instructorlist.MapTo<List<InstructorDto>>());
             return new PagedResultDto<InstructorReadDto>()
             {
                 TotalCount = Instructorcount,
