@@ -37,7 +37,6 @@ namespace JD.CRS.Office
             //获取清单
             var Officelist = query.ToList();
 
-            //return new PagedResultDto<OfficeDto>(Officecount, Officelist.MapTo<List<OfficeDto>>());
             return new PagedResultDto<OfficeReadDto>()
             {
                 TotalCount = Officecount,
