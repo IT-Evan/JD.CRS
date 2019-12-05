@@ -37,7 +37,6 @@ namespace JD.CRS.Student
             //获取清单
             var Studentlist = query.ToList();
 
-            //return new PagedResultDto<StudentDto>(Studentcount, Studentlist.MapTo<List<StudentDto>>());
             return new PagedResultDto<StudentReadDto>()
             {
                 TotalCount = Studentcount,
