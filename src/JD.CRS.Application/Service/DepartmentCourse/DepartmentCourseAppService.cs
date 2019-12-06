@@ -37,7 +37,6 @@ namespace JD.CRS.DepartmentCourse
             //获取清单
             var DepartmentCourselist = query.ToList();
 
-            //return new PagedResultDto<DepartmentCourseDto>(DepartmentCoursecount, DepartmentCourselist.MapTo<List<DepartmentCourseDto>>());
             return new PagedResultDto<DepartmentCourseReadDto>()
             {
                 TotalCount = DepartmentCoursecount,
