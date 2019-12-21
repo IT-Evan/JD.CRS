@@ -37,7 +37,6 @@ namespace JD.CRS.DepartmentInstructor
             //获取清单
             var DepartmentInstructorlist = query.ToList();
 
-            //return new PagedResultDto<DepartmentInstructorDto>(DepartmentInstructorcount, DepartmentInstructorlist.MapTo<List<DepartmentInstructorDto>>());
             return new PagedResultDto<DepartmentInstructorReadDto>()
             {
                 TotalCount = DepartmentInstructorcount,
