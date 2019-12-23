@@ -37,7 +37,6 @@ namespace JD.CRS.OfficeInstructor
             //获取清单
             var OfficeInstructorlist = query.ToList();
 
-            //return new PagedResultDto<OfficeInstructorDto>(OfficeInstructorcount, OfficeInstructorlist.MapTo<List<OfficeInstructorDto>>());
             return new PagedResultDto<OfficeInstructorReadDto>()
             {
                 TotalCount = OfficeInstructorcount,
