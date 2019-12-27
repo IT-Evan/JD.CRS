@@ -28,7 +28,7 @@ namespace JD.CRS.DepartmentInstructor
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<DepartmentInstructorReadDto>> GetAll(PagedResultRequestDto input)//(GetAllDepartmentInstructorsInput input)
+        public override async Task<PagedResultDto<DepartmentInstructorReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
