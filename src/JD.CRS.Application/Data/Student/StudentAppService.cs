@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Student
 {
-    public class StudentAppService : AsyncCrudAppService<Entitys.Student, StudentReadDto, int, PagedResultRequestDto,// GetAllStudentsInput,
+    public class StudentAppService : AsyncCrudAppService<Entitys.Student, StudentReadDto, int, PagedResultRequestDto,
                              StudentWriteDto, StudentWriteDto>, IStudentAppService
 
     {
