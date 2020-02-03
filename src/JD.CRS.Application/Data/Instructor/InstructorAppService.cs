@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Instructor
 {
-    public class InstructorAppService : AsyncCrudAppService<Entitys.Instructor, InstructorReadDto, int, PagedResultRequestDto,// GetAllInstructorsInput,
+    public class InstructorAppService : AsyncCrudAppService<Entitys.Instructor, InstructorReadDto, int, PagedResultRequestDto,
                              InstructorWriteDto, InstructorWriteDto>, IInstructorAppService
 
     {
