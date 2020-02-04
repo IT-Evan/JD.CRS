@@ -28,7 +28,7 @@ namespace JD.CRS.Office
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<OfficeReadDto>> GetAll(PagedResultRequestDto input)//(GetAllOfficesInput input)
+        public override async Task<PagedResultDto<OfficeReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
