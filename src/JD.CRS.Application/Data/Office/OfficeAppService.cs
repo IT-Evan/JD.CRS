@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Office
 {
-    public class OfficeAppService : AsyncCrudAppService<Entitys.Office, OfficeReadDto, int, PagedResultRequestDto,// GetAllOfficesInput,
+    public class OfficeAppService : AsyncCrudAppService<Entitys.Office, OfficeReadDto, int, PagedResultRequestDto,
                              OfficeWriteDto, OfficeWriteDto>, IOfficeAppService
 
     {
