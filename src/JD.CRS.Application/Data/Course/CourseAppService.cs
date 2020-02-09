@@ -30,7 +30,7 @@ namespace JD.CRS.Course
 
         public override async Task<PagedResultDto<CourseReadDto>> GetAll(PagedResultRequestDto input)//(GetAllCoursesInput input)
         {
-            //组合查询 (此服务端查询功能已废弃，由Datatables客户端查询替代)
+            //组合查询(此服务端查询功能已废弃，由Datatables客户端查询替代)
             //var query = base.CreateFilteredQuery(input)
             //    .WhereIf(input.Status.HasValue, t => t.Status == input.Status.Value)
             //    .WhereIf(
