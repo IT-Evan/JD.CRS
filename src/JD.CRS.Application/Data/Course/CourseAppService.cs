@@ -48,7 +48,7 @@ namespace JD.CRS.Course
             //获取清单
             var courselist = query.ToList();
 
-            //return new PagedResultDto<CourseDto>(coursecount, courselist.MapTo<List<CourseDto>>());
+            // return new PagedResultDto<CourseDto>(coursecount, courselist.MapTo<List<CourseDto>>());
             return new PagedResultDto<CourseReadDto>()
             {
                 TotalCount = coursecount,
