@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Department
 {
-    public class DepartmentAppService : AsyncCrudAppService<Entitys.Department, DepartmentReadDto, int, PagedResultRequestDto,// GetAllDepartmentsInput,
+    public class DepartmentAppService : AsyncCrudAppService<Entitys.Department, DepartmentReadDto, int, PagedResultRequestDto,
                              DepartmentWriteDto, DepartmentWriteDto>, IDepartmentAppService
 
     {
@@ -28,7 +28,7 @@ namespace JD.CRS.Department
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<DepartmentReadDto>> GetAll(PagedResultRequestDto input)//(GetAllDepartmentsInput input)
+        public override async Task<PagedResultDto<DepartmentReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -37,7 +37,6 @@ namespace JD.CRS.Department
             //获取清单
             var Departmentlist = query.ToList();
 
-            //return new PagedResultDto<DepartmentDto>(Departmentcount, Departmentlist.MapTo<List<DepartmentDto>>());
             return new PagedResultDto<DepartmentReadDto>()
             {
                 TotalCount = Departmentcount,

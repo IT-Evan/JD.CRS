@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Office
 {
-    public class OfficeAppService : AsyncCrudAppService<Entitys.Office, OfficeReadDto, int, PagedResultRequestDto,// GetAllOfficesInput,
+    public class OfficeAppService : AsyncCrudAppService<Entitys.Office, OfficeReadDto, int, PagedResultRequestDto,
                              OfficeWriteDto, OfficeWriteDto>, IOfficeAppService
 
     {
@@ -28,7 +28,7 @@ namespace JD.CRS.Office
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<OfficeReadDto>> GetAll(PagedResultRequestDto input)//(GetAllOfficesInput input)
+        public override async Task<PagedResultDto<OfficeReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -37,7 +37,6 @@ namespace JD.CRS.Office
             //获取清单
             var Officelist = query.ToList();
 
-            //return new PagedResultDto<OfficeDto>(Officecount, Officelist.MapTo<List<OfficeDto>>());
             return new PagedResultDto<OfficeReadDto>()
             {
                 TotalCount = Officecount,

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Instructor
 {
-    public class InstructorAppService : AsyncCrudAppService<Entitys.Instructor, InstructorReadDto, int, PagedResultRequestDto,// GetAllInstructorsInput,
+    public class InstructorAppService : AsyncCrudAppService<Entitys.Instructor, InstructorReadDto, int, PagedResultRequestDto,
                              InstructorWriteDto, InstructorWriteDto>, IInstructorAppService
 
     {
@@ -28,7 +28,7 @@ namespace JD.CRS.Instructor
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<InstructorReadDto>> GetAll(PagedResultRequestDto input)//(GetAllInstructorsInput input)
+        public override async Task<PagedResultDto<InstructorReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -37,7 +37,6 @@ namespace JD.CRS.Instructor
             //获取清单
             var Instructorlist = query.ToList();
 
-            //return new PagedResultDto<InstructorDto>(Instructorcount, Instructorlist.MapTo<List<InstructorDto>>());
             return new PagedResultDto<InstructorReadDto>()
             {
                 TotalCount = Instructorcount,

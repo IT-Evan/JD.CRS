@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.Student
 {
-    public class StudentAppService : AsyncCrudAppService<Entitys.Student, StudentReadDto, int, PagedResultRequestDto,// GetAllStudentsInput,
+    public class StudentAppService : AsyncCrudAppService<Entitys.Student, StudentReadDto, int, PagedResultRequestDto,
                              StudentWriteDto, StudentWriteDto>, IStudentAppService
 
     {
@@ -28,7 +28,7 @@ namespace JD.CRS.Student
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<StudentReadDto>> GetAll(PagedResultRequestDto input)//(GetAllStudentsInput input)
+        public override async Task<PagedResultDto<StudentReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -37,7 +37,6 @@ namespace JD.CRS.Student
             //获取清单
             var Studentlist = query.ToList();
 
-            //return new PagedResultDto<StudentDto>(Studentcount, Studentlist.MapTo<List<StudentDto>>());
             return new PagedResultDto<StudentReadDto>()
             {
                 TotalCount = Studentcount,

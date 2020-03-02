@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.DepartmentCourse
 {
-    public class DepartmentCourseAppService : AsyncCrudAppService<Entitys.DepartmentCourse, DepartmentCourseReadDto, int, PagedResultRequestDto,// GetAllDepartmentCoursesInput,
+    public class DepartmentCourseAppService : AsyncCrudAppService<Entitys.DepartmentCourse, DepartmentCourseReadDto, int, PagedResultRequestDto,
                              DepartmentCourseWriteDto, DepartmentCourseWriteDto>, IDepartmentCourseAppService
 
     {
@@ -28,7 +28,7 @@ namespace JD.CRS.DepartmentCourse
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<DepartmentCourseReadDto>> GetAll(PagedResultRequestDto input)//(GetAllDepartmentCoursesInput input)
+        public override async Task<PagedResultDto<DepartmentCourseReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -37,7 +37,6 @@ namespace JD.CRS.DepartmentCourse
             //获取清单
             var DepartmentCourselist = query.ToList();
 
-            //return new PagedResultDto<DepartmentCourseDto>(DepartmentCoursecount, DepartmentCourselist.MapTo<List<DepartmentCourseDto>>());
             return new PagedResultDto<DepartmentCourseReadDto>()
             {
                 TotalCount = DepartmentCoursecount,

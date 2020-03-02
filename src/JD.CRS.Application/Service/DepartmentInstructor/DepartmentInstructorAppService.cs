@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JD.CRS.DepartmentInstructor
 {
-    public class DepartmentInstructorAppService : AsyncCrudAppService<Entitys.DepartmentInstructor, DepartmentInstructorReadDto, int, PagedResultRequestDto,// GetAllDepartmentInstructorsInput,
+    public class DepartmentInstructorAppService : AsyncCrudAppService<Entitys.DepartmentInstructor, DepartmentInstructorReadDto, int, PagedResultRequestDto,
                              DepartmentInstructorWriteDto, DepartmentInstructorWriteDto>, IDepartmentInstructorAppService
 
     {
@@ -28,7 +28,7 @@ namespace JD.CRS.DepartmentInstructor
             return base.Create(input);
         }
 
-        public override async Task<PagedResultDto<DepartmentInstructorReadDto>> GetAll(PagedResultRequestDto input)//(GetAllDepartmentInstructorsInput input)
+        public override async Task<PagedResultDto<DepartmentInstructorReadDto>> GetAll(PagedResultRequestDto input)
         {
             //查询
             var query = base.CreateFilteredQuery(input);
@@ -37,7 +37,6 @@ namespace JD.CRS.DepartmentInstructor
             //获取清单
             var DepartmentInstructorlist = query.ToList();
 
-            //return new PagedResultDto<DepartmentInstructorDto>(DepartmentInstructorcount, DepartmentInstructorlist.MapTo<List<DepartmentInstructorDto>>());
             return new PagedResultDto<DepartmentInstructorReadDto>()
             {
                 TotalCount = DepartmentInstructorcount,
