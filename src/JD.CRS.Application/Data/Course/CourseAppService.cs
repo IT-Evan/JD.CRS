@@ -43,7 +43,7 @@ namespace JD.CRS.Course
             //    );
             //查询
             var query = base.CreateFilteredQuery(input);
-            //获取总数
+            // 获取总数
             var coursecount = query.Count();
             //获取清单
             var courselist = query.ToList();
