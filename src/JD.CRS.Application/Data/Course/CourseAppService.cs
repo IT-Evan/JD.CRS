@@ -41,7 +41,7 @@ namespace JD.CRS.Course
             //    || t.Credits.ToString().Contains((input.Keyword ?? string.Empty).ToLower()) //按学分查询
             //    || t.Remarks.ToLower().Contains((input.Keyword ?? string.Empty).ToLower()) //按备注查询
             //    );
-            // 查询
+            //查询
             var query = base.CreateFilteredQuery(input);
             //获取总数
             var coursecount = query.Count();
