@@ -27,7 +27,7 @@ namespace JD.CRS.OfficeInstructor.Dto
         [StringLength(200)]
         public string Remarks { get; set; }
         /// <summary>
-        /// 状态: 0 有效, 1 无效
+        /// 状态: 0 有效, 1 无效 
         /// </summary>
         public StatusCode Status { get; set; }
         /// <summary>
